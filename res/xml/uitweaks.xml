@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    		<PreferenceCategory
+				android:title="UI Tweaks">
+				<CheckBoxPreference
+        				android:title="Theme"
+        				android:summary="@string/themePref"
+        				android:key="themePref"
+        				android:defaultValue="false"
+            			android:widgetLayout="@drawable/checkbox_pref" />
+				<Preference
+        				android:title="Top Bar Start Color"
+        				android:summary="@string/topbarStart"
+        				android:key="uitopBarPref" />
+        		<Preference
+        				android:title="Top Bar End Color"
+        				android:summary="@string/topbarEnd"
+        				android:key="uibottomBarPref" />
+				<Preference
+        				android:title="Top Bar Text Color"
+        				android:summary="@string/topbarText"
+        				android:key="uiTopTextPref" />
+				<Preference
+        				android:title="Page Title Color"
+        				android:summary="@string/pageTitleText"
+        				android:key="pageTitlePref" />
+				<Preference
+        				android:title="Page Unused Title Color"
+        				android:summary="@string/pageUnusedTitleText"
+        				android:key="pageUnusedTitlePref" />
+				<Preference
+        				android:title="Buttons Start Color"
+        				android:summary="@string/buttonStart"
+        				android:key="buttonStartPref" />
+        		<Preference
+        				android:title="Buttons End Color"
+        				android:summary="@string/buttonEnd"
+        				android:key="buttonEndPref" />
+        		<Preference
+        				android:title="Buttons Text Color"
+        				android:summary="@string/buttonText"
+        				android:key="buttonTextPref" />
+				</PreferenceCategory>
+</PreferenceScreen>

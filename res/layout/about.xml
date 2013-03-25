@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <com.markupartist.android.widget.ActionBar xmlns:app="http://schemas.android.com/apk/res/com.drx2.bootmanager"
+    android:id="@+id/actionbar"
+    app:title="About"
+    style="@style/ActionBar" />
+    <ScrollView android:id="@+id/scrollView1" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical"
+    android:scrollbarTrackVertical="@drawable/scrollbar_handle_vertical_track">
+    	<LinearLayout android:layout_width="wrap_content" 
+    	android:orientation="vertical" 
+    	android:id="@+id/linearLayout2" 
+    	android:layout_height="wrap_content">
+    		<TextView android:text="@string/brought_by" 
+    		android:textStyle="bold" 
+    		android:layout_marginTop="8dip"
+    		android:layout_marginRight="8dip"
+    		android:layout_marginLeft="5dip"
+    		android:textSize="18dip" 
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    		</TextView>
+    		<TextView android:layout_marginLeft="5dip" 
+    		android:layout_marginRight="5dip" 
+    		android:text="@string/developers" 
+    		android:id="@+id/AboutText" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"  
+    		android:textSize="16dip" 
+    		android:autoLink="web|email">
+    		</TextView>
+    		<TextView android:text="@string/contact_title" 
+    		android:textStyle="bold" 
+    		android:layout_marginTop="15dip"
+    		android:layout_marginLeft="5dip" 
+    		android:layout_marginRight="5dip"
+    		android:textSize="18dip" 
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    		</TextView>
+    		<TextView android:layout_marginLeft="5dip" 
+    		android:layout_marginRight="5dip" 
+    		android:text="@string/contact_info" 
+    		android:id="@+id/AboutText" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textSize="16dip" 
+    		android:textColorLink="#CD2626"
+    		android:textColorHighlight="#ffffff"
+    		android:autoLink="web|email">
+    		</TextView>
+    		<TextView android:text="@string/about_title" 
+    		android:textStyle="bold" 
+    		android:layout_marginTop="15dip"
+    		android:layout_marginLeft="5dip" 
+    		android:layout_marginRight="5dip"
+    		android:textSize="18dip" 
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    		</TextView>
+    		<TextView android:layout_marginLeft="5dip" 
+    		android:layout_marginRight="5dip" 
+    		android:text="@string/about_info" 
+    		android:id="@+id/AboutText" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textSize="16dip" 
+    		android:autoLink="web|email">
+    		</TextView>
+    		<TextView android:text="@string/credits_title" 
+    		android:textStyle="bold" 
+    		android:layout_marginTop="15dip"
+    		android:layout_marginLeft="5dip" 
+    		android:layout_marginRight="5dip"
+    		android:textSize="18dip" 
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    		</TextView>
+    		<TextView android:layout_marginLeft="5dip" 
+    		android:layout_marginRight="5dip" 
+    		android:text="@string/developers" 
+    		android:id="@+id/AboutText" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textSize="16dip" 
+    		android:autoLink="web|email">
+    		</TextView>
+    		<TextView android:text="@string/specialthanks_title" 
+    		android:textStyle="bold" 
+    		android:layout_marginTop="15dip"
+    		android:layout_marginLeft="5dip" 
+    		android:layout_marginRight="5dip"
+    		android:textSize="18dip" 
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    		</TextView>
+    		<TextView android:layout_marginLeft="5dip" 
+    		android:layout_marginRight="5dip"
+    		android:layout_marginBottom="15dip"
+    		android:text="@string/specialthanks" 
+    		android:id="@+id/AboutText" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textSize="16dip" 
+    		android:autoLink="web|email">
+    		</TextView>
+    	</LinearLayout>
+    </ScrollView>
+</LinearLayout>

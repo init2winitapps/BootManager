@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <com.markupartist.android.widget.ActionBar xmlns:app="http://schemas.android.com/apk/res/com.drx2.bootmanager"
+    	android:id="@+id/actionbar"
+    	app:title="About"
+    	style="@style/ActionBar" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/bottombar"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:layout_alignParentBottom="true"
+    	android:background="@drawable/red_gradient">
+    	<Button
+            android:text="Restore"
+            android:id="@+id/installbutton"
+            android:textColor="#ffffff" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:background="@drawable/install_button" />
+    </LinearLayout>
+	<ListView
+ 		android:id="@android:id/list"
+ 		android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:cacheColorHint="#00000000"
+    	android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical"
+    	android:scrollbarTrackVertical="@drawable/scrollbar_handle_vertical_track" 
+    	android:layout_below="@id/actionbar"
+    	android:layout_above="@id/bottombar" />
+	<TextView
+ 		android:id="@+id/empty"
+ 		android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/actionbar" 
+    	android:text="" />
+</RelativeLayout>

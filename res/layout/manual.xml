@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center" android:background="@android:color/transparent">
+<com.markupartist.android.widget.ActionBar xmlns:app="http://schemas.android.com/apk/res/com.drx2.bootmanager"
+    android:id="@+id/actionbar"
+    app:title="Manually Set Variables"
+    style="@style/ActionBar" />
+<ScrollView android:id="@+id/scrollView1" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true"
+	android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" 
+	android:scrollbarTrackVertical="@drawable/scrollbar_handle_vertical_track" >	
+	<LinearLayout android:layout_width="fill_parent" 
+		android:orientation="vertical" 
+		android:id="@+id/linearLayout2" 
+		android:layout_height="wrap_content"
+		android:weightSum="6">
+	<!-- Device Variable -->
+    <LinearLayout android:layout_width="fill_parent" 
+		android:orientation="vertical" 
+		android:id="@+id/linearLayout2" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+    		<TextView android:layout_marginLeft="10dip" 
+    			android:text="@string/device" 
+    			android:id="@+id/textView1" 
+    			android:layout_width="wrap_content" 
+    			android:layout_height="wrap_content">
+    		</TextView>
+    	</LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent" 
+    	android:weightSum="10">
+        <EditText android:text="" 
+        	android:id="@+id/vText1" 
+        	android:layout_height="wrap_content" 
+        	android:layout_width="wrap_content" 
+        	android:layout_marginLeft="3dp" 
+        	android:layout_weight="8.5">
+        </EditText>
+        <Button android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:text="Set" 
+        	android:id="@+id/variable1" 
+        	android:background="@drawable/new_button" 
+        	android:textColor="#ffffff" 
+        	android:layout_marginRight="3dp" 
+        	android:layout_weight="1.5">
+        </Button>
+    </LinearLayout>
+    <!-- SD Variable -->
+    <LinearLayout android:layout_width="fill_parent" 
+		android:orientation="vertical" 
+		android:id="@+id/linearLayout2" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+    	<TextView android:layout_marginLeft="10dip" 
+    		android:text="@string/sdcardblock" 
+    		android:id="@+id/textView2" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    	</TextView>
+    	<LinearLayout android:id="@+id/linearLayout4" 
+    		android:layout_height="wrap_content" 
+    		android:layout_width="fill_parent" 
+    		android:weightSum="10">
+        	<EditText android:text="" 
+        		android:id="@+id/vText2" 
+        		android:layout_height="wrap_content" 
+        		android:layout_width="wrap_content" 
+        		android:layout_marginLeft="3dp" 
+        		android:layout_weight="8.5">
+        	</EditText>
+        	<Button android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="Set" 
+        		android:id="@+id/variable2" 
+        		android:background="@drawable/new_button" 
+        		android:textColor="#ffffff" 
+        		android:layout_marginRight="3dp" 
+        		android:layout_weight="1.5">
+        	</Button>
+    	</LinearLayout>
+    </LinearLayout>
+	<!-- System Variable -->
+	<LinearLayout android:layout_width="fill_parent" 
+		android:orientation="vertical" 
+		android:id="@+id/linearLayout2" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1">    
+    	<TextView android:layout_marginLeft="10dip" 
+    		android:text="@string/systemSize" 
+    		android:id="@+id/textView3" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    	</TextView>
+    	<LinearLayout android:id="@+id/linearLayout5" 
+    		android:layout_height="wrap_content" 
+    		android:layout_width="fill_parent" 
+    		android:weightSum="10">
+        	<EditText android:text="" 
+        		android:id="@+id/vText3" 
+        		android:layout_height="wrap_content" 
+        		android:layout_width="wrap_content" 
+        		android:inputType="number"
+        		android:layout_marginLeft="3dp" 
+        		android:layout_weight="8.5">
+        	</EditText>
+        	<Button android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="Set" 
+        		android:id="@+id/variable3" 
+        		android:background="@drawable/new_button" 
+        		android:textColor="#ffffff" 
+        		android:layout_marginRight="3dp" 
+        		android:layout_weight="1.5">
+        	</Button>
+    	</LinearLayout>
+    </LinearLayout>
+    <!-- Data Variable -->
+    <LinearLayout android:layout_width="fill_parent" 
+		android:orientation="vertical" 
+		android:id="@+id/linearLayout2" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+    	<TextView android:layout_marginLeft="10dip" 
+    		android:text="@string/dataSize" 
+    		android:id="@+id/textView4" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    	</TextView>
+    	<LinearLayout android:id="@+id/linearLayout6" 
+    		android:layout_height="wrap_content" 
+    		android:layout_width="fill_parent" 
+    		android:weightSum="10">
+        	<EditText android:text="" 
+        		android:id="@+id/vText4" 
+        		android:layout_height="wrap_content" 
+        		android:layout_width="wrap_content" 
+        		android:inputType="number"
+        		android:layout_marginLeft="3dp" 
+        		android:layout_weight="8.5">
+        	</EditText>
+        	<Button android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"
+        		android:text="Set" 
+        		android:id="@+id/variable4" 
+        		android:background="@drawable/new_button" 
+        		android:textColor="#ffffff" 
+        		android:layout_marginRight="3dp" 
+        		android:layout_weight="1.5">
+        	</Button>
+    	</LinearLayout>
+    </LinearLayout>
+    <!-- Cache Variable -->
+    <LinearLayout android:layout_width="fill_parent" 
+		android:orientation="vertical" 
+		android:id="@+id/linearLayout2" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+    	<TextView android:layout_marginLeft="10dip" 
+    		android:text="@string/cacheSize" 
+    		android:id="@+id/textView5" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    	</TextView>
+    	<LinearLayout android:id="@+id/linearLayout7" 
+    		android:layout_height="wrap_content" 
+    		android:layout_width="fill_parent" 
+    		android:weightSum="10">
+        	<EditText android:text="" 
+        		android:id="@+id/vText5" 
+        		android:layout_height="wrap_content" 
+        		android:layout_width="wrap_content" 
+        		android:inputType="number"
+        		android:layout_marginLeft="3dp" 
+        		android:layout_weight="8.5">
+        	</EditText>
+        	<Button android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="Set" 
+        		android:id="@+id/variable5" 
+        		android:background="@drawable/new_button" 
+        		android:textColor="#ffffff" 
+        		android:layout_marginRight="3dp" 
+        		android:layout_weight="1.5">
+        	</Button>
+    	</LinearLayout>
+    </LinearLayout>
+    <Button android:layout_width="250dip" 
+    	android:layout_gravity="center" 
+    	android:layout_height="50dip" 
+    	android:text="Finished" 
+    	android:id="@+id/variableFin" 
+    	android:layout_marginBottom="5dp"
+    	android:background="@drawable/new_button" 
+    	android:textColor="#ffffff"
+    	android:layout_weight="1">
+    </Button>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

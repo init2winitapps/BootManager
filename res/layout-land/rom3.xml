@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:weightSum="10">
+	  <ImageView android:src="@drawable/screen_shot" 
+      	android:layout_height="fill_parent" 
+      	android:id="@+id/imageView1" 
+      	android:layout_width="fill_parent"
+      	android:layout_weight="7"
+      	android:layout_marginTop="3dp"
+      	android:layout_marginLeft="3dp"
+      	android:layout_marginBottom="3dp">
+      </ImageView>
+      <LinearLayout
+  		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:orientation="vertical"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:layout_weight="3"
+  		android:weightSum="10">
+  			<LinearLayout
+  				xmlns:android="http://schemas.android.com/apk/res/android"
+  				android:orientation="horizontal"
+  				android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:weightSum="4"
+  				android:layout_weight="6">
+  				<Button android:text="@string/bootTitle" 
+          			android:id="@+id/bootButton" 
+          			android:layout_width="match_parent" 
+          			android:layout_height="wrap_content"
+          			android:layout_weight="1"
+          			android:layout_marginTop="3dp"
+          			android:layout_marginLeft="3dp"
+          			android:layout_marginRight="3dp"
+          			android:background="@drawable/big_button"
+          			android:textColor="#FFFFFFFF">
+          		</Button>
+          		<Button android:text="@string/installTitle" 
+          			android:id="@+id/installButton" 
+          			android:layout_width="match_parent" 
+          			android:layout_height="wrap_content"
+          			android:layout_weight="1"
+          			android:layout_marginTop="3dp"
+          			android:layout_marginLeft="3dp"
+          			android:layout_marginRight="3dp"
+          			android:background="@drawable/big_button"
+          			android:textColor="#FFFFFFFF">
+          		</Button>
+				<Button android:text="@string/editROMTitle" 
+          			android:id="@+id/editROMButton" 
+          			android:layout_width="match_parent" 
+          			android:layout_height="wrap_content"
+          			android:layout_weight="1"
+          			android:layout_marginTop="3dp"
+          			android:layout_marginLeft="3dp"
+          			android:layout_marginRight="3dp"
+          			android:background="@drawable/big_button"
+          			android:textColor="#FFFFFFFF">
+          		</Button>
+          		<Button android:text="@string/editTitle" 
+          			android:id="@+id/editButton" 
+          			android:layout_width="match_parent" 
+          			android:layout_height="wrap_content"
+          			android:layout_weight="1"
+          			android:layout_marginTop="3dp"
+          			android:layout_marginLeft="3dp"
+          			android:layout_marginRight="3dp"
+          			android:background="@drawable/big_button"
+          			android:textColor="#FFFFFFFF">
+          		</Button>
+  			</LinearLayout>
+  			<ScrollView android:id="@+id/scrollView1" 
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:fillViewport="true"
+				android:layout_weight="4"
+				android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" 
+				android:scrollbarTrackVertical="@drawable/scrollbar_handle_vertical_track">
+				  <LinearLayout
+  					xmlns:android="http://schemas.android.com/apk/res/android"
+  					android:orientation="vertical"
+  					android:layout_width="fill_parent"
+  					android:layout_height="wrap_content"
+  					android:layout_marginTop="15dp"
+  					android:layout_marginLeft="3dp">
+  					<LinearLayout
+  						xmlns:android="http://schemas.android.com/apk/res/android"
+  						android:orientation="horizontal"
+  						android:layout_width="wrap_content"
+  						android:layout_height="wrap_content">
+      				<TextView android:text="ROM Name: "
+      					android:id="@+id/romName" 
+      					android:layout_width="wrap_content"
+      					android:layout_height="wrap_content"
+      					android:layout_marginBottom="3dp">
+      				</TextView>
+      				<TextView android:text="ROM"
+      					android:id="@+id/romText" 
+      					android:layout_width="wrap_content" 
+      					android:layout_height="wrap_content">
+      				</TextView>
+    			</LinearLayout>
+    			<LinearLayout
+  					xmlns:android="http://schemas.android.com/apk/res/android"
+  					android:orientation="horizontal"
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content">
+      				<TextView android:text="Kernel Name: " 
+      					android:id="@+id/kernelName" 
+      					android:layout_width="wrap_content" 
+      					android:layout_height="wrap_content"
+      					android:layout_marginBottom="3dp">
+      				</TextView>
+      				<TextView android:text="kernel"
+      					android:id="@+id/kernelText" 
+      					android:layout_width="wrap_content" 
+      					android:layout_height="wrap_content">
+      				</TextView>
+    			</LinearLayout>
+				<LinearLayout
+  					xmlns:android="http://schemas.android.com/apk/res/android"
+  					android:orientation="horizontal"
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content">
+      				<TextView android:text="Description: " 
+      					android:id="@+id/description" 
+      					android:layout_width="wrap_content" 
+      					android:layout_height="wrap_content"
+      					android:layout_marginBottom="3dp">
+      				</TextView>
+      				<TextView android:text="description"
+      					android:id="@+id/descriptionText" 
+      					android:layout_width="wrap_content" 
+      					android:layout_height="wrap_content">
+      				</TextView>
+    			</LinearLayout>
+			</LinearLayout>
+          </ScrollView>
+	  </LinearLayout>
+</LinearLayout>

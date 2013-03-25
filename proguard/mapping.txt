@@ -1,0 +1,3167 @@
+android.support.v4.app.BackStackRecord -> android.support.v4.app.a:
+    android.support.v4.app.FragmentManagerImpl mManager -> a
+    android.support.v4.app.BackStackRecord$Op mHead -> b
+    android.support.v4.app.BackStackRecord$Op mTail -> c
+    int mNumOp -> d
+    int mEnterAnim -> e
+    int mExitAnim -> f
+    int mTransition -> g
+    int mTransitionStyle -> h
+    boolean mAddToBackStack -> i
+    boolean mAllowAddToBackStack -> j
+    java.lang.String mName -> k
+    boolean mCommitted -> l
+    int mIndex -> m
+    int mBreadCrumbTitleRes -> n
+    java.lang.CharSequence mBreadCrumbTitleText -> o
+    int mBreadCrumbShortTitleRes -> p
+    java.lang.CharSequence mBreadCrumbShortTitleText -> q
+    204:262:void dump$ec96877(java.lang.String,java.io.PrintWriter) -> a
+    295:305:void addOp(android.support.v4.app.BackStackRecord$Op) -> a
+    313:314:android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment) -> a
+    367:377:android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment) -> a
+    496:516:void bumpBackStackNesting(int) -> a
+    519:519:int commit() -> a
+    540:622:void run() -> run
+    625:695:void popFromBackStack$1385ff() -> b
+android.support.v4.app.BackStackRecord$Op -> android.support.v4.app.b:
+    android.support.v4.app.BackStackRecord$Op next -> a
+    android.support.v4.app.BackStackRecord$Op prev -> b
+    int cmd -> c
+    android.support.v4.app.Fragment fragment -> d
+    int enterAnim -> e
+    int exitAnim -> f
+    java.util.ArrayList removed -> g
+android.support.v4.app.BackStackState -> android.support.v4.app.BackStackState:
+    int[] mOps -> a
+    int mTransition -> b
+    int mTransitionStyle -> c
+    java.lang.String mName -> d
+    int mIndex -> e
+    int mBreadCrumbTitleRes -> f
+    java.lang.CharSequence mBreadCrumbTitleText -> g
+    int mBreadCrumbShortTitleRes -> h
+    java.lang.CharSequence mBreadCrumbShortTitleText -> i
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    93:126:android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
+    130:130:int describeContents() -> describeContents
+    134:143:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.BackStackState$1 -> android.support.v4.app.c:
+    146:146:java.lang.Object[] newArray(int) -> newArray
+    146:146:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.Fragment -> android.support.v4.app.Fragment:
+    java.util.HashMap sClassMap -> L
+    int mState -> a
+    android.view.View mAnimatingAway -> b
+    int mStateAfterAnimating -> c
+    android.os.Bundle mSavedFragmentState -> d
+    android.util.SparseArray mSavedViewState -> e
+    int mIndex -> f
+    java.lang.String mWho -> g
+    android.os.Bundle mArguments -> h
+    android.support.v4.app.Fragment mTarget -> i
+    int mTargetIndex -> j
+    int mTargetRequestCode -> k
+    boolean mAdded -> l
+    boolean mRemoving -> m
+    boolean mResumed -> n
+    boolean mFromLayout -> o
+    boolean mInLayout -> p
+    boolean mRestored -> q
+    int mBackStackNesting -> r
+    android.support.v4.app.FragmentManager mFragmentManager -> s
+    android.support.v4.app.FragmentActivity mImmediateActivity -> t
+    android.support.v4.app.FragmentActivity mActivity -> u
+    int mFragmentId -> v
+    int mContainerId -> w
+    java.lang.String mTag -> x
+    boolean mHidden -> y
+    boolean mDetached -> z
+    boolean mRetainInstance -> A
+    boolean mRetaining -> B
+    boolean mHasMenu -> C
+    boolean mCalled -> D
+    int mNextAnim -> E
+    android.view.ViewGroup mContainer -> F
+    android.view.View mView -> G
+    android.view.View mInnerView -> H
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> I
+    boolean mLoadersStarted -> J
+    boolean mCheckedForLoaderManager -> K
+    353:353:android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
+    372:393:android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    400:404:void restoreViewState() -> a
+    407:409:void setIndex(int) -> a
+    412:412:boolean isInBackStack() -> b
+    419:419:boolean equals(java.lang.Object) -> equals
+    426:426:int hashCode() -> hashCode
+    431:446:java.lang.String toString() -> toString
+    496:501:void setInitialSavedState(android.support.v4.app.Fragment$SavedState) -> a
+    537:537:android.support.v4.app.FragmentActivity getActivity() -> c
+    567:567:java.lang.String getString$47921032() -> d
+    667:667:void onHiddenChanged$1385ff() -> e
+    727:731:void startActivity(android.content.Intent) -> a
+    738:742:void startActivityForResult$7a9ca511(android.content.Intent) -> b
+    759:759:void onActivityResult(int,int,android.content.Intent) -> a
+    767:767:android.view.LayoutInflater getLayoutInflater$2ee30c11() -> f
+    813:814:void onInflate$423a76cd() -> g
+    821:822:void onAttach$63a22f9() -> h
+    828:828:android.view.animation.Animation onCreateAnimation$24236ca7() -> i
+    846:847:void onCreate$79e5e33f() -> j
+    870:870:android.view.View onCreateView$469ccb8a(android.view.LayoutInflater) -> a
+    884:884:void onViewCreated(android.view.View,android.os.Bundle) -> a
+    893:893:android.view.View getView() -> k
+    910:911:void onActivityCreated(android.os.Bundle) -> a
+    940:941:void onResume() -> l
+    963:963:void onSaveInstanceState$79e5e33f() -> m
+    966:967:void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    975:976:void onPause() -> n
+    988:989:void onLowMemory() -> onLowMemory
+    1001:1002:void onDestroyView() -> o
+    1009:1019:void onDestroy() -> p
+    1028:1048:void initState() -> q
+    1055:1056:void onDetach() -> r
+    1072:1072:void onCreateOptionsMenu$761f6f96() -> s
+    1089:1089:void onPrepareOptionsMenu$1eec55bd() -> t
+    1099:1099:void onDestroyOptionsMenu() -> u
+    1120:1120:boolean onOptionsItemSelected$1b88ab4c() -> v
+    1131:1131:void onOptionsMenuClosed$1eec55bd() -> w
+    1151:1152:void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    1197:1197:boolean onContextItemSelected$1b88ab4c() -> x
+    1210:1278:void dump$ec96877$3725603f(java.lang.String,java.io.PrintWriter) -> a
+    1281:1285:void performStart() -> y
+    1288:1289:void performStop() -> z
+    1292:1306:void performReallyStop(boolean) -> a
+    1309:1313:void performDestroyView() -> A
+android.support.v4.app.Fragment$InstantiationException -> android.support.v4.app.d:
+android.support.v4.app.Fragment$SavedState -> android.support.v4.app.Fragment$SavedState:
+    android.os.Bundle mState -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    298:298:int describeContents() -> describeContents
+    303:304:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.Fragment$SavedState$1 -> android.support.v4.app.e:
+    307:307:java.lang.Object[] newArray(int) -> newArray
+    307:307:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentActivity -> android.support.v4.app.FragmentActivity:
+    android.os.Handler mHandler -> a
+    android.support.v4.app.FragmentManagerImpl mFragments -> b
+    boolean mCreated -> c
+    boolean mResumed -> d
+    boolean mStopped -> e
+    boolean mReallyStopped -> f
+    boolean mOptionsMenuInvalidated -> g
+    boolean mCheckedForLoaderManager -> h
+    boolean mLoadersStarted -> i
+    android.support.v4.app.HCSparseArray mAllLoaderManagers -> j
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> k
+    131:149:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    156:159:void onBackPressed() -> onBackPressed
+    166:168:void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    175:193:void onCreate(android.os.Bundle) -> onCreate
+    200:211:boolean onCreatePanelMenu(int,android.view.Menu) -> onCreatePanelMenu
+    219:296:android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet) -> onCreateView
+    304:312:void onDestroy() -> onDestroy
+    319:328:boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    336:338:void onLowMemory() -> onLowMemory
+    345:357:boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    366:372:void onPanelClosed(int,android.view.Menu) -> onPanelClosed
+    379:386:void onPause() -> onPause
+    393:397:void onResume() -> onResume
+    404:408:void onPostResume() -> onPostResume
+    415:425:boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
+    434:462:java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    470:475:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    483:515:void onStart() -> onStart
+    522:528:void onStop() -> onStop
+    535:545:void supportInvalidateOptionsMenu() -> a
+    583:588:void doReallyStop(boolean) -> a
+    620:620:void onAttachFragment$65850823() -> b
+    627:627:android.support.v4.app.FragmentManager getSupportFragmentManager() -> c
+    636:640:void startActivityForResult(android.content.Intent,int) -> startActivityForResult
+    647:655:void startActivityFromFragment(android.support.v4.app.Fragment,android.content.Intent,int) -> a
+    659:666:void invalidateSupportFragmentIndex(int) -> a
+    685:697:android.support.v4.app.LoaderManagerImpl getLoaderManager$3d2266e4(int) -> b
+android.support.v4.app.FragmentActivity$1 -> android.support.v4.app.f:
+    android.support.v4.app.FragmentActivity this$0 -> a
+    76:89:void handleMessage(android.os.Message) -> handleMessage
+android.support.v4.app.FragmentActivity$FragmentTag -> android.support.v4.app.g:
+    int[] Fragment -> a
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> android.support.v4.app.h:
+    java.lang.Object activity -> a
+    java.util.HashMap children -> b
+    java.util.ArrayList fragments -> c
+    android.support.v4.app.HCSparseArray loaders -> d
+android.support.v4.app.FragmentManager -> android.support.v4.app.i:
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean executePendingTransactions() -> b
+    void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
+    android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment) -> a
+android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.j:
+    boolean DEBUG -> a
+    boolean HONEYCOMB -> b
+    java.util.ArrayList mPendingActions -> c
+    java.lang.Runnable[] mTmpActions -> d
+    boolean mExecutingActions -> e
+    java.util.ArrayList mActive -> f
+    java.util.ArrayList mAdded -> g
+    java.util.ArrayList mAvailIndices -> h
+    java.util.ArrayList mBackStack -> i
+    java.util.ArrayList mCreatedMenus -> j
+    java.util.ArrayList mBackStackIndices -> k
+    java.util.ArrayList mAvailBackStackIndices -> l
+    java.util.ArrayList mBackStackChangeListeners -> m
+    int mCurState -> n
+    android.support.v4.app.FragmentActivity mActivity -> o
+    boolean mNeedMenuInvalidate -> p
+    boolean mStateSaved -> q
+    boolean mDestroyed -> r
+    java.lang.String mNoTransactionsBecause -> s
+    android.os.Bundle mStateBundle -> t
+    android.util.SparseArray mStateArray -> u
+    java.lang.Runnable mExecCommit -> v
+    android.view.animation.Interpolator DECELERATE_QUINT -> w
+    android.view.animation.Interpolator DECELERATE_CUBIC -> x
+    android.view.animation.Interpolator ACCELERATE_QUINT -> y
+    android.view.animation.Interpolator ACCELERATE_CUBIC -> z
+    417:417:android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    422:422:boolean executePendingTransactions() -> b
+    436:438:boolean popBackStackImmediate() -> c
+    506:511:void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment) -> a
+    515:528:android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
+    533:541:android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment) -> a
+    546:552:java.lang.String toString() -> toString
+    557:661:void dump$ec96877$3725603f(java.lang.String,java.io.PrintWriter) -> a
+    672:682:android.view.animation.Animation makeOpenCloseAnimation$376f30fd(float,float,float,float) -> a
+    686:689:android.view.animation.Animation makeFadeAnimation$424ea1bd(float,float) -> a
+    694:748:android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
+    753:1017:void moveToState(android.support.v4.app.Fragment,int,int,int) -> a
+    1020:1021:void moveToState(android.support.v4.app.Fragment) -> b
+    1024:1025:void moveToState$2563266(int) -> d
+    1028:1050:void moveToState(int,int,int,boolean) -> a
+    1086:1102:void addFragment(android.support.v4.app.Fragment,boolean) -> a
+    1105:1117:void removeFragment(android.support.v4.app.Fragment,int,int) -> a
+    1120:1136:void hideFragment(android.support.v4.app.Fragment,int,int) -> b
+    1139:1155:void showFragment(android.support.v4.app.Fragment,int,int) -> c
+    1158:1171:void detachFragment(android.support.v4.app.Fragment,int,int) -> d
+    1174:1186:void attachFragment(android.support.v4.app.Fragment,int,int) -> e
+    1189:1205:android.support.v4.app.Fragment findFragmentById(int) -> a
+    1209:1225:android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+    1241:1249:void checkStateLoss() -> u
+    1252:1267:void enqueueAction$574583f(java.lang.Runnable) -> a
+    1271:1287:int allocBackStackIndex(android.support.v4.app.BackStackRecord) -> a
+    1291:1312:void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
+    1316:1323:void freeBackStackIndex(int) -> b
+    1330:1363:boolean execPendingActions() -> d
+    1367:1372:void reportBackStackChanged() -> v
+    1375:1380:void addBackStackState(android.support.v4.app.BackStackRecord) -> b
+    1446:1460:java.util.ArrayList retainNonConfig() -> e
+    1464:1477:void saveFragmentViewState(android.support.v4.app.Fragment) -> c
+    1480:1502:android.os.Bundle saveFragmentBasicState(android.support.v4.app.Fragment) -> d
+    1508:1609:android.os.Parcelable saveAllState() -> f
+    1615:1716:void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
+    1719:1721:void attachActivity(android.support.v4.app.FragmentActivity) -> a
+    1724:1725:void noteStateNotSaved() -> g
+    1728:1730:void dispatchCreate() -> h
+    1733:1735:void dispatchActivityCreated() -> i
+    1738:1740:void dispatchStart() -> j
+    1743:1745:void dispatchResume() -> k
+    1748:1749:void dispatchPause() -> l
+    1755:1758:void dispatchStop() -> m
+    1761:1769:void dispatchReallyStop(boolean) -> a
+    1772:1775:void dispatchDestroy() -> n
+    1778:1786:void dispatchConfigurationChanged(android.content.res.Configuration) -> a
+    1789:1797:void dispatchLowMemory() -> o
+    1800:1827:boolean dispatchCreateOptionsMenu$761f6f92() -> p
+    1831:1841:boolean dispatchPrepareOptionsMenu$1eec55b9() -> q
+    1845:1855:boolean dispatchOptionsItemSelected$1b88ab4c() -> r
+    1859:1869:boolean dispatchContextItemSelected$1b88ab4c() -> s
+    1873:1881:void dispatchOptionsMenuClosed$1eec55bd() -> t
+    1884:1896:int reverseTransit(int) -> c
+android.support.v4.app.FragmentManagerImpl$1 -> android.support.v4.app.k:
+    android.support.v4.app.FragmentManagerImpl this$0 -> a
+    411:412:void run() -> run
+android.support.v4.app.FragmentManagerImpl$5 -> android.support.v4.app.l:
+    android.support.v4.app.Fragment val$fragment -> a
+    android.support.v4.app.FragmentManagerImpl this$0 -> b
+    944:949:void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    952:952:void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    955:955:void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+android.support.v4.app.FragmentManagerState -> android.support.v4.app.FragmentManagerState:
+    android.support.v4.app.FragmentState[] mActive -> a
+    int[] mAdded -> b
+    android.support.v4.app.BackStackState[] mBackStack -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    346:346:int describeContents() -> describeContents
+    350:353:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentManagerState$1 -> android.support.v4.app.m:
+    356:356:java.lang.Object[] newArray(int) -> newArray
+    356:356:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentState -> android.support.v4.app.FragmentState:
+    java.lang.String mClassName -> a
+    int mIndex -> b
+    boolean mFromLayout -> c
+    int mFragmentId -> d
+    int mContainerId -> e
+    java.lang.String mTag -> f
+    boolean mRetainInstance -> g
+    boolean mDetached -> h
+    android.os.Bundle mArguments -> i
+    android.os.Bundle mSavedFragmentState -> j
+    android.support.v4.app.Fragment mInstance -> k
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    88:112:android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity) -> a
+    116:116:int describeContents() -> describeContents
+    120:130:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentState$1 -> android.support.v4.app.n:
+    133:133:java.lang.Object[] newArray(int) -> newArray
+    133:133:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentStatePagerAdapter -> android.support.v4.app.o:
+    android.support.v4.app.FragmentManager mFragmentManager -> a
+    android.support.v4.app.FragmentTransaction mCurTransaction -> b
+    java.util.ArrayList mSavedState -> c
+    java.util.ArrayList mFragments -> d
+    android.support.v4.app.Fragment getItem(int) -> a
+    56:81:java.lang.Object instantiateItem(android.view.View,int) -> a
+    86:100:void destroyItem$7e55ba3e(int,java.lang.Object) -> a
+    104:109:void finishUpdate$3c7ec8c3() -> a
+    113:113:boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    118:135:android.os.Parcelable saveState() -> b
+    140:167:void restoreState(android.os.Parcelable,java.lang.ClassLoader) -> a
+android.support.v4.app.FragmentTransaction -> android.support.v4.app.p:
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment) -> a
+    int commit() -> a
+android.support.v4.app.HCSparseArray -> android.support.v4.app.q:
+    java.lang.Object DELETED -> a
+    boolean mGarbage -> b
+    int[] mKeys -> c
+    java.lang.Object[] mValues -> d
+    int mSize -> e
+    53:53:java.lang.Object get(int) -> a
+    88:89:void remove(int) -> b
+    95:99:void removeAt(int) -> c
+    104:126:void gc() -> c
+    185:189:int size() -> a
+    198:202:int keyAt(int) -> d
+    211:215:java.lang.Object valueAt(int) -> e
+    268:277:void clear() -> b
+    314:330:int binarySearch$76412d8d(int[],int,int) -> a
+android.support.v4.app.ListFragment -> android.support.v4.app.r:
+    android.os.Handler mHandler -> T
+    java.lang.Runnable mRequestFocus -> U
+    android.widget.AdapterView$OnItemClickListener mOnClickListener -> V
+    android.widget.ListAdapter mAdapter -> L
+    android.widget.ListView mList -> M
+    android.view.View mEmptyView -> N
+    android.widget.TextView mStandardEmptyView -> O
+    android.view.View mProgressContainer -> P
+    android.view.View mListContainer -> Q
+    java.lang.CharSequence mEmptyText -> R
+    boolean mListShown -> S
+    91:136:android.view.View onCreateView$469ccb8a(android.view.LayoutInflater) -> a
+    144:146:void onViewCreated(android.view.View,android.os.Bundle) -> a
+    153:159:void onDestroyView() -> o
+    173:173:void onListItemClick(android.widget.ListView,android.view.View,int,long) -> a
+    179:189:void setListAdapter(android.widget.ListAdapter) -> a
+    222:223:android.widget.ListView getListView() -> B
+    232:241:void setEmptyText(java.lang.CharSequence) -> a
+    280:313:void setListShown(boolean,boolean) -> a
+    323:374:void ensureList() -> C
+android.support.v4.app.ListFragment$1 -> android.support.v4.app.s:
+    android.support.v4.app.ListFragment this$0 -> a
+    51:52:void run() -> run
+android.support.v4.app.ListFragment$2 -> android.support.v4.app.t:
+    android.support.v4.app.ListFragment this$0 -> a
+    58:59:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+android.support.v4.app.LoaderManager -> android.support.v4.app.u:
+android.support.v4.app.LoaderManager$LoaderCallbacks -> android.support.v4.app.v:
+    android.support.v4.content.Loader onCreateLoader$e57f803() -> a
+android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.w:
+    boolean DEBUG -> a
+    android.support.v4.app.HCSparseArray mLoaders -> b
+    android.support.v4.app.HCSparseArray mInactiveLoaders -> c
+    android.support.v4.app.FragmentActivity mActivity -> d
+    boolean mStarted -> e
+    boolean mRetaining -> f
+    470:471:void updateActivity(android.support.v4.app.FragmentActivity) -> a
+    684:699:void doStart() -> a
+    702:714:void doStop() -> b
+    717:730:void doRetain() -> c
+    733:741:void finishRetain() -> d
+    744:747:void doReportNextStart() -> e
+    750:753:void doReportStart() -> f
+    756:768:void doDestroy() -> g
+    772:778:java.lang.String toString() -> toString
+    783:803:void dump$ec96877$79f041d6(java.lang.String,java.io.PrintWriter) -> a
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.x:
+    int mId -> a
+    android.os.Bundle mArgs -> b
+    android.support.v4.app.LoaderManager$LoaderCallbacks mCallbacks -> c
+    android.support.v4.content.Loader mLoader -> d
+    boolean mHaveData -> e
+    boolean mDeliveredData -> f
+    java.lang.Object mData -> g
+    boolean mStarted -> h
+    boolean mRetaining -> i
+    boolean mRetainingStarted -> j
+    boolean mReportNextStart -> k
+    boolean mDestroyed -> l
+    boolean mListenerRegistered -> m
+    android.support.v4.app.LoaderManagerImpl$LoaderInfo mPendingLoader -> n
+    android.support.v4.app.LoaderManagerImpl this$0 -> o
+    305:315:void stop() -> a
+    318:350:void destroy() -> b
+    405:422:void callOnLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    426:434:java.lang.String toString() -> toString
+    438:461:void dump$ec96877$79f041d6(java.lang.String,java.io.PrintWriter) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> android.support.v4.app.y:
+    32:41:android.view.ViewGroup wrap(android.view.View) -> a
+    53:54:void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
+    61:62:void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
+android.support.v4.app.SuperNotCalledException -> android.support.v4.app.z:
+android.support.v4.content.Loader -> android.support.v4.a.a:
+    int mId -> a
+    android.support.v4.content.Loader$OnLoadCompleteListener mListener -> b
+    boolean mStarted -> c
+    boolean mAbandoned -> d
+    boolean mReset -> e
+    boolean mContentChanged -> f
+    114:119:void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    127:134:void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    179:182:void startLoading() -> a
+    227:228:void stopLoading() -> b
+    275:280:void reset() -> c
+    334:339:java.lang.String toString() -> toString
+    351:357:void dump$ec96877(java.lang.String,java.io.PrintWriter) -> a
+android.support.v4.content.Loader$OnLoadCompleteListener -> android.support.v4.a.b:
+android.support.v4.os.ParcelableCompat -> android.support.v4.b.a:
+    25:28:android.os.Parcelable$Creator newCreator(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.os.ParcelableCompat$CompatCreator -> android.support.v4.b.b:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    40:40:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    45:45:java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorCallbacks -> android.support.v4.b.c:
+    java.lang.Object createFromParcel$58b95460(android.os.Parcel) -> a
+    java.lang.Object[] newArray(int) -> a
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2 -> android.support.v4.b.d:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+android.support.v4.util.DebugUtils -> android.support.v4.c.a:
+    24:39:void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
+android.support.v4.util.LogWriter -> android.support.v4.c.b:
+    java.lang.String mTag -> a
+    java.lang.StringBuilder mBuilder -> b
+    47:48:void close() -> close
+    51:52:void flush() -> flush
+    55:64:void write(char[],int,int) -> write
+    67:71:void flushBuilder() -> a
+android.support.v4.view.MotionEventCompat -> android.support.v4.view.a:
+    android.support.v4.view.MotionEventCompat$MotionEventVersionImpl IMPL -> a
+    141:141:int getActionIndex(android.view.MotionEvent) -> a
+    151:151:int findPointerIndex(android.view.MotionEvent,int) -> a
+    160:160:int getPointerId(android.view.MotionEvent,int) -> b
+    169:169:float getX(android.view.MotionEvent,int) -> c
+    178:178:float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl -> android.support.v4.view.b:
+    41:41:int findPointerIndex(android.view.MotionEvent,int) -> a
+    45:45:int getPointerId(android.view.MotionEvent,int) -> b
+    49:49:float getX(android.view.MotionEvent,int) -> c
+    53:53:float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl -> android.support.v4.view.c:
+    63:63:int findPointerIndex(android.view.MotionEvent,int) -> a
+    67:67:int getPointerId(android.view.MotionEvent,int) -> b
+    71:71:float getX(android.view.MotionEvent,int) -> c
+    75:75:float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$MotionEventVersionImpl -> android.support.v4.view.d:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.PagerAdapter -> android.support.v4.view.e:
+    android.support.v4.view.PagerAdapter$DataSetObserver mObserver -> a
+    int getCount() -> c
+    java.lang.Object instantiateItem(android.view.View,int) -> a
+    void destroyItem$7e55ba3e(int,java.lang.Object) -> a
+    void finishUpdate$3c7ec8c3() -> a
+    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    android.os.Parcelable saveState() -> b
+    void restoreState(android.os.Parcelable,java.lang.ClassLoader) -> a
+    118:121:void notifyDataSetChanged() -> d
+    124:125:void setDataSetObserver(android.support.v4.view.PagerAdapter$DataSetObserver) -> a
+android.support.v4.view.PagerAdapter$DataSetObserver -> android.support.v4.view.f:
+    void onDataSetChanged() -> a
+android.support.v4.view.VelocityTrackerCompat -> android.support.v4.view.g:
+    android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl IMPL -> a
+    90:90:float getYVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl -> android.support.v4.view.h:
+    43:43:float getYVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl -> android.support.v4.view.i:
+    57:57:float getYVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl -> android.support.v4.view.j:
+    float getYVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.ViewConfigurationCompat -> android.support.v4.view.k:
+    android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl IMPL -> a
+    72:72:int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewConfigurationCompat$BaseViewConfigurationVersionImpl -> android.support.v4.view.l:
+    38:38:int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewConfigurationCompat$FroyoViewConfigurationVersionImpl -> android.support.v4.view.m:
+    48:48:int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl -> android.support.v4.view.n:
+    int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
+    java.util.ArrayList mItems -> a
+    android.support.v4.view.PagerAdapter mAdapter -> b
+    int mCurItem -> c
+    int mRestoredCurItem -> d
+    android.os.Parcelable mRestoredAdapterState -> e
+    java.lang.ClassLoader mRestoredClassLoader -> f
+    android.widget.Scroller mScroller -> g
+    android.support.v4.view.PagerAdapter$DataSetObserver mObserver -> h
+    int mChildWidthMeasureSpec -> i
+    int mChildHeightMeasureSpec -> j
+    boolean mInLayout -> k
+    boolean mScrollingCacheEnabled -> l
+    boolean mPopulatePending -> m
+    boolean mScrolling -> n
+    boolean mIsBeingDragged -> o
+    boolean mIsUnableToDrag -> p
+    int mTouchSlop -> q
+    float mInitialMotionX -> r
+    float mLastMotionX -> s
+    float mLastMotionY -> t
+    int mActivePointerId -> u
+    android.view.VelocityTracker mVelocityTracker -> v
+    int mMinimumVelocity -> w
+    int mMaximumVelocity -> x
+    android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> y
+    int mScrollState -> z
+    203:211:void setScrollState(int) -> b
+    214:236:void setAdapter(android.support.v4.view.PagerAdapter) -> a
+    243:245:void setCurrentItem(int) -> a
+    248:284:void setCurrentItemInternal(int,boolean,boolean) -> a
+    287:288:void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener) -> a
+    319:327:void addNewItem(int,int) -> a
+    332:376:void dataSetChanged() -> a
+    379:454:void populate() -> b
+    504:508:android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    513:529:void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    533:547:void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
+    561:565:void onAttachedToWindow() -> onAttachedToWindow
+    574:598:void onMeasure(int,int) -> onMeasure
+    602:610:void onSizeChanged(int,int,int,int) -> onSizeChanged
+    614:636:void onLayout(boolean,int,int,int,int) -> onLayout
+    641:669:void computeScroll() -> computeScroll
+    673:698:void completeScroll() -> c
+    708:812:boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    818:937:boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    941:953:void onSecondaryPointerUp(android.view.MotionEvent) -> a
+    956:963:void endDrag() -> d
+    966:978:void setScrollingCacheEnabled(boolean) -> a
+android.support.v4.view.ViewPager$DataSetObserver -> android.support.v4.view.o:
+    android.support.v4.view.ViewPager this$0 -> a
+    983:984:void onDataSetChanged() -> a
+android.support.v4.view.ViewPager$ItemInfo -> android.support.v4.view.p:
+    java.lang.Object object -> a
+    int position -> b
+    boolean scrolling -> c
+android.support.v4.view.ViewPager$OnPageChangeListener -> android.support.v4.view.q:
+    void onPageScrolled$486775f1(int,float) -> a
+    void onPageSelected(int) -> b
+android.support.v4.view.ViewPager$SavedState -> android.support.v4.view.ViewPager$SavedState:
+    int position -> a
+    android.os.Parcelable adapterState -> b
+    java.lang.ClassLoader loader -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    467:470:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    474:474:java.lang.String toString() -> toString
+android.support.v4.view.ViewPager$SavedState$1 -> android.support.v4.view.r:
+    480:480:java.lang.Object[] newArray(int) -> a
+    480:480:java.lang.Object createFromParcel$58b95460(android.os.Parcel) -> a
+com.android.vending.licensing.AESObfuscator -> com.android.vending.licensing.a:
+    byte[] IV -> a
+    javax.crypto.Cipher mEncryptor -> b
+    javax.crypto.Cipher mDecryptor -> c
+    73:82:java.lang.String obfuscate(java.lang.String) -> a
+    87:107:java.lang.String unobfuscate(java.lang.String) -> b
+com.android.vending.licensing.DeviceLimiter -> com.android.vending.licensing.b:
+    com.android.vending.licensing.Policy$LicenseResponse isDeviceAllowed$414f77c5() -> a
+com.android.vending.licensing.ILicenseResultListener -> com.android.vending.licensing.c:
+    void verifyLicense(int,java.lang.String,java.lang.String) -> a
+com.android.vending.licensing.ILicenseResultListener$Stub -> com.android.vending.licensing.d:
+    35:35:android.os.IBinder asBinder() -> asBinder
+    39:59:boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.android.vending.licensing.ILicenseResultListener$Stub$Proxy -> com.android.vending.licensing.e:
+    android.os.IBinder mRemote -> a
+    70:70:android.os.IBinder asBinder() -> asBinder
+    79:90:void verifyLicense(int,java.lang.String,java.lang.String) -> a
+com.android.vending.licensing.ILicensingService -> com.android.vending.licensing.ILicensingService:
+    void checkLicense(long,java.lang.String,com.android.vending.licensing.ILicenseResultListener) -> a
+com.android.vending.licensing.ILicensingService$Stub -> com.android.vending.licensing.f:
+    25:32:com.android.vending.licensing.ILicensingService asInterface(android.os.IBinder) -> a
+    40:60:boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.android.vending.licensing.ILicensingService$Stub$Proxy -> com.android.vending.licensing.g:
+    android.os.IBinder mRemote -> a
+    71:71:android.os.IBinder asBinder() -> asBinder
+    80:91:void checkLicense(long,java.lang.String,com.android.vending.licensing.ILicenseResultListener) -> a
+com.android.vending.licensing.LicenseChecker -> com.android.vending.licensing.h:
+    java.security.SecureRandom RANDOM -> a
+    com.android.vending.licensing.ILicensingService mService -> b
+    java.security.PublicKey mPublicKey -> c
+    android.content.Context mContext -> d
+    com.android.vending.licensing.Policy mPolicy -> e
+    android.os.Handler mHandler -> f
+    java.lang.String mPackageName -> g
+    java.lang.String mVersionCode -> h
+    java.util.Set mChecksInProgress -> i
+    java.util.Queue mPendingChecks -> j
+    109:121:java.security.PublicKey generatePublicKey(java.lang.String) -> a
+    133:162:void checkAccess(com.android.vending.licensing.LicenseCheckerCallback) -> a
+    166:178:void runChecks() -> a
+    181:185:void finishCheck(com.android.vending.licensing.LicenseValidator) -> a
+    232:234:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    240:242:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    249:256:void handleServiceConnectionError(com.android.vending.licensing.LicenseValidator) -> b
+    298:302:java.lang.String getVersionCode(android.content.Context,java.lang.String) -> a
+    248:248:void access$0(com.android.vending.licensing.LicenseChecker,com.android.vending.licensing.LicenseValidator) -> a
+    180:180:void access$1(com.android.vending.licensing.LicenseChecker,com.android.vending.licensing.LicenseValidator) -> b
+    77:77:android.os.Handler access$2(com.android.vending.licensing.LicenseChecker) -> a
+    80:80:java.util.Set access$3(com.android.vending.licensing.LicenseChecker) -> b
+    70:70:java.security.PublicKey access$4(com.android.vending.licensing.LicenseChecker) -> c
+com.android.vending.licensing.LicenseChecker$ResultListener -> com.android.vending.licensing.i:
+    com.android.vending.licensing.LicenseValidator mValidator -> b
+    java.lang.Runnable mOnTimeout -> c
+    com.android.vending.licensing.LicenseChecker this$0 -> a
+    207:218:void verifyLicense(int,java.lang.String,java.lang.String) -> a
+    188:188:com.android.vending.licensing.LicenseValidator access$0(com.android.vending.licensing.LicenseChecker$ResultListener) -> a
+    225:225:void access$1(com.android.vending.licensing.LicenseChecker$ResultListener) -> b
+    187:187:com.android.vending.licensing.LicenseChecker access$2(com.android.vending.licensing.LicenseChecker$ResultListener) -> c
+com.android.vending.licensing.LicenseChecker$ResultListener$1 -> com.android.vending.licensing.j:
+    com.android.vending.licensing.LicenseChecker$ResultListener this$1 -> a
+    195:198:void run() -> run
+com.android.vending.licensing.LicenseChecker$ResultListener$2 -> com.android.vending.licensing.k:
+    com.android.vending.licensing.LicenseChecker$ResultListener this$1 -> a
+    int val$responseCode -> b
+    java.lang.String val$signedData -> c
+    java.lang.String val$signature -> d
+    209:216:void run() -> run
+com.android.vending.licensing.LicenseCheckerCallback -> com.android.vending.licensing.l:
+    void allow() -> a
+    void dontAllow() -> b
+    void applicationError(com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode) -> a
+com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode -> com.android.vending.licensing.m:
+    com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode INVALID_PACKAGE_NAME -> a
+    com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode NON_MATCHING_UID -> b
+    com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode NOT_MARKET_MANAGED -> c
+    com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode CHECK_IN_PROGRESS -> d
+    com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode INVALID_PUBLIC_KEY -> e
+    com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode MISSING_PERMISSION -> f
+    com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode[] ENUM$VALUES -> g
+    1:1:com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode[] values() -> values
+    1:1:com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode valueOf(java.lang.String) -> valueOf
+com.android.vending.licensing.LicenseValidator -> com.android.vending.licensing.n:
+    com.android.vending.licensing.Policy mPolicy -> a
+    com.android.vending.licensing.LicenseCheckerCallback mCallback -> b
+    int mNonce -> c
+    java.lang.String mPackageName -> d
+    java.lang.String mVersionCode -> e
+    com.android.vending.licensing.DeviceLimiter mDeviceLimiter -> f
+    70:70:com.android.vending.licensing.LicenseCheckerCallback getCallback() -> a
+    74:74:int getNonce() -> b
+    78:78:java.lang.String getPackageName() -> c
+    92:198:void verify(java.security.PublicKey,int,java.lang.String,java.lang.String) -> a
+    208:217:void handleResponse(com.android.vending.licensing.Policy$LicenseResponse,com.android.vending.licensing.ResponseData) -> a
+    220:221:void handleApplicationError(com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode) -> a
+    224:225:void handleInvalidResponse() -> d
+com.android.vending.licensing.NullDeviceLimiter -> com.android.vending.licensing.o:
+    30:30:com.android.vending.licensing.Policy$LicenseResponse isDeviceAllowed$414f77c5() -> a
+com.android.vending.licensing.Obfuscator -> com.android.vending.licensing.p:
+    java.lang.String obfuscate(java.lang.String) -> a
+    java.lang.String unobfuscate(java.lang.String) -> b
+com.android.vending.licensing.Policy -> com.android.vending.licensing.q:
+    void processServerResponse(com.android.vending.licensing.Policy$LicenseResponse,com.android.vending.licensing.ResponseData) -> a
+    boolean allowAccess() -> a
+com.android.vending.licensing.Policy$LicenseResponse -> com.android.vending.licensing.r:
+    com.android.vending.licensing.Policy$LicenseResponse LICENSED -> a
+    com.android.vending.licensing.Policy$LicenseResponse NOT_LICENSED -> b
+    com.android.vending.licensing.Policy$LicenseResponse RETRY -> c
+    com.android.vending.licensing.Policy$LicenseResponse[] ENUM$VALUES -> d
+    1:1:com.android.vending.licensing.Policy$LicenseResponse[] values() -> values
+    1:1:com.android.vending.licensing.Policy$LicenseResponse valueOf(java.lang.String) -> valueOf
+com.android.vending.licensing.PreferenceObfuscator -> com.android.vending.licensing.s:
+    android.content.SharedPreferences mPreferences -> a
+    com.android.vending.licensing.Obfuscator mObfuscator -> b
+    android.content.SharedPreferences$Editor mEditor -> c
+    46:51:void putString(java.lang.String,java.lang.String) -> a
+    55:68:java.lang.String getString(java.lang.String,java.lang.String) -> b
+    72:76:void commit() -> a
+com.android.vending.licensing.ResponseData -> com.android.vending.licensing.t:
+    int responseCode -> a
+    int nonce -> b
+    java.lang.String packageName -> c
+    java.lang.String versionCode -> d
+    java.lang.String userId -> e
+    long timestamp -> f
+    java.lang.String extra -> g
+    81:81:java.lang.String toString() -> toString
+com.android.vending.licensing.ServerManagedPolicy -> com.android.vending.licensing.u:
+    long mValidityTimestamp -> a
+    long mRetryUntil -> b
+    long mMaxRetries -> c
+    long mRetryCount -> d
+    long mLastResponseTime -> e
+    com.android.vending.licensing.Policy$LicenseResponse mLastResponse -> f
+    com.android.vending.licensing.PreferenceObfuscator mPreferences -> g
+    105:127:void processServerResponse(com.android.vending.licensing.Policy$LicenseResponse,com.android.vending.licensing.ResponseData) -> a
+    149:151:void setRetryCount(long) -> a
+    167:177:void setValidityTimestamp(java.lang.String) -> a
+    193:203:void setRetryUntil(java.lang.String) -> b
+    219:229:void setMaxRetries(java.lang.String) -> c
+    246:259:boolean allowAccess() -> a
+    263:273:java.util.Map decodeExtras(java.lang.String) -> d
+com.android.vending.licensing.ValidationException -> com.android.vending.licensing.v:
+com.android.vending.licensing.util.Base64 -> com.android.vending.licensing.a.a:
+    byte[] ALPHABET -> b
+    byte[] WEBSAFE_ALPHABET -> c
+    byte[] DECODABET -> d
+    byte[] WEBSAFE_DECODABET -> e
+    boolean $assertionsDisabled -> a
+    247:247:java.lang.String encode(byte[]) -> a
+    378:406:int decode4to3$355785af(byte[],byte[],int,byte[]) -> a
+    419:420:byte[] decode(java.lang.String) -> a
+com.android.vending.licensing.util.Base64DecoderException -> com.android.vending.licensing.a.b:
+com.drx2.bootmanager.Boot -> com.drx2.bootmanager.Boot:
+    com.drx2.bootmanager.MainActivity ri -> a
+    com.drx2.bootmanager.Preferences sdBoostPrefs -> c
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    23:42:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    46:57:java.lang.String readBoost(java.lang.String) -> a
+com.drx2.bootmanager.Install -> com.drx2.bootmanager.Install:
+    android.widget.Button stopInstall -> c
+    android.content.Intent i -> a
+    android.content.Context context -> b
+    26:67:void onCreate(android.os.Bundle) -> onCreate
+com.drx2.bootmanager.Install$1 -> com.drx2.bootmanager.a:
+    com.drx2.bootmanager.Install this$0 -> a
+    35:65:void onClick(android.view.View) -> onClick
+    33:33:com.drx2.bootmanager.Install access$0(com.drx2.bootmanager.Install$1) -> a
+com.drx2.bootmanager.Install$1$1 -> com.drx2.bootmanager.b:
+    com.drx2.bootmanager.Install$1 this$1 -> a
+    41:57:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Install$1$2 -> com.drx2.bootmanager.c:
+    com.drx2.bootmanager.Install$1 this$1 -> a
+    61:62:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed -> com.drx2.bootmanager.Installed:
+    com.drx2.bootmanager.utilities.ShellCommand s -> a
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    java.util.List item -> v
+    java.util.List path -> w
+    java.lang.String root -> x
+    java.lang.String current -> y
+    java.lang.String slot -> z
+    java.lang.String installtype -> A
+    android.widget.Button installbutton -> c
+    java.lang.String systemsize -> d
+    java.lang.String datasize -> e
+    java.lang.String cachesize -> f
+    java.lang.String ext -> g
+    android.content.Context context -> h
+    android.content.SharedPreferences colors -> i
+    android.content.SharedPreferences shared -> j
+    java.io.File currentfile -> k
+    java.util.ArrayList queue -> l
+    java.util.ArrayList kernel -> m
+    java.util.ArrayList bootimg -> n
+    int queueTotal -> o
+    boolean wipesystem -> p
+    boolean wipedata -> q
+    boolean wipecache -> r
+    boolean kernelinqueue -> s
+    android.widget.ArrayAdapter adapter -> t
+    android.widget.AdapterView$OnItemLongClickListener longListen -> u
+    88:212:void onCreate(android.os.Bundle) -> onCreate
+    227:246:boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    250:293:void getDir(java.lang.String) -> b
+    297:310:boolean ifkernel(java.lang.String) -> c
+    315:343:void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+    716:738:void startinstallservice(java.lang.String) -> d
+    61:61:java.lang.String access$0(com.drx2.bootmanager.Installed) -> a
+    249:249:void access$1(com.drx2.bootmanager.Installed,java.lang.String) -> a
+    588:588:void access$2(com.drx2.bootmanager.Installed) -> b
+    62:62:java.lang.String access$3(com.drx2.bootmanager.Installed) -> c
+    61:61:void access$4(com.drx2.bootmanager.Installed,java.lang.String) -> b
+    64:64:java.lang.String access$5(com.drx2.bootmanager.Installed) -> d
+    295:295:boolean access$6$64877ffb(java.lang.String) -> a
+    435:435:void access$7(com.drx2.bootmanager.Installed,java.lang.String) -> c
+    715:715:void access$8(com.drx2.bootmanager.Installed,java.lang.String) -> d
+    63:63:java.lang.String access$9(com.drx2.bootmanager.Installed) -> e
+    374:374:void access$10(com.drx2.bootmanager.Installed,java.lang.String) -> e
+    345:345:void access$11(com.drx2.bootmanager.Installed,java.lang.String) -> f
+com.drx2.bootmanager.Installed$1 -> com.drx2.bootmanager.d:
+    com.drx2.bootmanager.Installed this$0 -> a
+    668:686:boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long) -> onItemLongClick
+com.drx2.bootmanager.Installed$1$1 -> com.drx2.bootmanager.e:
+    com.drx2.bootmanager.Installed$1 this$1 -> a
+    int val$position -> b
+    675:679:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$1$2 -> com.drx2.bootmanager.f:
+    com.drx2.bootmanager.Installed$1 this$1 -> a
+    683:684:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$10 -> com.drx2.bootmanager.g:
+    com.drx2.bootmanager.Installed this$0 -> a
+    java.lang.String val$slot -> b
+    473:479:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$11 -> com.drx2.bootmanager.h:
+    com.drx2.bootmanager.Installed this$0 -> a
+    608:608:void onCancel(android.content.DialogInterface) -> onCancel
+com.drx2.bootmanager.Installed$12 -> com.drx2.bootmanager.i:
+    com.drx2.bootmanager.Installed this$0 -> a
+    android.widget.CheckBox val$wsystem -> b
+    android.widget.CheckBox val$wdata -> c
+    android.widget.CheckBox val$wcache -> d
+    612:620:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$13 -> com.drx2.bootmanager.j:
+    com.drx2.bootmanager.Installed this$0 -> a
+    android.widget.CheckBox val$wsystem -> b
+    android.widget.CheckBox val$wdata -> c
+    android.widget.CheckBox val$wcache -> d
+    624:635:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$14 -> com.drx2.bootmanager.k:
+    com.drx2.bootmanager.Installed this$0 -> a
+    639:649:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$1IgnoreCaseComparator -> com.drx2.bootmanager.l:
+    com.drx2.bootmanager.Installed this$0 -> a
+    1:1:int compare(java.lang.Object,java.lang.Object) -> compare
+com.drx2.bootmanager.Installed$2 -> com.drx2.bootmanager.m:
+    com.drx2.bootmanager.Installed this$0 -> a
+    129:138:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.Installed$3 -> com.drx2.bootmanager.n:
+    com.drx2.bootmanager.Installed this$0 -> a
+    158:210:void onClick(android.view.View) -> onClick
+    156:156:com.drx2.bootmanager.Installed access$0(com.drx2.bootmanager.Installed$3) -> a
+com.drx2.bootmanager.Installed$3$1 -> com.drx2.bootmanager.o:
+    com.drx2.bootmanager.Installed$3 this$1 -> a
+    172:181:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$3$2 -> com.drx2.bootmanager.p:
+    com.drx2.bootmanager.Installed$3 this$1 -> a
+    185:194:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$4 -> com.drx2.bootmanager.q:
+    com.drx2.bootmanager.Installed this$0 -> a
+    366:367:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$5 -> com.drx2.bootmanager.r:
+    com.drx2.bootmanager.Installed this$0 -> a
+    java.lang.String val$slot -> b
+    381:389:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$6 -> com.drx2.bootmanager.s:
+    com.drx2.bootmanager.Installed this$0 -> a
+    393:404:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$7 -> com.drx2.bootmanager.t:
+    com.drx2.bootmanager.Installed this$0 -> a
+    java.lang.String val$slot -> b
+    415:416:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$8 -> com.drx2.bootmanager.u:
+    com.drx2.bootmanager.Installed this$0 -> a
+    420:431:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$9 -> com.drx2.bootmanager.v:
+    com.drx2.bootmanager.Installed this$0 -> a
+    java.lang.String val$slot -> b
+    462:469:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$Home -> com.drx2.bootmanager.w:
+    com.drx2.bootmanager.Installed this$0 -> a
+    217:217:int getDrawable() -> a
+    221:222:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.Installed$multipleBootsTask -> com.drx2.bootmanager.x:
+    java.util.ArrayList bootimgs -> a
+    com.drx2.bootmanager.utilities.CustomProgressDialog p -> b
+    com.drx2.bootmanager.Installed this$0 -> c
+    497:518:java.lang.Void doInBackground$10299ca() -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    484:484:com.drx2.bootmanager.Installed access$2(com.drx2.bootmanager.Installed$multipleBootsTask) -> a
+com.drx2.bootmanager.Installed$multipleBootsTask$1 -> com.drx2.bootmanager.y:
+    com.drx2.bootmanager.Installed$multipleBootsTask this$1 -> a
+    java.lang.CharSequence[] val$boots2 -> b
+    541:566:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$multipleBootsTask$1$1 -> com.drx2.bootmanager.z:
+    com.drx2.bootmanager.Installed$multipleBootsTask$1 this$2 -> a
+    548:549:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$multipleBootsTask$1$2 -> com.drx2.bootmanager.aa:
+    com.drx2.bootmanager.Installed$multipleBootsTask$1 this$2 -> a
+    554:564:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installed$multipleBootsTask$2 -> com.drx2.bootmanager.ab:
+    com.drx2.bootmanager.Installed$multipleBootsTask this$1 -> a
+    571:581:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Installgapps -> com.drx2.bootmanager.Installgapps:
+    android.widget.Button yes -> a
+    android.content.Intent i -> b
+    18:31:void onCreate(android.os.Bundle) -> onCreate
+    14:14:void access$0(com.drx2.bootmanager.Installgapps,android.content.Intent) -> a
+    14:14:android.content.Intent access$1(com.drx2.bootmanager.Installgapps) -> a
+com.drx2.bootmanager.Installgapps$1 -> com.drx2.bootmanager.ac:
+    com.drx2.bootmanager.Installgapps this$0 -> a
+    25:28:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.Loader -> com.drx2.bootmanager.Loader:
+    android.graphics.drawable.ShapeDrawable pgDrawable -> a
+    int progress -> b
+    android.widget.ProgressBar pg -> c
+    boolean customTitleSupported -> d
+    android.content.Context context -> e
+    com.drx2.bootmanager.utilities.Utilities u -> f
+    com.drx2.bootmanager.utilities.ShellCommand s -> g
+    java.lang.String selection -> h
+    java.io.File folder -> i
+    java.io.File rom1 -> j
+    java.io.File rom2 -> k
+    java.io.File rom3 -> l
+    java.io.File rom4 -> m
+    java.io.File rom1as -> n
+    java.io.File rom2as -> o
+    java.io.File rom3as -> p
+    java.io.File rom4as -> q
+    java.io.File phoneRom -> r
+    java.io.File backup -> s
+    java.lang.Boolean variablesset -> t
+    java.lang.Boolean useemmc -> u
+    java.lang.Boolean gappsinstalled -> v
+    java.lang.Boolean firstuse -> w
+    java.lang.String appKey -> x
+    android.content.SharedPreferences settings -> y
+    byte[] SALT -> z
+    com.android.vending.licensing.LicenseChecker mChecker -> A
+    com.android.vending.licensing.LicenseCheckerCallback mLicenseCheckerCallback -> B
+    109:135:void onCreate(android.os.Bundle) -> onCreate
+    338:358:void findMarketAPK(java.io.File) -> a
+    477:509:java.lang.String yekteg(java.lang.String) -> a
+    525:550:boolean netCheck() -> c
+    592:617:boolean yad7() -> d
+    648:657:java.lang.String frontBack(java.lang.String) -> b
+    661:670:java.lang.String dieuqinu() -> e
+    674:682:java.lang.String dieuqinu2() -> f
+    700:700:android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    742:743:void reboot() -> g
+    746:747:void eraseboot() -> h
+    966:978:java.lang.Boolean syncIMG(java.lang.String) -> c
+    984:997:void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    1044:1046:void progress(int) -> a
+    1101:1808:boolean getDevice() -> i
+    1813:1844:void setupemmc(android.content.Context,java.lang.Boolean) -> a
+    2326:2373:void sdSelectorDialog() -> j
+    2377:2395:java.lang.String findlunfile() -> k
+    2438:2447:boolean writeToSDSelectorFile(java.lang.String,java.lang.String) -> b
+    2451:2484:void warning2ndInitdialog(java.lang.String) -> d
+    2530:2590:void setUp() -> l
+    512:512:void access$0$13a9218c() -> a
+    965:965:java.lang.Boolean access$1(com.drx2.bootmanager.Loader,java.lang.String) -> a
+    388:388:void access$2(com.drx2.bootmanager.Loader,java.lang.String) -> b
+    360:360:java.lang.Boolean access$3(com.drx2.bootmanager.Loader) -> a
+    620:620:void access$4(com.drx2.bootmanager.Loader) -> b
+    2529:2529:void access$5(com.drx2.bootmanager.Loader) -> c
+    524:524:boolean access$6(com.drx2.bootmanager.Loader) -> d
+    954:954:void access$7(com.drx2.bootmanager.Loader,com.android.vending.licensing.LicenseCheckerCallback) -> a
+    951:951:byte[] access$8() -> b
+    952:952:void access$9(com.drx2.bootmanager.Loader,com.android.vending.licensing.LicenseChecker) -> a
+    956:956:void access$10(com.drx2.bootmanager.Loader) -> e
+    336:336:void access$11(com.drx2.bootmanager.Loader,java.io.File) -> a
+    591:591:boolean access$12(com.drx2.bootmanager.Loader) -> f
+    961:961:void access$13(com.drx2.bootmanager.Loader,java.lang.String) -> c
+    2375:2375:java.lang.String access$14(com.drx2.bootmanager.Loader) -> g
+    2280:2280:void access$15(com.drx2.bootmanager.Loader) -> h
+    2285:2285:void access$16(com.drx2.bootmanager.Loader) -> i
+    2123:2123:void access$17(com.drx2.bootmanager.Loader) -> j
+    1938:1938:void access$18(com.drx2.bootmanager.Loader) -> k
+    2044:2044:void access$19(com.drx2.bootmanager.Loader) -> l
+    1846:1846:void access$20(com.drx2.bootmanager.Loader) -> m
+    1900:1900:void access$21(com.drx2.bootmanager.Loader) -> n
+    1043:1043:void access$22(com.drx2.bootmanager.Loader,int) -> a
+    476:476:java.lang.String access$23(com.drx2.bootmanager.Loader,java.lang.String) -> d
+    749:749:void access$24(com.drx2.bootmanager.Loader,java.lang.String) -> e
+    768:768:void access$25(com.drx2.bootmanager.Loader,java.lang.String) -> f
+    804:804:void access$26(com.drx2.bootmanager.Loader,java.lang.String) -> g
+    2436:2436:boolean access$27$1a687f5c(java.lang.String,java.lang.String) -> a
+    2486:2486:void access$28(com.drx2.bootmanager.Loader) -> o
+    2325:2325:void access$29(com.drx2.bootmanager.Loader) -> p
+    1100:1100:boolean access$30(com.drx2.bootmanager.Loader) -> q
+com.drx2.bootmanager.Loader$1 -> com.drx2.bootmanager.ad:
+    com.drx2.bootmanager.Loader this$0 -> a
+    275:284:void run() -> run
+    273:273:com.drx2.bootmanager.Loader access$0(com.drx2.bootmanager.Loader$1) -> a
+com.drx2.bootmanager.Loader$1$1 -> com.drx2.bootmanager.ae:
+    com.drx2.bootmanager.Loader$1 this$1 -> a
+    281:282:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$10 -> com.drx2.bootmanager.af:
+    com.drx2.bootmanager.Loader this$0 -> a
+    812:821:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$11 -> com.drx2.bootmanager.ag:
+    com.drx2.bootmanager.Loader this$0 -> a
+    825:826:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$12 -> com.drx2.bootmanager.ah:
+    com.drx2.bootmanager.Loader this$0 -> a
+    881:882:void run() -> run
+com.drx2.bootmanager.Loader$13 -> com.drx2.bootmanager.ai:
+    com.drx2.bootmanager.Loader this$0 -> a
+    891:892:void run() -> run
+com.drx2.bootmanager.Loader$14 -> com.drx2.bootmanager.aj:
+    com.drx2.bootmanager.Loader this$0 -> a
+    931:932:void run() -> run
+com.drx2.bootmanager.Loader$15 -> com.drx2.bootmanager.ak:
+    com.drx2.bootmanager.Loader this$0 -> a
+    941:942:void run() -> run
+com.drx2.bootmanager.Loader$16 -> com.drx2.bootmanager.al:
+    com.drx2.bootmanager.Loader this$0 -> a
+    1492:1493:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$17 -> com.drx2.bootmanager.am:
+    com.drx2.bootmanager.Loader this$0 -> a
+    1517:1518:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$18 -> com.drx2.bootmanager.an:
+    com.drx2.bootmanager.Loader this$0 -> a
+    1542:1543:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$19 -> com.drx2.bootmanager.ao:
+    com.drx2.bootmanager.Loader this$0 -> a
+    1567:1568:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$2 -> com.drx2.bootmanager.ap:
+    com.drx2.bootmanager.Loader this$0 -> a
+    402:412:void run() -> run
+    400:400:com.drx2.bootmanager.Loader access$0(com.drx2.bootmanager.Loader$2) -> a
+com.drx2.bootmanager.Loader$2$1 -> com.drx2.bootmanager.aq:
+    com.drx2.bootmanager.Loader$2 this$1 -> a
+    409:410:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$20 -> com.drx2.bootmanager.ar:
+    com.drx2.bootmanager.Loader this$0 -> a
+    1775:1785:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$21 -> com.drx2.bootmanager.as:
+    com.drx2.bootmanager.Loader this$0 -> a
+    1789:1792:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$22 -> com.drx2.bootmanager.at:
+    com.drx2.bootmanager.Loader this$0 -> a
+    2332:2338:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$23 -> com.drx2.bootmanager.au:
+    com.drx2.bootmanager.Loader this$0 -> a
+    2342:2371:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$24 -> com.drx2.bootmanager.av:
+    com.drx2.bootmanager.Loader this$0 -> a
+    android.content.SharedPreferences$Editor val$editor -> b
+    android.content.SharedPreferences$Editor val$sharededitor -> c
+    2408:2418:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$25 -> com.drx2.bootmanager.aw:
+    com.drx2.bootmanager.Loader this$0 -> a
+    android.content.SharedPreferences$Editor val$editor -> b
+    android.content.SharedPreferences$Editor val$sharededitor -> c
+    2422:2432:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$26 -> com.drx2.bootmanager.ax:
+    com.drx2.bootmanager.Loader this$0 -> a
+    java.lang.String val$board -> b
+    2463:2477:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$27 -> com.drx2.bootmanager.ay:
+    com.drx2.bootmanager.Loader this$0 -> a
+    2481:2482:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$28 -> com.drx2.bootmanager.az:
+    com.drx2.bootmanager.Loader this$0 -> a
+    2532:2588:void run() -> run
+    2530:2530:com.drx2.bootmanager.Loader access$0(com.drx2.bootmanager.Loader$28) -> a
+com.drx2.bootmanager.Loader$28$1 -> com.drx2.bootmanager.ba:
+    com.drx2.bootmanager.Loader$28 this$1 -> a
+    2556:2568:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$28$2 -> com.drx2.bootmanager.bb:
+    com.drx2.bootmanager.Loader$28 this$1 -> a
+    2572:2573:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$3 -> com.drx2.bootmanager.bc:
+    com.drx2.bootmanager.Loader this$0 -> a
+    422:439:void run() -> run
+    420:420:com.drx2.bootmanager.Loader access$0(com.drx2.bootmanager.Loader$3) -> a
+com.drx2.bootmanager.Loader$3$1 -> com.drx2.bootmanager.bd:
+    com.drx2.bootmanager.Loader$3 this$1 -> a
+    428:432:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$3$2 -> com.drx2.bootmanager.be:
+    com.drx2.bootmanager.Loader$3 this$1 -> a
+    436:437:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$4 -> com.drx2.bootmanager.bf:
+    com.drx2.bootmanager.Loader this$0 -> a
+    444:454:void run() -> run
+    442:442:com.drx2.bootmanager.Loader access$0(com.drx2.bootmanager.Loader$4) -> a
+com.drx2.bootmanager.Loader$4$1 -> com.drx2.bootmanager.bg:
+    com.drx2.bootmanager.Loader$4 this$1 -> a
+    451:452:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$5 -> com.drx2.bootmanager.bh:
+    com.drx2.bootmanager.Loader this$0 -> a
+    460:470:void run() -> run
+    458:458:com.drx2.bootmanager.Loader access$0(com.drx2.bootmanager.Loader$5) -> a
+com.drx2.bootmanager.Loader$5$1 -> com.drx2.bootmanager.bi:
+    com.drx2.bootmanager.Loader$5 this$1 -> a
+    467:468:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$6 -> com.drx2.bootmanager.bj:
+    com.drx2.bootmanager.Loader this$0 -> a
+    537:545:void run() -> run
+    535:535:com.drx2.bootmanager.Loader access$0(com.drx2.bootmanager.Loader$6) -> a
+com.drx2.bootmanager.Loader$6$1 -> com.drx2.bootmanager.bk:
+    com.drx2.bootmanager.Loader$6 this$1 -> a
+    542:543:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$7 -> com.drx2.bootmanager.bl:
+    com.drx2.bootmanager.Loader this$0 -> a
+    707:710:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$8 -> com.drx2.bootmanager.bm:
+    com.drx2.bootmanager.Loader this$0 -> a
+    715:731:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$9 -> com.drx2.bootmanager.bn:
+    com.drx2.bootmanager.Loader this$0 -> a
+    736:737:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$MyAnimationRoutine -> com.drx2.bootmanager.bo:
+    com.drx2.bootmanager.Loader this$0 -> a
+    1004:1007:void run() -> run
+com.drx2.bootmanager.Loader$MyAnimationRoutine2 -> com.drx2.bootmanager.bp:
+    com.drx2.bootmanager.Loader this$0 -> a
+    1015:1018:void run() -> run
+com.drx2.bootmanager.Loader$MyLicenseCheckerCallback -> com.drx2.bootmanager.bq:
+    com.drx2.bootmanager.Loader this$0 -> a
+    556:562:void allow() -> a
+    566:572:void applicationError(com.android.vending.licensing.LicenseCheckerCallback$ApplicationErrorCode) -> a
+    576:588:void dontAllow() -> b
+com.drx2.bootmanager.Loader$MyLicenseCheckerCallback$1 -> com.drx2.bootmanager.br:
+    com.drx2.bootmanager.Loader$MyLicenseCheckerCallback this$1 -> a
+    582:583:void run() -> run
+com.drx2.bootmanager.Loader$licenseThread -> com.drx2.bootmanager.bs:
+    com.drx2.bootmanager.Loader this$0 -> a
+    140:265:void run() -> run
+    138:138:com.drx2.bootmanager.Loader access$1(com.drx2.bootmanager.Loader$licenseThread) -> a
+com.drx2.bootmanager.Loader$licenseThread$1 -> com.drx2.bootmanager.bt:
+    com.drx2.bootmanager.Loader$licenseThread this$1 -> a
+    188:198:void run() -> run
+    186:186:com.drx2.bootmanager.Loader$licenseThread access$0(com.drx2.bootmanager.Loader$licenseThread$1) -> a
+com.drx2.bootmanager.Loader$licenseThread$1$1 -> com.drx2.bootmanager.bu:
+    com.drx2.bootmanager.Loader$licenseThread$1 this$2 -> a
+    195:196:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$licenseThread$2 -> com.drx2.bootmanager.bv:
+    com.drx2.bootmanager.Loader$licenseThread this$1 -> a
+    221:222:void run() -> run
+com.drx2.bootmanager.Loader$licenseThread$3 -> com.drx2.bootmanager.bw:
+    com.drx2.bootmanager.Loader$licenseThread this$1 -> a
+    235:245:void run() -> run
+    233:233:com.drx2.bootmanager.Loader$licenseThread access$0(com.drx2.bootmanager.Loader$licenseThread$3) -> a
+com.drx2.bootmanager.Loader$licenseThread$3$1 -> com.drx2.bootmanager.bx:
+    com.drx2.bootmanager.Loader$licenseThread$3 this$2 -> a
+    242:243:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$licenseThread$4 -> com.drx2.bootmanager.by:
+    com.drx2.bootmanager.Loader$licenseThread this$1 -> a
+    252:262:void run() -> run
+    250:250:com.drx2.bootmanager.Loader$licenseThread access$0(com.drx2.bootmanager.Loader$licenseThread$4) -> a
+com.drx2.bootmanager.Loader$licenseThread$4$1 -> com.drx2.bootmanager.bz:
+    com.drx2.bootmanager.Loader$licenseThread$4 this$2 -> a
+    259:260:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Loader$superThread -> com.drx2.bootmanager.ca:
+    com.drx2.bootmanager.Loader this$0 -> a
+    1053:1096:void run() -> run
+    1048:1048:com.drx2.bootmanager.Loader access$1(com.drx2.bootmanager.Loader$superThread) -> a
+com.drx2.bootmanager.Loader$superThread$1 -> com.drx2.bootmanager.cb:
+    com.drx2.bootmanager.Loader$superThread this$1 -> a
+    1067:1068:void run() -> run
+com.drx2.bootmanager.Loader$tmpmessageTask -> com.drx2.bootmanager.cc:
+    android.content.Context context -> a
+    com.drx2.bootmanager.Loader this$0 -> b
+    2244:2273:java.lang.Void doInBackground$10299ca() -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.drx2.bootmanager.MainActivity -> com.drx2.bootmanager.MainActivity:
+    android.content.Intent i -> l
+    java.lang.String board -> m
+    java.lang.String Page -> n
+    java.lang.String SDmount -> o
+    com.drx2.bootmanager.utilities.CustomProgressDialog sp -> p
+    com.drx2.bootmanager.utilities.Utilities u -> q
+    com.drx2.bootmanager.page.adapter.PagerHeader mPageHeader -> r
+    android.support.v4.view.ViewPager mViewPager -> s
+    com.drx2.bootmanager.page.adapter.PageAdapter mAdapter -> t
+    com.drx2.bootmanager.utilities.ShellCommand s -> u
+    android.content.Context context -> v
+    java.lang.String currentromname -> w
+    android.content.SharedPreferences colors -> x
+    android.content.SharedPreferences shared -> y
+    int current_page -> z
+    android.graphics.drawable.GradientDrawable button -> A
+    android.graphics.drawable.GradientDrawable buttonpressed -> B
+    int f1 -> C
+    int f2 -> D
+    int f3 -> E
+    java.util.ArrayList header -> F
+    95:243:void onCreate(android.os.Bundle) -> onCreate
+    246:255:void safestrap() -> d
+    258:278:void fragNum(int) -> e
+    281:285:java.lang.String truncate(java.lang.String) -> a
+    291:293:boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    298:326:boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    382:394:java.lang.String readRomName(java.lang.String) -> b
+    399:411:java.lang.String getnames(java.lang.String) -> c
+    415:455:void onResume() -> onResume
+    460:583:void currentROM() -> e
+    587:613:void onPageChange(int) -> c
+    617:703:void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    832:869:void cleanUp(android.content.Context) -> a
+    953:961:java.lang.String readFile(java.lang.String) -> d
+    965:974:android.graphics.drawable.StateListDrawable buttonState(android.content.Context) -> b
+    1059:1062:com.drx2.bootmanager.extras.ActionItem ai(java.lang.String) -> e
+    1065:1086:void setupActionbarclick() -> f
+    257:257:void access$0$7c22318c(int) -> d
+    459:459:void access$1(com.drx2.bootmanager.MainActivity) -> a
+    373:373:void access$2(com.drx2.bootmanager.MainActivity) -> b
+com.drx2.bootmanager.MainActivity$1 -> com.drx2.bootmanager.cd:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    216:217:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$10 -> com.drx2.bootmanager.ce:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    com.drx2.bootmanager.extras.QuickAction val$mQuickAction -> b
+    1083:1084:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.MainActivity$2 -> com.drx2.bootmanager.cf:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    222:222:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$3 -> com.drx2.bootmanager.cg:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    233:234:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$4 -> com.drx2.bootmanager.ch:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    239:239:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$5 -> com.drx2.bootmanager.ci:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    252:253:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$6 -> com.drx2.bootmanager.cj:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    java.lang.String val$version -> b
+    java.lang.String val$currentVersion -> c
+    902:913:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$7 -> com.drx2.bootmanager.ck:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    917:918:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$8 -> com.drx2.bootmanager.cl:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    942:944:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$9 -> com.drx2.bootmanager.cm:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    1073:1076:void onItemClick$49b4ed98(int) -> a
+com.drx2.bootmanager.MainActivity$Home -> com.drx2.bootmanager.cn:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    355:355:int getDrawable() -> a
+    359:370:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.MainActivity$SetupPR -> com.drx2.bootmanager.co:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    333:333:int getDrawable() -> a
+    337:349:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.MainActivity$checkfiles -> com.drx2.bootmanager.cp:
+    android.content.Context context -> a
+    com.drx2.bootmanager.MainActivity this$0 -> b
+    769:827:void run() -> run
+    762:762:com.drx2.bootmanager.MainActivity access$1(com.drx2.bootmanager.MainActivity$checkfiles) -> a
+com.drx2.bootmanager.MainActivity$checkfiles$1 -> com.drx2.bootmanager.cq:
+    com.drx2.bootmanager.MainActivity$checkfiles this$1 -> a
+    793:802:void run() -> run
+    791:791:com.drx2.bootmanager.MainActivity$checkfiles access$0(com.drx2.bootmanager.MainActivity$checkfiles$1) -> a
+com.drx2.bootmanager.MainActivity$checkfiles$1$1 -> com.drx2.bootmanager.cr:
+    com.drx2.bootmanager.MainActivity$checkfiles$1 this$2 -> a
+    799:800:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$checkfiles$2 -> com.drx2.bootmanager.cs:
+    com.drx2.bootmanager.MainActivity$checkfiles this$1 -> a
+    811:820:void run() -> run
+    809:809:com.drx2.bootmanager.MainActivity$checkfiles access$0(com.drx2.bootmanager.MainActivity$checkfiles$2) -> a
+com.drx2.bootmanager.MainActivity$checkfiles$2$1 -> com.drx2.bootmanager.ct:
+    com.drx2.bootmanager.MainActivity$checkfiles$2 this$2 -> a
+    817:818:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$checkhijack -> com.drx2.bootmanager.cu:
+    com.drx2.bootmanager.MainActivity this$0 -> a
+    710:759:void run() -> run
+    705:705:com.drx2.bootmanager.MainActivity access$1(com.drx2.bootmanager.MainActivity$checkhijack) -> a
+com.drx2.bootmanager.MainActivity$checkhijack$1 -> com.drx2.bootmanager.cv:
+    com.drx2.bootmanager.MainActivity$checkhijack this$1 -> a
+    726:735:void run() -> run
+    724:724:com.drx2.bootmanager.MainActivity$checkhijack access$0(com.drx2.bootmanager.MainActivity$checkhijack$1) -> a
+com.drx2.bootmanager.MainActivity$checkhijack$1$1 -> com.drx2.bootmanager.cw:
+    com.drx2.bootmanager.MainActivity$checkhijack$1 this$2 -> a
+    732:733:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$checkhijack$2 -> com.drx2.bootmanager.cx:
+    com.drx2.bootmanager.MainActivity$checkhijack this$1 -> a
+    744:753:void run() -> run
+    742:742:com.drx2.bootmanager.MainActivity$checkhijack access$0(com.drx2.bootmanager.MainActivity$checkhijack$2) -> a
+com.drx2.bootmanager.MainActivity$checkhijack$2$1 -> com.drx2.bootmanager.cy:
+    com.drx2.bootmanager.MainActivity$checkhijack$2 this$2 -> a
+    750:751:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.MainActivity$cleanUpThread -> com.drx2.bootmanager.cz:
+    android.content.Context context -> a
+    com.drx2.bootmanager.MainActivity this$0 -> b
+    878:884:void run() -> run
+com.drx2.bootmanager.Manual -> com.drx2.bootmanager.Manual:
+    android.widget.Button b1 -> a
+    android.widget.Button b2 -> b
+    android.widget.Button b3 -> c
+    android.widget.Button b4 -> d
+    android.widget.Button b5 -> e
+    android.widget.Button b6 -> f
+    android.widget.TextView t1 -> g
+    android.widget.TextView t2 -> h
+    android.widget.TextView t3 -> i
+    android.widget.TextView t4 -> j
+    android.widget.TextView t5 -> k
+    android.widget.TextView tv1 -> l
+    android.widget.TextView tv2 -> m
+    android.widget.TextView tv3 -> n
+    android.widget.TextView tv4 -> o
+    android.widget.TextView tv5 -> p
+    com.drx2.bootmanager.utilities.Utilities u -> q
+    android.content.Intent i -> t
+    android.content.Context context -> r
+    android.content.SharedPreferences shared -> s
+    52:107:void onCreate(android.os.Bundle) -> onCreate
+    110:178:void onClick(android.view.View) -> onClick
+    181:186:void manVariable(java.lang.String,java.lang.String) -> a
+    189:210:void getVariable() -> a
+    214:219:void onBackPressed() -> onBackPressed
+    45:45:void access$0(com.drx2.bootmanager.Manual,android.content.Intent) -> a
+    45:45:android.content.Intent access$1(com.drx2.bootmanager.Manual) -> a
+com.drx2.bootmanager.Manual$1 -> com.drx2.bootmanager.da:
+    com.drx2.bootmanager.Manual this$0 -> a
+    163:170:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Manual$2 -> com.drx2.bootmanager.db:
+    com.drx2.bootmanager.Manual this$0 -> a
+    174:175:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Manual$Home -> com.drx2.bootmanager.dc:
+    com.drx2.bootmanager.Manual this$0 -> a
+    224:224:int getDrawable() -> a
+    228:230:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.NandPicker -> com.drx2.bootmanager.NandPicker:
+    com.drx2.bootmanager.utilities.ShellCommand s -> a
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    java.util.List item -> k
+    java.util.List path -> l
+    java.lang.String root -> m
+    java.lang.String current -> n
+    java.lang.String slot -> o
+    java.lang.String romshort -> p
+    android.widget.Button installbutton -> c
+    java.lang.String systemsize -> d
+    java.lang.String datasize -> e
+    java.lang.String cachesize -> f
+    java.lang.String ext -> g
+    java.lang.String nandroid -> q
+    android.content.Context context -> h
+    android.content.SharedPreferences colors -> i
+    android.content.SharedPreferences shared -> j
+    69:123:void onCreate(android.os.Bundle) -> onCreate
+    138:157:boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    161:203:void getDir(java.lang.String) -> a
+    207:250:void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+    385:390:void startinstallservice(java.lang.String) -> b
+    49:49:java.lang.String access$0(com.drx2.bootmanager.NandPicker) -> a
+    160:160:void access$1(com.drx2.bootmanager.NandPicker,java.lang.String) -> a
+    51:51:java.lang.String access$2(com.drx2.bootmanager.NandPicker) -> b
+    281:281:void access$3(com.drx2.bootmanager.NandPicker,java.lang.String) -> b
+    252:252:void access$4(com.drx2.bootmanager.NandPicker,java.lang.String) -> c
+    317:317:void access$5(com.drx2.bootmanager.NandPicker,java.lang.String) -> d
+    384:384:void access$6(com.drx2.bootmanager.NandPicker,java.lang.String) -> e
+com.drx2.bootmanager.NandPicker$1 -> com.drx2.bootmanager.dd:
+    com.drx2.bootmanager.NandPicker this$0 -> a
+    116:121:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.NandPicker$1IgnoreCaseComparator -> com.drx2.bootmanager.de:
+    com.drx2.bootmanager.NandPicker this$0 -> a
+    1:1:int compare(java.lang.Object,java.lang.Object) -> compare
+com.drx2.bootmanager.NandPicker$2 -> com.drx2.bootmanager.df:
+    com.drx2.bootmanager.NandPicker this$0 -> a
+    273:274:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.NandPicker$3 -> com.drx2.bootmanager.dg:
+    com.drx2.bootmanager.NandPicker this$0 -> a
+    java.lang.String val$slot -> b
+    289:290:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.NandPicker$4 -> com.drx2.bootmanager.dh:
+    com.drx2.bootmanager.NandPicker this$0 -> a
+    294:295:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.NandPicker$5 -> com.drx2.bootmanager.di:
+    com.drx2.bootmanager.NandPicker this$0 -> a
+    java.lang.String val$slot -> b
+    307:308:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.NandPicker$6 -> com.drx2.bootmanager.dj:
+    com.drx2.bootmanager.NandPicker this$0 -> a
+    312:313:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.NandPicker$7 -> com.drx2.bootmanager.dk:
+    com.drx2.bootmanager.NandPicker this$0 -> a
+    java.lang.String val$slot -> b
+    339:345:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.NandPicker$8 -> com.drx2.bootmanager.dl:
+    com.drx2.bootmanager.NandPicker this$0 -> a
+    java.lang.String val$slot -> b
+    349:354:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.NandPicker$Home -> com.drx2.bootmanager.dm:
+    com.drx2.bootmanager.NandPicker this$0 -> a
+    128:128:int getDrawable() -> a
+    132:133:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.PhoneROM -> com.drx2.bootmanager.dn:
+    android.widget.Button boot -> V
+    android.widget.Button recovery -> W
+    android.widget.Button editROM -> X
+    android.widget.Button edit -> Y
+    java.lang.String slot -> L
+    java.lang.String name1 -> M
+    java.lang.String kernelName -> N
+    java.lang.String desc -> O
+    java.lang.String board -> P
+    com.drx2.bootmanager.utilities.Utilities u -> Q
+    android.content.Context context -> R
+    android.view.View V -> S
+    com.drx2.bootmanager.utilities.PhotoPicker p -> T
+    com.drx2.bootmanager.MainActivity ma -> U
+    51:270:android.view.View onCreateView$469ccb8a(android.view.LayoutInflater) -> a
+    276:286:void onActivityResult(int,int,android.content.Intent) -> a
+    289:301:void getnames() -> B
+    305:317:java.lang.String readRomName(java.lang.String) -> a
+    288:288:void access$0(com.drx2.bootmanager.PhoneROM) -> a
+com.drx2.bootmanager.PhoneROM$1 -> com.drx2.bootmanager.do:
+    com.drx2.bootmanager.PhoneROM this$0 -> a
+    114:134:void onClick(android.view.View) -> onClick
+    112:112:com.drx2.bootmanager.PhoneROM access$0(com.drx2.bootmanager.PhoneROM$1) -> a
+com.drx2.bootmanager.PhoneROM$1$1 -> com.drx2.bootmanager.dp:
+    com.drx2.bootmanager.PhoneROM$1 this$1 -> a
+    121:124:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$1$2 -> com.drx2.bootmanager.dq:
+    com.drx2.bootmanager.PhoneROM$1 this$1 -> a
+    128:129:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$2 -> com.drx2.bootmanager.dr:
+    com.drx2.bootmanager.PhoneROM this$0 -> a
+    142:166:void onClick(android.view.View) -> onClick
+    137:137:com.drx2.bootmanager.PhoneROM access$0(com.drx2.bootmanager.PhoneROM$2) -> a
+com.drx2.bootmanager.PhoneROM$2$1 -> com.drx2.bootmanager.ds:
+    com.drx2.bootmanager.PhoneROM$2 this$1 -> a
+    148:159:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$2$2 -> com.drx2.bootmanager.dt:
+    com.drx2.bootmanager.PhoneROM$2 this$1 -> a
+    163:164:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$3 -> com.drx2.bootmanager.du:
+    com.drx2.bootmanager.PhoneROM this$0 -> a
+    171:176:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.PhoneROM$4 -> com.drx2.bootmanager.dv:
+    com.drx2.bootmanager.PhoneROM this$0 -> a
+    181:268:void onClick(android.view.View) -> onClick
+    179:179:com.drx2.bootmanager.PhoneROM access$0(com.drx2.bootmanager.PhoneROM$4) -> a
+com.drx2.bootmanager.PhoneROM$4$1 -> com.drx2.bootmanager.dw:
+    com.drx2.bootmanager.PhoneROM$4 this$1 -> a
+    187:188:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$4$2 -> com.drx2.bootmanager.dx:
+    com.drx2.bootmanager.PhoneROM$4 this$1 -> a
+    192:263:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$4$2$1 -> com.drx2.bootmanager.dy:
+    com.drx2.bootmanager.PhoneROM$4$2 this$2 -> a
+    android.widget.EditText val$input -> b
+    205:211:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$4$2$2 -> com.drx2.bootmanager.dz:
+    com.drx2.bootmanager.PhoneROM$4$2 this$2 -> a
+    215:216:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$4$2$3 -> com.drx2.bootmanager.ea:
+    com.drx2.bootmanager.PhoneROM$4$2 this$2 -> a
+    android.widget.EditText val$input -> b
+    227:233:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$4$2$4 -> com.drx2.bootmanager.eb:
+    com.drx2.bootmanager.PhoneROM$4$2 this$2 -> a
+    237:238:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$4$2$5 -> com.drx2.bootmanager.ec:
+    com.drx2.bootmanager.PhoneROM$4$2 this$2 -> a
+    android.widget.EditText val$input -> b
+    249:255:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.PhoneROM$4$2$6 -> com.drx2.bootmanager.ed:
+    com.drx2.bootmanager.PhoneROM$4$2 this$2 -> a
+    259:260:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Preferences -> com.drx2.bootmanager.ee:
+    android.content.SharedPreferences appSharedPrefs -> a
+    android.content.SharedPreferences$Editor prefsEditor -> b
+    20:20:int getvmIndex() -> a
+    24:26:void savevmIndex(int) -> a
+    29:29:int getSdBoostIndex() -> b
+    33:35:void saveSdBoostIndex(int) -> b
+com.drx2.bootmanager.R -> com.drx2.bootmanager.ef:
+com.drx2.bootmanager.R$styleable -> com.drx2.bootmanager.eg:
+    int[] ActionBar -> a
+    int[] PagerHeader -> b
+com.drx2.bootmanager.Restore -> com.drx2.bootmanager.Restore:
+    com.drx2.bootmanager.utilities.ShellCommand s -> a
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    java.util.List item -> i
+    java.util.List path -> j
+    java.lang.String root -> k
+    java.lang.String current -> l
+    java.lang.String slot -> m
+    java.lang.String whattodo -> n
+    java.lang.String backup -> o
+    java.lang.String backupshort -> p
+    android.widget.Button installbutton -> c
+    java.lang.String ext -> d
+    java.io.File file -> e
+    android.content.Context context -> f
+    android.content.SharedPreferences colors -> g
+    android.content.SharedPreferences shared -> h
+    67:123:void onCreate(android.os.Bundle) -> onCreate
+    138:157:boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    161:203:void getDir(java.lang.String) -> a
+    218:262:void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+    47:47:java.lang.String access$0(com.drx2.bootmanager.Restore) -> a
+    160:160:void access$1(com.drx2.bootmanager.Restore,java.lang.String) -> a
+    51:51:java.lang.String access$2(com.drx2.bootmanager.Restore) -> b
+    52:52:java.lang.String access$3(com.drx2.bootmanager.Restore) -> c
+    50:50:java.lang.String access$4(com.drx2.bootmanager.Restore) -> d
+    49:49:java.lang.String access$5(com.drx2.bootmanager.Restore) -> e
+    205:205:void access$6(com.drx2.bootmanager.Restore) -> f
+com.drx2.bootmanager.Restore$1 -> com.drx2.bootmanager.eh:
+    com.drx2.bootmanager.Restore this$0 -> a
+    114:121:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.Restore$1IgnoreCaseComparator -> com.drx2.bootmanager.ei:
+    com.drx2.bootmanager.Restore this$0 -> a
+    1:1:int compare(java.lang.Object,java.lang.Object) -> compare
+com.drx2.bootmanager.Restore$2 -> com.drx2.bootmanager.ej:
+    com.drx2.bootmanager.Restore this$0 -> a
+    236:237:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Restore$3 -> com.drx2.bootmanager.ek:
+    com.drx2.bootmanager.Restore this$0 -> a
+    241:242:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.Restore$Home -> com.drx2.bootmanager.el:
+    com.drx2.bootmanager.Restore this$0 -> a
+    128:128:int getDrawable() -> a
+    132:133:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.extras.About -> com.drx2.bootmanager.extras.About:
+    android.content.Context context -> a
+    android.content.SharedPreferences shared -> b
+    31:63:void onCreate(android.os.Bundle) -> onCreate
+    67:72:void onBackPressed() -> onBackPressed
+com.drx2.bootmanager.extras.About$Home -> com.drx2.bootmanager.extras.a:
+    com.drx2.bootmanager.extras.About this$0 -> a
+    77:77:int getDrawable() -> a
+    81:83:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.extras.ActionItem -> com.drx2.bootmanager.extras.b:
+    android.graphics.drawable.Drawable icon -> a
+    java.lang.String title -> b
+    int actionId -> c
+    boolean sticky -> d
+    78:79:void setTitle(java.lang.String) -> a
+    87:87:java.lang.String getTitle() -> a
+    96:97:void setIcon(android.graphics.drawable.Drawable) -> a
+    104:104:android.graphics.drawable.Drawable getIcon() -> b
+    120:120:int getActionId() -> c
+    136:136:boolean isSticky() -> d
+com.drx2.bootmanager.extras.AmbilWarnaDialog -> com.drx2.bootmanager.extras.c:
+    android.app.AlertDialog dialog -> a
+    com.drx2.bootmanager.extras.AmbilWarnaDialog$OnAmbilWarnaListener listener -> b
+    android.view.View viewHue -> c
+    com.drx2.bootmanager.extras.AmbilWarnaKotak viewSatVal -> d
+    android.widget.ImageView viewCursor -> e
+    android.view.View viewOldColor -> f
+    android.view.View viewNewColor -> g
+    android.widget.ImageView viewTarget -> h
+    android.view.ViewGroup viewContainer -> i
+    float[] currentColorHsv -> j
+    151:159:void moveCursor() -> a
+    162:168:void moveTarget() -> b
+com.drx2.bootmanager.extras.AmbilWarnaDialog$1 -> com.drx2.bootmanager.extras.d:
+    com.drx2.bootmanager.extras.AmbilWarnaDialog this$0 -> a
+    63:81:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.drx2.bootmanager.extras.AmbilWarnaDialog$2 -> com.drx2.bootmanager.extras.e:
+    com.drx2.bootmanager.extras.AmbilWarnaDialog this$0 -> a
+    86:107:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.drx2.bootmanager.extras.AmbilWarnaDialog$3 -> com.drx2.bootmanager.extras.f:
+    com.drx2.bootmanager.extras.AmbilWarnaDialog this$0 -> a
+    114:117:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.AmbilWarnaDialog$4 -> com.drx2.bootmanager.extras.g:
+    com.drx2.bootmanager.extras.AmbilWarnaDialog this$0 -> a
+    121:124:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.AmbilWarnaDialog$5 -> com.drx2.bootmanager.extras.h:
+    com.drx2.bootmanager.extras.AmbilWarnaDialog this$0 -> a
+    129:133:void onCancel(android.content.DialogInterface) -> onCancel
+com.drx2.bootmanager.extras.AmbilWarnaDialog$6 -> com.drx2.bootmanager.extras.i:
+    com.drx2.bootmanager.extras.AmbilWarnaDialog this$0 -> a
+    android.view.View val$view -> b
+    143:146:void onGlobalLayout() -> onGlobalLayout
+com.drx2.bootmanager.extras.AmbilWarnaDialog$OnAmbilWarnaListener -> com.drx2.bootmanager.extras.j:
+    void onOk$35af6948(int) -> a
+com.drx2.bootmanager.extras.AmbilWarnaKotak -> com.drx2.bootmanager.extras.AmbilWarnaKotak:
+    android.graphics.Paint paint -> a
+    android.graphics.Shader luar -> b
+    float[] color -> c
+    27:37:void onDraw(android.graphics.Canvas) -> onDraw
+    40:42:void setHue(float) -> a
+com.drx2.bootmanager.extras.Extras -> com.drx2.bootmanager.extras.k:
+    com.drx2.bootmanager.utilities.Utilities u -> T
+    com.drx2.bootmanager.utilities.CustomProgressDialog extraDialog -> U
+    android.graphics.drawable.GradientDrawable d -> V
+    android.content.Context context -> W
+    com.drx2.bootmanager.Preferences vmPrefs -> aa
+    com.drx2.bootmanager.Preferences sdBoostPrefs -> ab
+    java.lang.String board -> X
+    java.lang.String[] items -> Y
+    java.lang.String[] tunaitems -> Z
+    41:60:void onActivityCreated(android.os.Bundle) -> a
+    65:278:void onListItemClick(android.widget.ListView,android.view.View,int,long) -> a
+    282:287:void onPause() -> n
+    353:411:boolean systemMounter() -> C
+    432:452:void sdBoost() -> D
+    321:321:void access$0(com.drx2.bootmanager.extras.Extras) -> a
+    34:34:com.drx2.bootmanager.Preferences access$1(com.drx2.bootmanager.extras.Extras) -> b
+    331:331:void access$2(com.drx2.bootmanager.extras.Extras) -> c
+    431:431:void access$3(com.drx2.bootmanager.extras.Extras) -> d
+    35:35:com.drx2.bootmanager.Preferences access$4(com.drx2.bootmanager.extras.Extras) -> e
+com.drx2.bootmanager.extras.Extras$1 -> com.drx2.bootmanager.extras.l:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    74:74:void onClick(android.content.DialogInterface,int,boolean) -> onClick
+com.drx2.bootmanager.extras.Extras$10 -> com.drx2.bootmanager.extras.m:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    java.lang.CharSequence[] val$items -> b
+    226:233:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$11 -> com.drx2.bootmanager.extras.n:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    237:238:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$12 -> com.drx2.bootmanager.extras.o:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    249:251:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$13 -> com.drx2.bootmanager.extras.p:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    255:256:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$14 -> com.drx2.bootmanager.extras.q:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    267:270:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$15 -> com.drx2.bootmanager.extras.r:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    274:275:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$16 -> com.drx2.bootmanager.extras.s:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    337:338:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$17 -> com.drx2.bootmanager.extras.t:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    342:343:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$18 -> com.drx2.bootmanager.extras.u:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    347:348:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$19 -> com.drx2.bootmanager.extras.v:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    379:380:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$2 -> com.drx2.bootmanager.extras.w:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    78:90:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$20 -> com.drx2.bootmanager.extras.x:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    384:385:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$21 -> com.drx2.bootmanager.extras.y:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    395:396:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$22 -> com.drx2.bootmanager.extras.z:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    400:401:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$23 -> com.drx2.bootmanager.extras.aa:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    421:422:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$24 -> com.drx2.bootmanager.extras.ab:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    426:427:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$25 -> com.drx2.bootmanager.extras.ac:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    java.lang.CharSequence[] val$items -> b
+    437:445:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$26 -> com.drx2.bootmanager.extras.ad:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    449:450:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$3 -> com.drx2.bootmanager.extras.ae:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    94:95:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$4 -> com.drx2.bootmanager.extras.af:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    106:109:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$5 -> com.drx2.bootmanager.extras.ag:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    113:114:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$6 -> com.drx2.bootmanager.extras.ah:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    125:128:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$7 -> com.drx2.bootmanager.extras.ai:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    132:133:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$8 -> com.drx2.bootmanager.extras.aj:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    java.lang.CharSequence[] val$items -> b
+    156:211:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$8$1 -> com.drx2.bootmanager.extras.ak:
+    com.drx2.bootmanager.extras.Extras$8 this$1 -> a
+    163:164:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$8$2 -> com.drx2.bootmanager.extras.al:
+    com.drx2.bootmanager.extras.Extras$8 this$1 -> a
+    168:169:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$8$3 -> com.drx2.bootmanager.extras.am:
+    com.drx2.bootmanager.extras.Extras$8 this$1 -> a
+    179:187:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$8$4 -> com.drx2.bootmanager.extras.an:
+    com.drx2.bootmanager.extras.Extras$8 this$1 -> a
+    191:192:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$8$5 -> com.drx2.bootmanager.extras.ao:
+    com.drx2.bootmanager.extras.Extras$8 this$1 -> a
+    202:203:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$8$6 -> com.drx2.bootmanager.extras.ap:
+    com.drx2.bootmanager.extras.Extras$8 this$1 -> a
+    207:208:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$9 -> com.drx2.bootmanager.extras.aq:
+    com.drx2.bootmanager.extras.Extras this$0 -> a
+    215:216:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Extras$superThread -> com.drx2.bootmanager.extras.ar:
+    java.lang.String Commandone -> a
+    com.drx2.bootmanager.extras.Extras this$0 -> b
+    297:318:void run() -> run
+com.drx2.bootmanager.extras.Help -> com.drx2.bootmanager.extras.Help:
+    17:21:void onCreate(android.os.Bundle) -> onCreate
+    25:27:void onBackPressed() -> onBackPressed
+com.drx2.bootmanager.extras.Help$Home -> com.drx2.bootmanager.extras.as:
+    com.drx2.bootmanager.extras.Help this$0 -> a
+    32:32:int getDrawable() -> a
+    36:38:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.extras.PopupWindows -> com.drx2.bootmanager.extras.at:
+    android.content.Context mContext -> a
+    android.widget.PopupWindow mWindow -> b
+    android.view.View mRootView -> c
+    android.graphics.drawable.Drawable mBackground -> d
+    android.view.WindowManager mWindowManager -> e
+    57:57:void onDismiss() -> onDismiss
+    69:86:void preShow() -> a
+    103:106:void setContentView(android.view.View) -> a
+    132:133:void dismiss() -> b
+com.drx2.bootmanager.extras.PopupWindows$1 -> com.drx2.bootmanager.extras.au:
+    com.drx2.bootmanager.extras.PopupWindows this$0 -> a
+    40:46:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.drx2.bootmanager.extras.QuickAction -> com.drx2.bootmanager.extras.av:
+    android.view.View mRootView -> f
+    android.widget.ImageView mArrowUp -> g
+    android.widget.ImageView mArrowDown -> h
+    android.view.LayoutInflater mInflater -> i
+    android.view.ViewGroup mTrack -> j
+    android.widget.ScrollView mScroller -> k
+    com.drx2.bootmanager.extras.QuickAction$OnActionItemClickListener mItemClickListener -> l
+    com.drx2.bootmanager.extras.QuickAction$OnDismissListener mDismissListener -> m
+    java.util.List actionItems -> n
+    boolean mDidAction -> o
+    int mChildPos -> p
+    int mInsertPos -> q
+    int mAnimStyle -> r
+    int mOrientation -> s
+    int rootWidth -> t
+    101:101:com.drx2.bootmanager.extras.ActionItem getActionItem(int) -> a
+    110:124:void setRootViewId(int) -> b
+    141:142:void setOnActionItemClickListener(com.drx2.bootmanager.extras.QuickAction$OnActionItemClickListener) -> a
+    150:216:void addActionItem(com.drx2.bootmanager.extras.ActionItem) -> a
+    223:293:void show(android.view.View) -> b
+    369:372:void onDismiss() -> onDismiss
+    39:39:com.drx2.bootmanager.extras.QuickAction$OnActionItemClickListener access$0(com.drx2.bootmanager.extras.QuickAction) -> a
+    44:44:void access$1$5e19fcc(com.drx2.bootmanager.extras.QuickAction) -> b
+com.drx2.bootmanager.extras.QuickAction$1 -> com.drx2.bootmanager.extras.aw:
+    com.drx2.bootmanager.extras.QuickAction this$0 -> a
+    int val$pos -> b
+    int val$actionId -> c
+    184:193:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.extras.QuickAction$OnActionItemClickListener -> com.drx2.bootmanager.extras.ax:
+    void onItemClick$49b4ed98(int) -> a
+com.drx2.bootmanager.extras.QuickAction$OnDismissListener -> com.drx2.bootmanager.extras.ay:
+com.drx2.bootmanager.extras.Settings -> com.drx2.bootmanager.extras.Settings:
+    android.content.Intent i -> a
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    android.content.Context context -> c
+    android.content.SharedPreferences shared -> d
+    64:413:void onCreate(android.os.Bundle) -> onCreate
+    435:440:boolean[] toPrimitiveArray(java.util.ArrayList) -> a
+    461:469:java.lang.String readFile(java.lang.String) -> a
+    485:498:void onPause() -> onPause
+    502:504:void onBackPressed() -> onBackPressed
+    520:544:boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    547:547:boolean access$0(com.drx2.bootmanager.extras.Settings,java.lang.String,java.lang.String) -> a
+    444:444:void access$1(com.drx2.bootmanager.extras.Settings) -> a
+    423:423:boolean[] access$2(com.drx2.bootmanager.extras.Settings,java.lang.String) -> a
+    416:416:void access$3(com.drx2.bootmanager.extras.Settings,java.lang.String,java.lang.Boolean,java.lang.String) -> a
+com.drx2.bootmanager.extras.Settings$1 -> com.drx2.bootmanager.extras.az:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    91:95:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$10 -> com.drx2.bootmanager.extras.ba:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    219:220:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$11 -> com.drx2.bootmanager.extras.bb:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    226:228:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$12 -> com.drx2.bootmanager.extras.bc:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    234:236:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$13 -> com.drx2.bootmanager.extras.bd:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    242:244:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$14 -> com.drx2.bootmanager.extras.be:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    250:252:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$15 -> com.drx2.bootmanager.extras.bf:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    274:311:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+    272:272:com.drx2.bootmanager.extras.Settings access$0(com.drx2.bootmanager.extras.Settings$15) -> a
+com.drx2.bootmanager.extras.Settings$15$1 -> com.drx2.bootmanager.extras.bg:
+    com.drx2.bootmanager.extras.Settings$15 this$1 -> a
+    287:287:void onClick(android.content.DialogInterface,int,boolean) -> onClick
+com.drx2.bootmanager.extras.Settings$15$2 -> com.drx2.bootmanager.extras.bh:
+    com.drx2.bootmanager.extras.Settings$15 this$1 -> a
+    291:304:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Settings$15$3 -> com.drx2.bootmanager.extras.bi:
+    com.drx2.bootmanager.extras.Settings$15 this$1 -> a
+    308:309:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Settings$16 -> com.drx2.bootmanager.extras.bj:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    318:354:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+    316:316:com.drx2.bootmanager.extras.Settings access$0(com.drx2.bootmanager.extras.Settings$16) -> a
+com.drx2.bootmanager.extras.Settings$16$1 -> com.drx2.bootmanager.extras.bk:
+    com.drx2.bootmanager.extras.Settings$16 this$1 -> a
+    330:330:void onClick(android.content.DialogInterface,int,boolean) -> onClick
+com.drx2.bootmanager.extras.Settings$16$2 -> com.drx2.bootmanager.extras.bl:
+    com.drx2.bootmanager.extras.Settings$16 this$1 -> a
+    334:347:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Settings$16$3 -> com.drx2.bootmanager.extras.bm:
+    com.drx2.bootmanager.extras.Settings$16 this$1 -> a
+    351:352:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Settings$17 -> com.drx2.bootmanager.extras.bn:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    366:407:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$18 -> com.drx2.bootmanager.extras.bo:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    451:452:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Settings$2 -> com.drx2.bootmanager.extras.bp:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    101:103:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$3 -> com.drx2.bootmanager.extras.bq:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    114:118:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$4 -> com.drx2.bootmanager.extras.br:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    131:136:boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+com.drx2.bootmanager.extras.Settings$5 -> com.drx2.bootmanager.extras.bs:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    142:154:boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+com.drx2.bootmanager.extras.Settings$6 -> com.drx2.bootmanager.extras.bt:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    161:166:boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+com.drx2.bootmanager.extras.Settings$7 -> com.drx2.bootmanager.extras.bu:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    177:181:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$8 -> com.drx2.bootmanager.extras.bv:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    194:196:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$9 -> com.drx2.bootmanager.extras.bw:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    202:213:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.Settings$Home -> com.drx2.bootmanager.extras.bx:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    509:509:int getDrawable() -> a
+    513:515:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.extras.Settings$mesThread -> com.drx2.bootmanager.extras.by:
+    com.drx2.bootmanager.extras.Settings this$0 -> a
+    476:480:void run() -> run
+com.drx2.bootmanager.extras.Tips -> com.drx2.bootmanager.extras.Tips:
+    14:16:void onCreate(android.os.Bundle) -> onCreate
+    19:38:void Tip1() -> a
+    150:150:void access$0(com.drx2.bootmanager.extras.Tips) -> a
+    40:40:void access$1(com.drx2.bootmanager.extras.Tips) -> b
+    18:18:void access$2(com.drx2.bootmanager.extras.Tips) -> c
+    62:62:void access$3(com.drx2.bootmanager.extras.Tips) -> d
+    84:84:void access$4(com.drx2.bootmanager.extras.Tips) -> e
+    106:106:void access$5(com.drx2.bootmanager.extras.Tips) -> f
+    128:128:void access$6(com.drx2.bootmanager.extras.Tips) -> g
+com.drx2.bootmanager.extras.Tips$1 -> com.drx2.bootmanager.extras.bz:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    25:26:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$10 -> com.drx2.bootmanager.extras.ca:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    91:92:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$11 -> com.drx2.bootmanager.extras.cb:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    96:97:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$12 -> com.drx2.bootmanager.extras.cc:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    101:102:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$13 -> com.drx2.bootmanager.extras.cd:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    113:114:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$14 -> com.drx2.bootmanager.extras.ce:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    118:119:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$15 -> com.drx2.bootmanager.extras.cf:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    123:124:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$16 -> com.drx2.bootmanager.extras.cg:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    135:136:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$17 -> com.drx2.bootmanager.extras.ch:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    140:141:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$18 -> com.drx2.bootmanager.extras.ci:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    145:146:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$19 -> com.drx2.bootmanager.extras.cj:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    157:158:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$2 -> com.drx2.bootmanager.extras.ck:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    30:31:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$20 -> com.drx2.bootmanager.extras.cl:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    162:163:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$21 -> com.drx2.bootmanager.extras.cm:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    167:168:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$3 -> com.drx2.bootmanager.extras.cn:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    35:36:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$4 -> com.drx2.bootmanager.extras.co:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    47:48:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$5 -> com.drx2.bootmanager.extras.cp:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    52:53:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$6 -> com.drx2.bootmanager.extras.cq:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    57:58:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$7 -> com.drx2.bootmanager.extras.cr:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    69:70:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$8 -> com.drx2.bootmanager.extras.cs:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    74:75:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.Tips$9 -> com.drx2.bootmanager.extras.ct:
+    com.drx2.bootmanager.extras.Tips this$0 -> a
+    79:80:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.extras.UITweaks -> com.drx2.bootmanager.extras.UITweaks:
+    android.content.Context context -> a
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    com.markupartist.android.widget.ActionBar actionBar -> c
+    android.content.SharedPreferences shared -> d
+    34:231:void onCreate(android.os.Bundle) -> onCreate
+    235:240:void onBackPressed() -> onBackPressed
+com.drx2.bootmanager.extras.UITweaks$1 -> com.drx2.bootmanager.extras.cu:
+    com.drx2.bootmanager.extras.UITweaks this$0 -> a
+    android.content.SharedPreferences val$colors -> b
+    android.content.SharedPreferences$Editor val$editor -> c
+    android.content.SharedPreferences val$colord -> d
+    62:81:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+    60:60:com.drx2.bootmanager.extras.UITweaks access$0(com.drx2.bootmanager.extras.UITweaks$1) -> a
+com.drx2.bootmanager.extras.UITweaks$1$1 -> com.drx2.bootmanager.extras.cv:
+    com.drx2.bootmanager.extras.UITweaks$1 this$1 -> a
+    android.content.SharedPreferences$Editor val$editor -> b
+    android.content.SharedPreferences val$colord -> c
+    android.content.SharedPreferences val$colors -> d
+    65:73:void onOk$35af6948(int) -> a
+com.drx2.bootmanager.extras.UITweaks$2 -> com.drx2.bootmanager.extras.cw:
+    com.drx2.bootmanager.extras.UITweaks this$0 -> a
+    android.content.SharedPreferences val$colors -> b
+    android.content.SharedPreferences$Editor val$editor -> c
+    android.content.SharedPreferences val$colord -> d
+    88:107:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+    86:86:com.drx2.bootmanager.extras.UITweaks access$0(com.drx2.bootmanager.extras.UITweaks$2) -> a
+com.drx2.bootmanager.extras.UITweaks$2$1 -> com.drx2.bootmanager.extras.cx:
+    com.drx2.bootmanager.extras.UITweaks$2 this$1 -> a
+    android.content.SharedPreferences$Editor val$editor -> b
+    android.content.SharedPreferences val$colord -> c
+    android.content.SharedPreferences val$colors -> d
+    91:99:void onOk$35af6948(int) -> a
+com.drx2.bootmanager.extras.UITweaks$3 -> com.drx2.bootmanager.extras.cy:
+    com.drx2.bootmanager.extras.UITweaks this$0 -> a
+    android.content.SharedPreferences val$colors -> b
+    android.content.SharedPreferences$Editor val$editor -> c
+    114:128:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+    112:112:com.drx2.bootmanager.extras.UITweaks access$0(com.drx2.bootmanager.extras.UITweaks$3) -> a
+com.drx2.bootmanager.extras.UITweaks$3$1 -> com.drx2.bootmanager.extras.cz:
+    com.drx2.bootmanager.extras.UITweaks$3 this$1 -> a
+    android.content.SharedPreferences$Editor val$editor -> b
+    117:120:void onOk$35af6948(int) -> a
+com.drx2.bootmanager.extras.UITweaks$4 -> com.drx2.bootmanager.extras.da:
+    com.drx2.bootmanager.extras.UITweaks this$0 -> a
+    android.content.SharedPreferences val$colors -> b
+    android.content.SharedPreferences$Editor val$editor -> c
+    135:148:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.UITweaks$4$1 -> com.drx2.bootmanager.extras.db:
+    com.drx2.bootmanager.extras.UITweaks$4 this$1 -> a
+    android.content.SharedPreferences$Editor val$editor -> b
+    138:140:void onOk$35af6948(int) -> a
+com.drx2.bootmanager.extras.UITweaks$5 -> com.drx2.bootmanager.extras.dc:
+    com.drx2.bootmanager.extras.UITweaks this$0 -> a
+    android.content.SharedPreferences val$colors -> b
+    android.content.SharedPreferences$Editor val$editor -> c
+    155:168:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.UITweaks$5$1 -> com.drx2.bootmanager.extras.dd:
+    com.drx2.bootmanager.extras.UITweaks$5 this$1 -> a
+    android.content.SharedPreferences$Editor val$editor -> b
+    158:160:void onOk$35af6948(int) -> a
+com.drx2.bootmanager.extras.UITweaks$6 -> com.drx2.bootmanager.extras.de:
+    com.drx2.bootmanager.extras.UITweaks this$0 -> a
+    android.content.SharedPreferences val$colors -> b
+    android.content.SharedPreferences$Editor val$editor -> c
+    175:188:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.UITweaks$6$1 -> com.drx2.bootmanager.extras.df:
+    com.drx2.bootmanager.extras.UITweaks$6 this$1 -> a
+    android.content.SharedPreferences$Editor val$editor -> b
+    178:180:void onOk$35af6948(int) -> a
+com.drx2.bootmanager.extras.UITweaks$7 -> com.drx2.bootmanager.extras.dg:
+    com.drx2.bootmanager.extras.UITweaks this$0 -> a
+    android.content.SharedPreferences val$colors -> b
+    android.content.SharedPreferences$Editor val$editor -> c
+    195:208:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.UITweaks$7$1 -> com.drx2.bootmanager.extras.dh:
+    com.drx2.bootmanager.extras.UITweaks$7 this$1 -> a
+    android.content.SharedPreferences$Editor val$editor -> b
+    198:200:void onOk$35af6948(int) -> a
+com.drx2.bootmanager.extras.UITweaks$8 -> com.drx2.bootmanager.extras.di:
+    com.drx2.bootmanager.extras.UITweaks this$0 -> a
+    android.content.SharedPreferences val$colors -> b
+    android.content.SharedPreferences$Editor val$editor -> c
+    215:228:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.drx2.bootmanager.extras.UITweaks$8$1 -> com.drx2.bootmanager.extras.dj:
+    com.drx2.bootmanager.extras.UITweaks$8 this$1 -> a
+    android.content.SharedPreferences$Editor val$editor -> b
+    218:220:void onOk$35af6948(int) -> a
+com.drx2.bootmanager.extras.UITweaks$Home -> com.drx2.bootmanager.extras.dk:
+    com.drx2.bootmanager.extras.UITweaks this$0 -> a
+    245:245:int getDrawable() -> a
+    249:251:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.fragment1 -> com.drx2.bootmanager.em:
+    android.content.Context context -> L
+    com.drx2.bootmanager.utilities.Utilities u -> M
+    java.lang.String slot -> N
+    android.widget.Button boot -> T
+    android.widget.Button install -> U
+    android.widget.Button editROM -> V
+    android.widget.Button edit -> W
+    java.lang.String name2 -> O
+    java.lang.String kernelName -> P
+    java.lang.String desc -> Q
+    android.view.View V -> R
+    com.drx2.bootmanager.utilities.PhotoPicker p -> S
+    52:397:android.view.View onCreateView$469ccb8a(android.view.LayoutInflater) -> a
+    402:412:void onActivityResult(int,int,android.content.Intent) -> a
+    417:429:void getnames() -> B
+    433:445:java.lang.String readRomName(java.lang.String) -> a
+    416:416:void access$0(com.drx2.bootmanager.fragment1) -> a
+com.drx2.bootmanager.fragment1$1 -> com.drx2.bootmanager.en:
+    com.drx2.bootmanager.fragment1 this$0 -> a
+    117:137:void onClick(android.view.View) -> onClick
+    115:115:com.drx2.bootmanager.fragment1 access$0(com.drx2.bootmanager.fragment1$1) -> a
+com.drx2.bootmanager.fragment1$1$1 -> com.drx2.bootmanager.eo:
+    com.drx2.bootmanager.fragment1$1 this$1 -> a
+    124:127:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$1$2 -> com.drx2.bootmanager.ep:
+    com.drx2.bootmanager.fragment1$1 this$1 -> a
+    131:132:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$2 -> com.drx2.bootmanager.eq:
+    com.drx2.bootmanager.fragment1 this$0 -> a
+    142:184:void onClick(android.view.View) -> onClick
+    140:140:com.drx2.bootmanager.fragment1 access$0(com.drx2.bootmanager.fragment1$2) -> a
+com.drx2.bootmanager.fragment1$2$1 -> com.drx2.bootmanager.er:
+    com.drx2.bootmanager.fragment1$2 this$1 -> a
+    148:174:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$2$2 -> com.drx2.bootmanager.es:
+    com.drx2.bootmanager.fragment1$2 this$1 -> a
+    178:179:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$3 -> com.drx2.bootmanager.et:
+    com.drx2.bootmanager.fragment1 this$0 -> a
+    189:299:void onClick(android.view.View) -> onClick
+    187:187:com.drx2.bootmanager.fragment1 access$0(com.drx2.bootmanager.fragment1$3) -> a
+com.drx2.bootmanager.fragment1$3$1 -> com.drx2.bootmanager.eu:
+    com.drx2.bootmanager.fragment1$3 this$1 -> a
+    195:289:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$3$1$1 -> com.drx2.bootmanager.ev:
+    com.drx2.bootmanager.fragment1$3$1 this$2 -> a
+    208:212:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$3$1$2 -> com.drx2.bootmanager.ew:
+    com.drx2.bootmanager.fragment1$3$1 this$2 -> a
+    216:217:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$3$1$3 -> com.drx2.bootmanager.ex:
+    com.drx2.bootmanager.fragment1$3$1 this$2 -> a
+    233:246:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$3$1$4 -> com.drx2.bootmanager.ey:
+    com.drx2.bootmanager.fragment1$3$1 this$2 -> a
+    250:251:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$3$1$5 -> com.drx2.bootmanager.ez:
+    com.drx2.bootmanager.fragment1$3$1 this$2 -> a
+    261:262:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$3$1$6 -> com.drx2.bootmanager.fa:
+    com.drx2.bootmanager.fragment1$3$1 this$2 -> a
+    266:267:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$3$1$7 -> com.drx2.bootmanager.fb:
+    com.drx2.bootmanager.fragment1$3$1 this$2 -> a
+    277:281:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$3$1$8 -> com.drx2.bootmanager.fc:
+    com.drx2.bootmanager.fragment1$3$1 this$2 -> a
+    285:286:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$3$2 -> com.drx2.bootmanager.fd:
+    com.drx2.bootmanager.fragment1$3 this$1 -> a
+    293:294:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$4 -> com.drx2.bootmanager.fe:
+    com.drx2.bootmanager.fragment1 this$0 -> a
+    304:395:void onClick(android.view.View) -> onClick
+    302:302:com.drx2.bootmanager.fragment1 access$0(com.drx2.bootmanager.fragment1$4) -> a
+com.drx2.bootmanager.fragment1$4$1 -> com.drx2.bootmanager.ff:
+    com.drx2.bootmanager.fragment1$4 this$1 -> a
+    310:385:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$4$1$1 -> com.drx2.bootmanager.fg:
+    com.drx2.bootmanager.fragment1$4$1 this$2 -> a
+    android.widget.EditText val$input -> b
+    327:333:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$4$1$2 -> com.drx2.bootmanager.fh:
+    com.drx2.bootmanager.fragment1$4$1 this$2 -> a
+    337:338:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$4$1$3 -> com.drx2.bootmanager.fi:
+    com.drx2.bootmanager.fragment1$4$1 this$2 -> a
+    android.widget.EditText val$input -> b
+    349:355:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$4$1$4 -> com.drx2.bootmanager.fj:
+    com.drx2.bootmanager.fragment1$4$1 this$2 -> a
+    359:360:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$4$1$5 -> com.drx2.bootmanager.fk:
+    com.drx2.bootmanager.fragment1$4$1 this$2 -> a
+    android.widget.EditText val$input -> b
+    371:377:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$4$1$6 -> com.drx2.bootmanager.fl:
+    com.drx2.bootmanager.fragment1$4$1 this$2 -> a
+    381:382:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment1$4$2 -> com.drx2.bootmanager.fm:
+    com.drx2.bootmanager.fragment1$4 this$1 -> a
+    389:390:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2 -> com.drx2.bootmanager.fn:
+    android.content.Context context -> L
+    com.drx2.bootmanager.utilities.Utilities u -> M
+    java.lang.String slot -> N
+    android.widget.Button boot -> T
+    android.widget.Button install -> U
+    android.widget.Button editROM -> V
+    android.widget.Button edit -> W
+    java.lang.String name2 -> O
+    java.lang.String kernelName -> P
+    java.lang.String desc -> Q
+    android.view.View V -> R
+    com.drx2.bootmanager.utilities.PhotoPicker p -> S
+    52:396:android.view.View onCreateView$469ccb8a(android.view.LayoutInflater) -> a
+    401:411:void onActivityResult(int,int,android.content.Intent) -> a
+    416:428:void getnames() -> B
+    432:444:java.lang.String readRomName(java.lang.String) -> a
+    415:415:void access$0(com.drx2.bootmanager.fragment2) -> a
+com.drx2.bootmanager.fragment2$1 -> com.drx2.bootmanager.fo:
+    com.drx2.bootmanager.fragment2 this$0 -> a
+    117:137:void onClick(android.view.View) -> onClick
+    115:115:com.drx2.bootmanager.fragment2 access$0(com.drx2.bootmanager.fragment2$1) -> a
+com.drx2.bootmanager.fragment2$1$1 -> com.drx2.bootmanager.fp:
+    com.drx2.bootmanager.fragment2$1 this$1 -> a
+    124:127:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$1$2 -> com.drx2.bootmanager.fq:
+    com.drx2.bootmanager.fragment2$1 this$1 -> a
+    131:132:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$2 -> com.drx2.bootmanager.fr:
+    com.drx2.bootmanager.fragment2 this$0 -> a
+    142:184:void onClick(android.view.View) -> onClick
+    140:140:com.drx2.bootmanager.fragment2 access$0(com.drx2.bootmanager.fragment2$2) -> a
+com.drx2.bootmanager.fragment2$2$1 -> com.drx2.bootmanager.fs:
+    com.drx2.bootmanager.fragment2$2 this$1 -> a
+    148:174:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$2$2 -> com.drx2.bootmanager.ft:
+    com.drx2.bootmanager.fragment2$2 this$1 -> a
+    178:179:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$3 -> com.drx2.bootmanager.fu:
+    com.drx2.bootmanager.fragment2 this$0 -> a
+    189:299:void onClick(android.view.View) -> onClick
+    187:187:com.drx2.bootmanager.fragment2 access$0(com.drx2.bootmanager.fragment2$3) -> a
+com.drx2.bootmanager.fragment2$3$1 -> com.drx2.bootmanager.fv:
+    com.drx2.bootmanager.fragment2$3 this$1 -> a
+    195:289:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$3$1$1 -> com.drx2.bootmanager.fw:
+    com.drx2.bootmanager.fragment2$3$1 this$2 -> a
+    208:212:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$3$1$2 -> com.drx2.bootmanager.fx:
+    com.drx2.bootmanager.fragment2$3$1 this$2 -> a
+    216:217:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$3$1$3 -> com.drx2.bootmanager.fy:
+    com.drx2.bootmanager.fragment2$3$1 this$2 -> a
+    233:246:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$3$1$4 -> com.drx2.bootmanager.fz:
+    com.drx2.bootmanager.fragment2$3$1 this$2 -> a
+    250:251:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$3$1$5 -> com.drx2.bootmanager.ga:
+    com.drx2.bootmanager.fragment2$3$1 this$2 -> a
+    261:262:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$3$1$6 -> com.drx2.bootmanager.gb:
+    com.drx2.bootmanager.fragment2$3$1 this$2 -> a
+    266:267:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$3$1$7 -> com.drx2.bootmanager.gc:
+    com.drx2.bootmanager.fragment2$3$1 this$2 -> a
+    277:281:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$3$1$8 -> com.drx2.bootmanager.gd:
+    com.drx2.bootmanager.fragment2$3$1 this$2 -> a
+    285:286:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$3$2 -> com.drx2.bootmanager.ge:
+    com.drx2.bootmanager.fragment2$3 this$1 -> a
+    293:294:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$4 -> com.drx2.bootmanager.gf:
+    com.drx2.bootmanager.fragment2 this$0 -> a
+    304:394:void onClick(android.view.View) -> onClick
+    302:302:com.drx2.bootmanager.fragment2 access$0(com.drx2.bootmanager.fragment2$4) -> a
+com.drx2.bootmanager.fragment2$4$1 -> com.drx2.bootmanager.gg:
+    com.drx2.bootmanager.fragment2$4 this$1 -> a
+    310:384:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$4$1$1 -> com.drx2.bootmanager.gh:
+    com.drx2.bootmanager.fragment2$4$1 this$2 -> a
+    android.widget.EditText val$input -> b
+    326:332:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$4$1$2 -> com.drx2.bootmanager.gi:
+    com.drx2.bootmanager.fragment2$4$1 this$2 -> a
+    336:337:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$4$1$3 -> com.drx2.bootmanager.gj:
+    com.drx2.bootmanager.fragment2$4$1 this$2 -> a
+    android.widget.EditText val$input -> b
+    348:354:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$4$1$4 -> com.drx2.bootmanager.gk:
+    com.drx2.bootmanager.fragment2$4$1 this$2 -> a
+    358:359:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$4$1$5 -> com.drx2.bootmanager.gl:
+    com.drx2.bootmanager.fragment2$4$1 this$2 -> a
+    android.widget.EditText val$input -> b
+    370:376:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$4$1$6 -> com.drx2.bootmanager.gm:
+    com.drx2.bootmanager.fragment2$4$1 this$2 -> a
+    380:381:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment2$4$2 -> com.drx2.bootmanager.gn:
+    com.drx2.bootmanager.fragment2$4 this$1 -> a
+    388:389:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3 -> com.drx2.bootmanager.go:
+    android.content.Context context -> L
+    com.drx2.bootmanager.utilities.Utilities u -> M
+    java.lang.String slot -> N
+    android.widget.Button boot -> T
+    android.widget.Button install -> U
+    android.widget.Button editROM -> V
+    android.widget.Button edit -> W
+    java.lang.String name2 -> O
+    java.lang.String kernelName -> P
+    java.lang.String desc -> Q
+    android.view.View V -> R
+    com.drx2.bootmanager.utilities.PhotoPicker p -> S
+    52:397:android.view.View onCreateView$469ccb8a(android.view.LayoutInflater) -> a
+    402:412:void onActivityResult(int,int,android.content.Intent) -> a
+    417:429:void getnames() -> B
+    433:445:java.lang.String readRomName(java.lang.String) -> a
+    416:416:void access$0(com.drx2.bootmanager.fragment3) -> a
+com.drx2.bootmanager.fragment3$1 -> com.drx2.bootmanager.gp:
+    com.drx2.bootmanager.fragment3 this$0 -> a
+    117:137:void onClick(android.view.View) -> onClick
+    115:115:com.drx2.bootmanager.fragment3 access$0(com.drx2.bootmanager.fragment3$1) -> a
+com.drx2.bootmanager.fragment3$1$1 -> com.drx2.bootmanager.gq:
+    com.drx2.bootmanager.fragment3$1 this$1 -> a
+    124:127:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$1$2 -> com.drx2.bootmanager.gr:
+    com.drx2.bootmanager.fragment3$1 this$1 -> a
+    131:132:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$2 -> com.drx2.bootmanager.gs:
+    com.drx2.bootmanager.fragment3 this$0 -> a
+    142:184:void onClick(android.view.View) -> onClick
+    140:140:com.drx2.bootmanager.fragment3 access$0(com.drx2.bootmanager.fragment3$2) -> a
+com.drx2.bootmanager.fragment3$2$1 -> com.drx2.bootmanager.gt:
+    com.drx2.bootmanager.fragment3$2 this$1 -> a
+    148:174:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$2$2 -> com.drx2.bootmanager.gu:
+    com.drx2.bootmanager.fragment3$2 this$1 -> a
+    178:179:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$3 -> com.drx2.bootmanager.gv:
+    com.drx2.bootmanager.fragment3 this$0 -> a
+    189:299:void onClick(android.view.View) -> onClick
+    187:187:com.drx2.bootmanager.fragment3 access$0(com.drx2.bootmanager.fragment3$3) -> a
+com.drx2.bootmanager.fragment3$3$1 -> com.drx2.bootmanager.gw:
+    com.drx2.bootmanager.fragment3$3 this$1 -> a
+    195:289:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$3$1$1 -> com.drx2.bootmanager.gx:
+    com.drx2.bootmanager.fragment3$3$1 this$2 -> a
+    208:212:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$3$1$2 -> com.drx2.bootmanager.gy:
+    com.drx2.bootmanager.fragment3$3$1 this$2 -> a
+    216:217:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$3$1$3 -> com.drx2.bootmanager.gz:
+    com.drx2.bootmanager.fragment3$3$1 this$2 -> a
+    233:246:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$3$1$4 -> com.drx2.bootmanager.ha:
+    com.drx2.bootmanager.fragment3$3$1 this$2 -> a
+    250:251:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$3$1$5 -> com.drx2.bootmanager.hb:
+    com.drx2.bootmanager.fragment3$3$1 this$2 -> a
+    261:262:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$3$1$6 -> com.drx2.bootmanager.hc:
+    com.drx2.bootmanager.fragment3$3$1 this$2 -> a
+    266:267:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$3$1$7 -> com.drx2.bootmanager.hd:
+    com.drx2.bootmanager.fragment3$3$1 this$2 -> a
+    277:281:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$3$1$8 -> com.drx2.bootmanager.he:
+    com.drx2.bootmanager.fragment3$3$1 this$2 -> a
+    285:286:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$3$2 -> com.drx2.bootmanager.hf:
+    com.drx2.bootmanager.fragment3$3 this$1 -> a
+    293:294:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$4 -> com.drx2.bootmanager.hg:
+    com.drx2.bootmanager.fragment3 this$0 -> a
+    304:395:void onClick(android.view.View) -> onClick
+    302:302:com.drx2.bootmanager.fragment3 access$0(com.drx2.bootmanager.fragment3$4) -> a
+com.drx2.bootmanager.fragment3$4$1 -> com.drx2.bootmanager.hh:
+    com.drx2.bootmanager.fragment3$4 this$1 -> a
+    310:385:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$4$1$1 -> com.drx2.bootmanager.hi:
+    com.drx2.bootmanager.fragment3$4$1 this$2 -> a
+    android.widget.EditText val$input -> b
+    327:333:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$4$1$2 -> com.drx2.bootmanager.hj:
+    com.drx2.bootmanager.fragment3$4$1 this$2 -> a
+    337:338:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$4$1$3 -> com.drx2.bootmanager.hk:
+    com.drx2.bootmanager.fragment3$4$1 this$2 -> a
+    android.widget.EditText val$input -> b
+    349:355:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$4$1$4 -> com.drx2.bootmanager.hl:
+    com.drx2.bootmanager.fragment3$4$1 this$2 -> a
+    359:360:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$4$1$5 -> com.drx2.bootmanager.hm:
+    com.drx2.bootmanager.fragment3$4$1 this$2 -> a
+    android.widget.EditText val$input -> b
+    371:377:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$4$1$6 -> com.drx2.bootmanager.hn:
+    com.drx2.bootmanager.fragment3$4$1 this$2 -> a
+    381:382:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.fragment3$4$2 -> com.drx2.bootmanager.ho:
+    com.drx2.bootmanager.fragment3$4 this$1 -> a
+    389:390:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.manage.Manage -> com.drx2.bootmanager.manage.Manage:
+    java.lang.String slot -> a
+    android.content.Context context -> b
+    android.widget.TextView systemsize -> c
+    android.widget.TextView datasize -> d
+    android.widget.TextView cachesize -> e
+    java.io.File systemimg -> f
+    java.io.File dataimg -> g
+    java.io.File cacheimg -> h
+    java.lang.String romName -> i
+    java.lang.String size -> j
+    java.lang.String used -> k
+    java.lang.String ssize -> l
+    java.lang.String sused -> m
+    java.lang.String dsize -> n
+    java.lang.String dused -> o
+    java.lang.String csize -> p
+    java.lang.String cused -> q
+    java.lang.String board -> r
+    android.widget.Button resizesystem -> s
+    android.widget.Button resizedata -> t
+    android.widget.Button resizecache -> u
+    com.markupartist.android.widget.ActionBar actionBar -> v
+    int sdfreespace -> w
+    com.drx2.bootmanager.utilities.ShellCommand s -> x
+    com.drx2.bootmanager.utilities.Utilities u -> y
+    android.view.View$OnClickListener systemclick -> z
+    android.view.View$OnClickListener dataclick -> A
+    android.view.View$OnClickListener cacheclick -> B
+    65:105:void onCreate(android.os.Bundle) -> onCreate
+    109:109:void access$0(com.drx2.bootmanager.manage.Manage,java.lang.String) -> a
+    338:338:float access$1(java.io.File) -> a
+com.drx2.bootmanager.manage.Manage$1 -> com.drx2.bootmanager.manage.a:
+    com.drx2.bootmanager.manage.Manage this$0 -> a
+    209:246:void onClick(android.view.View) -> onClick
+    206:206:com.drx2.bootmanager.manage.Manage access$0(com.drx2.bootmanager.manage.Manage$1) -> a
+com.drx2.bootmanager.manage.Manage$1$1 -> com.drx2.bootmanager.manage.b:
+    com.drx2.bootmanager.manage.Manage$1 this$1 -> a
+    android.widget.EditText val$input -> b
+    int val$usedI -> c
+    int val$sizeI -> d
+    226:238:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.manage.Manage$1$2 -> com.drx2.bootmanager.manage.c:
+    com.drx2.bootmanager.manage.Manage$1 this$1 -> a
+    242:243:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.manage.Manage$2 -> com.drx2.bootmanager.manage.d:
+    com.drx2.bootmanager.manage.Manage this$0 -> a
+    253:290:void onClick(android.view.View) -> onClick
+    250:250:com.drx2.bootmanager.manage.Manage access$0(com.drx2.bootmanager.manage.Manage$2) -> a
+com.drx2.bootmanager.manage.Manage$2$1 -> com.drx2.bootmanager.manage.e:
+    com.drx2.bootmanager.manage.Manage$2 this$1 -> a
+    android.widget.EditText val$input -> b
+    int val$usedI -> c
+    int val$sizeI -> d
+    270:282:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.manage.Manage$2$2 -> com.drx2.bootmanager.manage.f:
+    com.drx2.bootmanager.manage.Manage$2 this$1 -> a
+    286:287:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.manage.Manage$3 -> com.drx2.bootmanager.manage.g:
+    com.drx2.bootmanager.manage.Manage this$0 -> a
+    297:334:void onClick(android.view.View) -> onClick
+    294:294:com.drx2.bootmanager.manage.Manage access$0(com.drx2.bootmanager.manage.Manage$3) -> a
+com.drx2.bootmanager.manage.Manage$3$1 -> com.drx2.bootmanager.manage.h:
+    com.drx2.bootmanager.manage.Manage$3 this$1 -> a
+    android.widget.EditText val$input -> b
+    int val$usedI -> c
+    int val$sizeI -> d
+    314:326:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.manage.Manage$3$2 -> com.drx2.bootmanager.manage.i:
+    com.drx2.bootmanager.manage.Manage$3 this$1 -> a
+    330:331:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.manage.Manage$Home -> com.drx2.bootmanager.manage.j:
+    com.drx2.bootmanager.manage.Manage this$0 -> a
+    354:354:int getDrawable() -> a
+    358:360:void performAction$3c7ec8c3() -> b
+com.drx2.bootmanager.manage.Manage$loaderTask -> com.drx2.bootmanager.manage.k:
+    android.content.Context context -> a
+    java.lang.String slot -> b
+    com.drx2.bootmanager.utilities.CustomProgressDialog p -> c
+    com.drx2.bootmanager.manage.Manage this$0 -> d
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.drx2.bootmanager.manage.Manage$resizeTask -> com.drx2.bootmanager.manage.l:
+    android.content.Context context -> a
+    java.lang.String image -> b
+    java.lang.String value -> c
+    com.drx2.bootmanager.utilities.CustomProgressDialog p -> d
+    com.drx2.bootmanager.manage.Manage this$0 -> e
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.drx2.bootmanager.page.adapter.FragmentAdapter -> com.drx2.bootmanager.page.adapter.FragmentAdapter:
+com.drx2.bootmanager.page.adapter.PageAdapter -> com.drx2.bootmanager.page.adapter.a:
+    android.content.Context mContext -> b
+    android.support.v4.view.ViewPager mPager -> c
+    java.util.ArrayList mPages -> d
+    com.drx2.bootmanager.page.adapter.PagerHeader mHeader -> e
+    com.drx2.bootmanager.page.adapter.PageChangeListener onPageChange -> a
+    39:43:void addPage$6e662e36(java.lang.Class,java.lang.String) -> a
+    57:58:void onPageScrolled$486775f1(int,float) -> a
+    62:66:void onPageSelected(int) -> b
+    70:71:android.support.v4.app.Fragment getItem(int) -> a
+    76:76:int getCount() -> c
+    86:88:void onHeaderSelected(int) -> c
+com.drx2.bootmanager.page.adapter.PageChangeListener -> com.drx2.bootmanager.page.adapter.b:
+    void onPageChange(int) -> c
+com.drx2.bootmanager.page.adapter.PageInfo -> com.drx2.bootmanager.page.adapter.c:
+    java.lang.Class clss -> a
+    android.os.Bundle bundle -> b
+    java.lang.String title -> c
+com.drx2.bootmanager.page.adapter.PagerHeader -> com.drx2.bootmanager.page.adapter.PagerHeader:
+    android.content.Context mContext -> b
+    int mDisplayedPage -> c
+    int mLeftZoneEdge -> d
+    int mRightZoneEdge -> e
+    boolean mTouchZonesAccurate -> f
+    int mTouchSlopSquare -> g
+    boolean mAlwaysInTapRegion -> h
+    android.view.MotionEvent mCurrentDownEvent -> i
+    android.graphics.drawable.ShapeDrawable mTabDrawable -> j
+    android.graphics.drawable.ShapeDrawable mBottomBar -> k
+    android.graphics.drawable.GradientDrawable mShadow -> l
+    android.graphics.drawable.GradientDrawable mFadingEdgeLeft -> m
+    android.graphics.drawable.GradientDrawable mFadingEdgeRight -> n
+    com.drx2.bootmanager.page.adapter.PagerHeader$OnHeaderClickListener mOnHeaderClickListener -> o
+    boolean mChangeOnClick -> p
+    com.drx2.bootmanager.page.adapter.PagerHeader$ColorSet mActiveTextColor -> q
+    com.drx2.bootmanager.page.adapter.PagerHeader$ColorSet mInactiveTextColor -> r
+    com.drx2.bootmanager.page.adapter.PagerHeader$ColorSet mTabColor -> s
+    int mTabHeight -> t
+    int mTabPadding -> u
+    int mPaddingPush -> v
+    int mFadingEdgeLength -> w
+    int mShadowHeight -> x
+    int mBottomBarHeight -> y
+    int mTextSize -> z
+    boolean mShowTopShadow -> A
+    boolean mShowBottomBar -> B
+    boolean mShowTab -> C
+    android.content.SharedPreferences colors -> a
+    android.util.DisplayMetrics mDisplayMetrics -> D
+    132:137:void add$4f708078(java.lang.String) -> a
+    140:141:void setDisplayedPage(int) -> a
+    144:145:void setOnHeaderClickListener(com.drx2.bootmanager.page.adapter.PagerHeader$OnHeaderClickListener) -> a
+    156:240:void setPosition$486775f1(int,float) -> a
+    244:261:void onMeasure(int,int) -> onMeasure
+    265:291:void onLayout(boolean,int,int,int,int) -> onLayout
+    295:302:void dispatchDraw(android.graphics.Canvas) -> dispatchDraw
+    306:337:boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    341:346:void showPress(android.view.MotionEvent,boolean) -> a
+    363:388:int getTouchZone(android.view.MotionEvent) -> a
+    392:392:int map(float,float,float,int,int) -> a
+    399:399:int dipToPixels(float) -> a
+com.drx2.bootmanager.page.adapter.PagerHeader$ColorSet -> com.drx2.bootmanager.page.adapter.d:
+    int alpha -> a
+    int red -> b
+    int green -> c
+    int blue -> d
+    com.drx2.bootmanager.page.adapter.PagerHeader this$0 -> e
+    413:417:void setColor(int) -> a
+    420:420:int getColor() -> a
+    424:424:int getColor(int) -> b
+com.drx2.bootmanager.page.adapter.PagerHeader$OnHeaderClickListener -> com.drx2.bootmanager.page.adapter.e:
+    void onHeaderSelected(int) -> c
+com.drx2.bootmanager.screenshot.ScreenShot -> com.drx2.bootmanager.screenshot.ScreenShot:
+    com.drx2.bootmanager.utilities.Utilities u -> a
+    android.content.Context context -> b
+    android.os.Handler ssHandler -> c
+    java.io.File input -> d
+    java.lang.String ssDir -> e
+    35:48:void onCreate(android.os.Bundle) -> onCreate
+    111:112:void onDestroy() -> onDestroy
+    61:61:void access$0(com.drx2.bootmanager.screenshot.ScreenShot) -> a
+com.drx2.bootmanager.screenshot.ScreenShot$1 -> com.drx2.bootmanager.screenshot.a:
+    com.drx2.bootmanager.screenshot.ScreenShot this$0 -> a
+    56:57:void run() -> run
+com.drx2.bootmanager.services.BackupRestoreService -> com.drx2.bootmanager.services.BackupRestoreService:
+    android.content.Context context -> a
+    java.lang.String whattodo -> b
+    java.lang.String backup -> c
+    java.lang.String backupshort -> d
+    java.lang.String slot -> e
+    java.lang.Boolean useemmc -> f
+    com.drx2.bootmanager.utilities.Utilities u -> g
+    android.app.NotificationManager myNotificationManager -> h
+    android.os.PowerManager$WakeLock mWakeLock -> m
+    android.app.Notification notification -> i
+    android.app.PendingIntent contentIntent -> j
+    android.content.Intent notificationIntent -> k
+    java.lang.CharSequence NotificationTitle -> l
+    45:45:android.os.IBinder onBind(android.content.Intent) -> onBind
+    50:88:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    133:135:void notify(java.lang.String,java.lang.String) -> a
+    197:206:boolean deleteDir(java.io.File) -> b
+    137:137:void access$0(com.drx2.bootmanager.services.BackupRestoreService) -> a
+    132:132:void access$1(com.drx2.bootmanager.services.BackupRestoreService,java.lang.String,java.lang.String) -> a
+    196:196:boolean access$2(java.io.File) -> a
+com.drx2.bootmanager.services.BackupRestoreService$BUThread -> com.drx2.bootmanager.services.a:
+    java.lang.String slot -> a
+    java.lang.String name -> b
+    java.lang.String date -> c
+    com.drx2.bootmanager.services.BackupRestoreService this$0 -> d
+    118:129:void run() -> run
+com.drx2.bootmanager.services.BackupRestoreService$restoreThread -> com.drx2.bootmanager.services.b:
+    java.lang.String file -> a
+    java.lang.String fileName -> b
+    com.drx2.bootmanager.services.BackupRestoreService this$0 -> c
+    185:193:void run() -> run
+com.drx2.bootmanager.services.BootManagerService -> com.drx2.bootmanager.services.BootManagerService:
+    android.app.NotificationManager myNotificationManager -> a
+    android.os.PowerManager$WakeLock mWakeLock -> O
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    com.drx2.bootmanager.utilities.ShellCommand s -> c
+    com.drx2.bootmanager.utilities.Script script -> d
+    com.drx2.bootmanager.Loader l -> e
+    java.lang.String appKey -> f
+    android.content.Context context -> g
+    java.lang.String board -> h
+    java.lang.String sdcard -> i
+    java.lang.String ext_sd -> j
+    java.lang.String systemsize -> k
+    java.lang.String datasize -> l
+    java.lang.String cachesize -> m
+    java.lang.String rom -> n
+    java.lang.String romshort -> o
+    java.lang.String emmc -> p
+    java.lang.String busybox -> q
+    java.lang.String bbpath -> r
+    java.lang.String ext -> s
+    java.lang.String slot -> t
+    java.lang.String error -> u
+    java.lang.String currentratio -> v
+    java.lang.String currentlowmem -> w
+    java.lang.String chosenboot -> x
+    java.lang.Boolean useemmc -> y
+    java.lang.Boolean threadStop -> z
+    java.lang.Boolean wipedata -> A
+    java.lang.Boolean wipesystem -> B
+    java.lang.Boolean wipecache -> C
+    int key -> D
+    int exit -> E
+    java.lang.Boolean largeboot -> F
+    java.lang.Boolean continueInstall -> G
+    android.app.Notification notification -> H
+    android.app.PendingIntent contentIntent -> I
+    android.content.Intent notificationIntent -> J
+    int queuePos -> K
+    android.os.Bundle extras -> L
+    java.util.ArrayList dirs -> M
+    java.util.ArrayList filePerms -> N
+    111:111:android.os.IBinder onBind(android.content.Intent) -> onBind
+    116:206:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    210:240:void queuer() -> a
+    244:246:void onDestroy() -> onDestroy
+    248:250:void notify(java.lang.String,java.lang.String) -> a
+    253:324:void finalnotify() -> b
+    328:339:java.lang.String owner(java.io.File) -> a
+    343:357:java.lang.String permission(java.io.File) -> b
+    360:400:java.lang.String getnumber(java.lang.String) -> a
+    484:686:void editbootNormal$1f856163(java.lang.String) -> b
+    869:872:boolean installInternal() -> c
+    876:913:void cleanUp(android.content.Context) -> a
+    917:1395:void installrom(java.lang.String,java.lang.String) -> b
+    1467:1663:void parseUS(boolean) -> a
+    1672:1726:void reparseUS() -> d
+    1730:1743:boolean isMounted(java.lang.String) -> c
+    1751:1794:void fixPermsonimgs() -> e
+    1797:1802:boolean permissionsset(java.io.File) -> c
+    1806:1834:void setPermissionsAfterInstall() -> f
+    1837:2332:void unzip(java.lang.String,java.lang.String,java.lang.String,android.content.Context) -> a
+    2346:2371:boolean yad7() -> g
+    2375:2383:java.lang.String dieuqinu() -> h
+    2387:2399:java.lang.Boolean syncIMG(java.lang.String) -> d
+    2404:2410:java.lang.Boolean sigChec() -> i
+    2414:2444:void addBootimgtoUpdateRezound(java.lang.String) -> e
+    209:209:void access$0(com.drx2.bootmanager.services.BootManagerService) -> a
+    252:252:void access$1(com.drx2.bootmanager.services.BootManagerService) -> b
+    1397:1397:void access$2(com.drx2.bootmanager.services.BootManagerService,java.lang.String,java.lang.String) -> a
+    875:875:void access$3(com.drx2.bootmanager.services.BootManagerService,android.content.Context) -> a
+    2334:2334:void access$4(com.drx2.bootmanager.services.BootManagerService) -> c
+    916:916:void access$5(com.drx2.bootmanager.services.BootManagerService,java.lang.String,java.lang.String) -> b
+    247:247:void access$6(com.drx2.bootmanager.services.BootManagerService,java.lang.String,java.lang.String) -> c
+    474:474:void access$7$6776364e(com.drx2.bootmanager.services.BootManagerService,java.lang.String,java.lang.String) -> d
+com.drx2.bootmanager.services.BootManagerService$installThread -> com.drx2.bootmanager.services.c:
+    java.lang.String vrom -> a
+    java.lang.String vboard -> b
+    java.lang.String vslot -> c
+    java.lang.String vsdcard -> d
+    com.drx2.bootmanager.services.BootManagerService this$0 -> e
+    441:470:void run() -> run
+com.drx2.bootmanager.services.BootManagerService$kernelThread -> com.drx2.bootmanager.services.d:
+    java.lang.String slot -> a
+    java.lang.String rom -> b
+    com.drx2.bootmanager.services.BootManagerService this$0 -> c
+    414:425:void run() -> run
+com.drx2.bootmanager.services.BootService -> com.drx2.bootmanager.services.BootService:
+    android.content.Context context -> a
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    23:23:android.os.IBinder onBind(android.content.Intent) -> onBind
+    27:54:void onStart(android.content.Intent,int) -> onStart
+com.drx2.bootmanager.services.NandRestoreService -> com.drx2.bootmanager.services.NandRestoreService:
+    android.app.NotificationManager myNotificationManager -> a
+    android.os.PowerManager$WakeLock mWakeLock -> I
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    com.drx2.bootmanager.utilities.ShellCommand s -> c
+    com.drx2.bootmanager.utilities.Script script -> d
+    com.drx2.bootmanager.Loader l -> e
+    java.lang.String appKey -> f
+    android.content.Context context -> g
+    java.lang.String board -> h
+    java.lang.String sdcard -> i
+    java.lang.String ext_sd -> j
+    java.lang.String systemsize -> k
+    java.lang.String datasize -> l
+    java.lang.String cachesize -> m
+    java.lang.String nandroid -> n
+    java.lang.String romshort -> o
+    java.lang.String emmc -> p
+    java.lang.String busybox -> q
+    java.lang.String bbpath -> r
+    java.lang.String ext -> s
+    java.lang.String currentratio -> t
+    java.lang.String currentlowmem -> u
+    java.lang.String slot -> v
+    java.lang.String error -> w
+    java.lang.Boolean wipe -> x
+    java.lang.Boolean useemmc -> y
+    java.lang.Boolean threadStop -> z
+    java.lang.Boolean largeboot -> A
+    java.lang.Boolean continueInstall -> B
+    int key -> C
+    int exit -> D
+    android.app.Notification notification -> E
+    android.app.PendingIntent contentIntent -> F
+    android.content.Intent notificationIntent -> G
+    int StartId -> H
+    85:85:android.os.IBinder onBind(android.content.Intent) -> onBind
+    89:181:void onStart(android.content.Intent,int) -> onStart
+    185:187:void notify(java.lang.String,java.lang.String) -> a
+    190:247:void finalnotify() -> a
+    289:688:void editboot(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    691:694:boolean installInternal() -> b
+    747:1648:void installrom$16da05f7(java.lang.String) -> a
+    1653:1662:boolean isMounted(java.lang.String) -> b
+    1668:1693:boolean yad7() -> c
+    1697:1704:java.lang.String dieuqinu() -> d
+    1708:1720:java.lang.Boolean syncIMG(java.lang.String) -> c
+    1725:1731:java.lang.Boolean sigChec() -> e
+    184:184:void access$0(com.drx2.bootmanager.services.NandRestoreService,java.lang.String,java.lang.String) -> a
+    189:189:void access$1(com.drx2.bootmanager.services.NandRestoreService) -> a
+    1734:1734:void access$2(com.drx2.bootmanager.services.NandRestoreService) -> b
+    746:746:void access$3$42fa63fc(com.drx2.bootmanager.services.NandRestoreService,java.lang.String) -> a
+    288:288:void access$4(com.drx2.bootmanager.services.NandRestoreService,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    699:699:void access$5(com.drx2.bootmanager.services.NandRestoreService,android.content.Context) -> a
+com.drx2.bootmanager.services.NandRestoreService$installThread -> com.drx2.bootmanager.services.e:
+    java.lang.String vrom -> a
+    java.lang.String vboard -> b
+    java.lang.String vslot -> c
+    java.lang.String vsdcard -> d
+    com.drx2.bootmanager.services.NandRestoreService this$0 -> e
+    262:284:void run() -> run
+com.drx2.bootmanager.utilities.AutoSdcard -> com.drx2.bootmanager.utilities.AutoSdcard:
+    com.drx2.bootmanager.utilities.Utilities u -> a
+    android.app.NotificationManager myNotificationManager -> b
+    23:70:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.drx2.bootmanager.utilities.BCrypt -> com.drx2.bootmanager.utilities.a:
+    int[] P_orig -> a
+    int[] S_orig -> b
+    int[] bf_crypt_ciphertext -> c
+    char[] base64_code -> d
+    byte[] index_64 -> e
+    int[] P -> f
+    int[] S -> g
+    330:358:java.lang.String encode_base64(byte[],int) -> a
+    368:370:byte char64(char) -> a
+    384:420:byte[] decode_base64$44bd1c79(java.lang.String) -> a
+    430:450:void encipher(int[],int) -> a
+    461:470:int streamtoword(byte[],int[]) -> a
+    487:505:void key(byte[]) -> a
+    516:538:void ekskey(byte[],byte[]) -> a
+    551:580:byte[] crypt_raw(byte[],byte[],int) -> a
+    594:637:java.lang.String hashpw(java.lang.String,java.lang.String) -> a
+    671:671:java.lang.String gensalt$47921032() -> a
+    692:692:boolean checkpw(java.lang.String,java.lang.String) -> b
+com.drx2.bootmanager.utilities.BMAct -> com.drx2.bootmanager.utilities.BMAct:
+    java.lang.String DEFAULT_PACKAGE -> a
+com.drx2.bootmanager.utilities.BMActivity -> com.drx2.bootmanager.utilities.BMActivity:
+    java.lang.String DEFAULT_PACKAGE -> a
+com.drx2.bootmanager.utilities.Base64 -> com.drx2.bootmanager.utilities.b:
+    byte[] _STANDARD_ALPHABET -> b
+    byte[] _STANDARD_DECODABET -> c
+    byte[] _URL_SAFE_ALPHABET -> d
+    byte[] _URL_SAFE_DECODABET -> e
+    byte[] _ORDERED_ALPHABET -> f
+    byte[] _ORDERED_DECODABET -> g
+    boolean $assertionsDisabled -> a
+    201:230:byte[] encode3to4$45536f7a(byte[],int,int,byte[],int) -> a
+    235:242:java.lang.String encodeBytes(byte[]) -> a
+    246:251:java.lang.String encodeBytes$5fb0bea7(byte[],int) -> a
+    376:418:byte[] decode$3bcfdf96$7dcc7401(byte[],int) -> b
+    422:422:byte[] decode(java.lang.String) -> a
+    426:465:byte[] decode$44bd1c79(java.lang.String) -> b
+com.drx2.bootmanager.utilities.CallLogBackupRestore -> com.drx2.bootmanager.utilities.c:
+    com.drx2.bootmanager.utilities.Utilities u -> a
+    java.lang.String[] strFields -> b
+    java.lang.String[] date -> c
+    37:114:void getSMS(android.content.Context) -> a
+    117:181:void getCallLog(android.content.Context) -> b
+    186:203:java.lang.String readphonelog(java.io.File) -> a
+    223:282:void restoreSMS(android.content.Context) -> c
+    286:326:void addCall(android.content.Context) -> d
+    329:341:org.json.JSONObject addJSONobj(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    345:361:org.json.JSONObject addJSONobj2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+com.drx2.bootmanager.utilities.CustomDialog -> com.drx2.bootmanager.utilities.d:
+    504:505:android.widget.ListView getListView() -> a
+com.drx2.bootmanager.utilities.CustomDialog$Builder -> com.drx2.bootmanager.utilities.e:
+    android.content.Context context -> a
+    java.lang.String title -> b
+    java.lang.String message -> c
+    java.lang.String positiveButtonText -> d
+    java.lang.String negativeButtonText -> e
+    java.lang.String neutralButtonText -> f
+    android.view.View contentView -> g
+    android.widget.TextView textview -> h
+    java.lang.Boolean cancelable -> i
+    java.lang.Boolean icon -> j
+    android.widget.ListView lst -> k
+    int iconId -> l
+    int position -> m
+    boolean[] states -> n
+    java.lang.CharSequence[] items -> o
+    java.lang.CharSequence[] listitems -> p
+    java.lang.CharSequence[] multiitems -> q
+    android.content.DialogInterface$OnClickListener itemsClickListener -> r
+    android.content.DialogInterface$OnMultiChoiceClickListener onMultichoiceListener -> s
+    android.content.DialogInterface$OnClickListener positiveButtonClickListener -> t
+    android.content.DialogInterface$OnClickListener negativeButtonClickListener -> u
+    android.content.DialogInterface$OnClickListener neutralButtonClickListener -> v
+    android.content.DialogInterface$OnCancelListener onCancel -> w
+    94:95:com.drx2.bootmanager.utilities.CustomDialog$Builder setMessage(java.lang.String) -> a
+    104:105:com.drx2.bootmanager.utilities.CustomDialog$Builder setMessage(int) -> a
+    117:118:com.drx2.bootmanager.utilities.CustomDialog$Builder setTitle(int) -> b
+    127:128:com.drx2.bootmanager.utilities.CustomDialog$Builder setTitle(java.lang.String) -> b
+    139:140:com.drx2.bootmanager.utilities.CustomDialog$Builder setContentView(android.view.View) -> a
+    151:157:com.drx2.bootmanager.utilities.CustomDialog$Builder setView(android.widget.TextView,java.lang.Boolean) -> a
+    162:164:com.drx2.bootmanager.utilities.CustomDialog$Builder setItems(java.lang.CharSequence[],android.content.DialogInterface$OnClickListener) -> a
+    168:171:com.drx2.bootmanager.utilities.CustomDialog$Builder setMultiChoiceItems(java.lang.CharSequence[],boolean[],android.content.DialogInterface$OnMultiChoiceClickListener) -> a
+    176:179:com.drx2.bootmanager.utilities.CustomDialog$Builder setSingleChoiceItems(java.lang.CharSequence[],int,android.content.DialogInterface$OnClickListener) -> a
+    183:184:com.drx2.bootmanager.utilities.CustomDialog$Builder setOnCancelListener(android.content.DialogInterface$OnCancelListener) -> a
+    195:198:com.drx2.bootmanager.utilities.CustomDialog$Builder setPositiveButton(int,android.content.DialogInterface$OnClickListener) -> a
+    209:211:com.drx2.bootmanager.utilities.CustomDialog$Builder setPositiveButton(java.lang.String,android.content.DialogInterface$OnClickListener) -> a
+    222:225:com.drx2.bootmanager.utilities.CustomDialog$Builder setNeutralButton(int,android.content.DialogInterface$OnClickListener) -> b
+    236:238:com.drx2.bootmanager.utilities.CustomDialog$Builder setNeutralButton(java.lang.String,android.content.DialogInterface$OnClickListener) -> b
+    250:253:com.drx2.bootmanager.utilities.CustomDialog$Builder setNegativeButton(int,android.content.DialogInterface$OnClickListener) -> c
+    264:266:com.drx2.bootmanager.utilities.CustomDialog$Builder setNegativeButton(java.lang.String,android.content.DialogInterface$OnClickListener) -> c
+    271:273:com.drx2.bootmanager.utilities.CustomDialog$Builder setIcon(int,java.lang.Boolean) -> a
+    278:279:com.drx2.bootmanager.utilities.CustomDialog$Builder setCancelable(java.lang.Boolean) -> a
+    285:286:com.drx2.bootmanager.utilities.CustomDialog$Builder show() -> a
+    297:493:com.drx2.bootmanager.utilities.CustomDialog create() -> b
+    497:497:android.widget.ListView getListView() -> c
+    82:82:android.content.DialogInterface$OnCancelListener access$0(com.drx2.bootmanager.utilities.CustomDialog$Builder) -> a
+    79:79:android.content.DialogInterface$OnClickListener access$1(com.drx2.bootmanager.utilities.CustomDialog$Builder) -> b
+    80:80:android.content.DialogInterface$OnClickListener access$2(com.drx2.bootmanager.utilities.CustomDialog$Builder) -> c
+    81:81:android.content.DialogInterface$OnClickListener access$3(com.drx2.bootmanager.utilities.CustomDialog$Builder) -> d
+    76:76:android.content.DialogInterface$OnClickListener access$4(com.drx2.bootmanager.utilities.CustomDialog$Builder) -> e
+    77:77:android.content.DialogInterface$OnMultiChoiceClickListener access$5(com.drx2.bootmanager.utilities.CustomDialog$Builder) -> f
+com.drx2.bootmanager.utilities.CustomDialog$Builder$1 -> com.drx2.bootmanager.utilities.f:
+    com.drx2.bootmanager.utilities.CustomDialog$Builder this$1 -> a
+    com.drx2.bootmanager.utilities.CustomDialog val$dialog -> b
+    333:334:void onCancel(android.content.DialogInterface) -> onCancel
+com.drx2.bootmanager.utilities.CustomDialog$Builder$2 -> com.drx2.bootmanager.utilities.g:
+    com.drx2.bootmanager.utilities.CustomDialog$Builder this$1 -> a
+    com.drx2.bootmanager.utilities.CustomDialog val$dialog -> b
+    351:353:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.utilities.CustomDialog$Builder$3 -> com.drx2.bootmanager.utilities.h:
+    com.drx2.bootmanager.utilities.CustomDialog$Builder this$1 -> a
+    com.drx2.bootmanager.utilities.CustomDialog val$dialog -> b
+    369:371:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.utilities.CustomDialog$Builder$4 -> com.drx2.bootmanager.utilities.i:
+    com.drx2.bootmanager.utilities.CustomDialog$Builder this$1 -> a
+    com.drx2.bootmanager.utilities.CustomDialog val$dialog -> b
+    387:388:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.utilities.CustomDialog$Builder$5 -> com.drx2.bootmanager.utilities.j:
+    com.drx2.bootmanager.utilities.CustomDialog$Builder this$1 -> a
+    com.drx2.bootmanager.utilities.CustomDialog val$dialog -> b
+    407:409:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.drx2.bootmanager.utilities.CustomDialog$Builder$6 -> com.drx2.bootmanager.utilities.k:
+    com.drx2.bootmanager.utilities.CustomDialog$Builder this$1 -> a
+    com.drx2.bootmanager.utilities.CustomDialog val$dialog -> b
+    426:428:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.drx2.bootmanager.utilities.CustomDialog$Builder$7 -> com.drx2.bootmanager.utilities.l:
+    com.drx2.bootmanager.utilities.CustomDialog$Builder this$1 -> a
+    com.drx2.bootmanager.utilities.CustomDialog val$dialog -> b
+    447:449:void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    451:452:void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+com.drx2.bootmanager.utilities.CustomProgressDialog -> com.drx2.bootmanager.utilities.m:
+    31:31:com.drx2.bootmanager.utilities.CustomProgressDialog show$2270c82c(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,boolean) -> a
+com.drx2.bootmanager.utilities.MultiBoot -> com.drx2.bootmanager.utilities.n:
+    17:49:java.lang.String daerrevreSeliF(java.lang.String) -> a
+com.drx2.bootmanager.utilities.PhoneRomSetup -> com.drx2.bootmanager.utilities.o:
+    com.drx2.bootmanager.utilities.CustomProgressDialog sp -> a
+    java.lang.String filesystem -> b
+    23:41:void setupPR(java.lang.String,android.content.Context,java.lang.String) -> a
+    272:297:void factorReset(java.lang.String,android.content.Context,java.lang.String) -> b
+    377:377:void access$0$674f7ba5() -> a
+com.drx2.bootmanager.utilities.PhoneRomSetup$1 -> com.drx2.bootmanager.utilities.p:
+    com.drx2.bootmanager.utilities.PhoneRomSetup this$0 -> a
+    android.content.Context val$context -> b
+    java.lang.String val$board -> c
+    java.lang.String val$boot -> d
+    31:34:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.utilities.PhoneRomSetup$2 -> com.drx2.bootmanager.utilities.q:
+    com.drx2.bootmanager.utilities.PhoneRomSetup this$0 -> a
+    38:39:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.utilities.PhoneRomSetup$3 -> com.drx2.bootmanager.utilities.r:
+    com.drx2.bootmanager.utilities.PhoneRomSetup this$0 -> a
+    android.content.Context val$context -> b
+    java.lang.String val$slot -> c
+    281:285:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.utilities.PhoneRomSetup$4 -> com.drx2.bootmanager.utilities.s:
+    com.drx2.bootmanager.utilities.PhoneRomSetup this$0 -> a
+    android.content.Context val$context -> b
+    java.lang.String val$slot -> c
+    289:293:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.utilities.PhoneRomSetup$frThread -> com.drx2.bootmanager.utilities.t:
+    android.content.Context context -> a
+    java.lang.String filesystem -> b
+    java.lang.String slot -> c
+    com.drx2.bootmanager.utilities.Utilities u -> d
+    com.drx2.bootmanager.utilities.ShellCommand s -> e
+    com.drx2.bootmanager.utilities.PhoneRomSetup this$0 -> f
+    314:374:void run() -> run
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread -> com.drx2.bootmanager.utilities.u:
+    android.content.Context context -> a
+    java.lang.String board -> b
+    java.lang.String boot -> c
+    com.drx2.bootmanager.utilities.Utilities u -> d
+    com.drx2.bootmanager.utilities.ShellCommand s -> e
+    com.drx2.bootmanager.utilities.PhoneRomSetup this$0 -> f
+    59:268:void run() -> run
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$1 -> com.drx2.bootmanager.utilities.v:
+    com.drx2.bootmanager.utilities.PhoneRomSetup$spThread this$1 -> a
+    111:120:void run() -> run
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$1$1 -> com.drx2.bootmanager.utilities.w:
+    com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$1 this$2 -> a
+    117:118:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$2 -> com.drx2.bootmanager.utilities.x:
+    com.drx2.bootmanager.utilities.PhoneRomSetup$spThread this$1 -> a
+    126:135:void run() -> run
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$2$1 -> com.drx2.bootmanager.utilities.y:
+    com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$2 this$2 -> a
+    132:133:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$3 -> com.drx2.bootmanager.utilities.z:
+    com.drx2.bootmanager.utilities.PhoneRomSetup$spThread this$1 -> a
+    84:95:void run() -> run
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$3$1 -> com.drx2.bootmanager.utilities.aa:
+    com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$3 this$2 -> a
+    91:93:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$4 -> com.drx2.bootmanager.utilities.ab:
+    com.drx2.bootmanager.utilities.PhoneRomSetup$spThread this$1 -> a
+    237:246:void run() -> run
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$4$1 -> com.drx2.bootmanager.utilities.ac:
+    com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$4 this$2 -> a
+    243:244:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$5 -> com.drx2.bootmanager.utilities.ad:
+    com.drx2.bootmanager.utilities.PhoneRomSetup$spThread this$1 -> a
+    252:261:void run() -> run
+com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$5$1 -> com.drx2.bootmanager.utilities.ae:
+    com.drx2.bootmanager.utilities.PhoneRomSetup$spThread$5 this$2 -> a
+    258:259:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.utilities.PhotoPicker -> com.drx2.bootmanager.utilities.PhotoPicker:
+    com.drx2.bootmanager.utilities.Utilities u -> a
+    java.lang.String rom -> b
+    android.content.Context context -> c
+    33:49:void onCreate(android.os.Bundle) -> onCreate
+    69:73:android.graphics.Bitmap getTempBitmap(java.lang.String) -> a
+    87:121:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    132:154:android.graphics.Bitmap decodeFile(java.io.File) -> a
+com.drx2.bootmanager.utilities.Romswitcher -> com.drx2.bootmanager.utilities.Romswitcher:
+    com.drx2.bootmanager.utilities.Utilities u -> a
+    com.drx2.bootmanager.utilities.ShellCommand s -> b
+    android.content.Context context -> c
+    java.lang.String slot -> d
+    27:38:void onCreate(android.os.Bundle) -> onCreate
+    41:96:java.lang.String currentRom() -> a
+    101:102:void reboot() -> b
+    302:303:void eraseboot() -> c
+    104:104:void access$0(com.drx2.bootmanager.utilities.Romswitcher,java.lang.String) -> a
+    248:248:void access$1(com.drx2.bootmanager.utilities.Romswitcher,java.lang.String,java.lang.String) -> a
+    306:306:void access$2(com.drx2.bootmanager.utilities.Romswitcher,java.lang.String) -> b
+    124:124:void access$3(com.drx2.bootmanager.utilities.Romswitcher,java.lang.String) -> c
+com.drx2.bootmanager.utilities.Romswitcher$1 -> com.drx2.bootmanager.utilities.af:
+    com.drx2.bootmanager.utilities.Romswitcher this$0 -> a
+    179:180:void run() -> run
+com.drx2.bootmanager.utilities.Romswitcher$2 -> com.drx2.bootmanager.utilities.ag:
+    com.drx2.bootmanager.utilities.Romswitcher this$0 -> a
+    189:190:void run() -> run
+com.drx2.bootmanager.utilities.Romswitcher$3 -> com.drx2.bootmanager.utilities.ah:
+    com.drx2.bootmanager.utilities.Romswitcher this$0 -> a
+    229:230:void run() -> run
+com.drx2.bootmanager.utilities.Romswitcher$4 -> com.drx2.bootmanager.utilities.ai:
+    com.drx2.bootmanager.utilities.Romswitcher this$0 -> a
+    239:240:void run() -> run
+com.drx2.bootmanager.utilities.Romswitcher$5 -> com.drx2.bootmanager.utilities.aj:
+    com.drx2.bootmanager.utilities.Romswitcher this$0 -> a
+    283:284:void run() -> run
+com.drx2.bootmanager.utilities.Romswitcher$6 -> com.drx2.bootmanager.utilities.ak:
+    com.drx2.bootmanager.utilities.Romswitcher this$0 -> a
+    293:294:void run() -> run
+com.drx2.bootmanager.utilities.Romswitcher$confirmTask -> com.drx2.bootmanager.utilities.al:
+    java.io.File f0 -> a
+    java.io.File f1 -> b
+    java.io.File s0 -> c
+    java.io.File s1 -> d
+    com.drx2.bootmanager.utilities.CustomProgressDialog p -> e
+    com.drx2.bootmanager.utilities.Romswitcher this$0 -> f
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.drx2.bootmanager.utilities.Script -> com.drx2.bootmanager.utilities.am:
+    com.drx2.bootmanager.utilities.Utilities u -> a
+    10:12:void vigorScript() -> a
+    15:17:void galaxynexusScript() -> b
+    20:22:void nexusSScript() -> c
+    25:27:void smallInstallScript() -> d
+    30:32:void smallInstallScript3d() -> e
+    35:37:void installScript() -> f
+    40:42:void installScriptX() -> g
+    45:47:void editStockHijackXScript() -> h
+    50:52:void editStockHijackRazrScript() -> i
+    55:57:void installScript3d() -> j
+    65:78:void javaWrite(java.lang.String,java.lang.String[]) -> a
+com.drx2.bootmanager.utilities.SdcardOff -> com.drx2.bootmanager.utilities.SdcardOff:
+    android.widget.Button SDcardoff -> c
+    android.content.Context context -> a
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    java.lang.String PREFS_DEVICE -> d
+    26:81:void onCreate(android.os.Bundle) -> onCreate
+    21:21:java.lang.String access$0(com.drx2.bootmanager.utilities.SdcardOff) -> a
+    18:18:android.widget.Button access$1(com.drx2.bootmanager.utilities.SdcardOff) -> b
+com.drx2.bootmanager.utilities.SdcardOff$1 -> com.drx2.bootmanager.utilities.an:
+    com.drx2.bootmanager.utilities.SdcardOff this$0 -> a
+    51:79:void onClick(android.view.View) -> onClick
+com.drx2.bootmanager.utilities.ShellCommand -> com.drx2.bootmanager.utilities.ao:
+    com.drx2.bootmanager.utilities.ShellCommand$SH sh -> b
+    com.drx2.bootmanager.utilities.ShellCommand$SH su -> a
+com.drx2.bootmanager.utilities.ShellCommand$CommandResult -> com.drx2.bootmanager.utilities.ap:
+    java.lang.String stdout -> a
+    java.lang.String stderr -> b
+    java.lang.Integer exit_value -> c
+    com.drx2.bootmanager.utilities.ShellCommand this$0 -> d
+com.drx2.bootmanager.utilities.ShellCommand$SH -> com.drx2.bootmanager.utilities.aq:
+    java.lang.String SHELL -> b
+    com.drx2.bootmanager.utilities.ShellCommand this$0 -> a
+    75:84:java.lang.Process run(java.lang.String) -> b
+    88:104:java.lang.String getStreamLines(java.io.InputStream) -> a
+    108:125:com.drx2.bootmanager.utilities.ShellCommand$CommandResult runWaitFor(java.lang.String) -> a
+com.drx2.bootmanager.utilities.USBOff -> com.drx2.bootmanager.utilities.USBOff:
+    14:16:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.drx2.bootmanager.utilities.Utilities -> com.drx2.bootmanager.utilities.ar:
+    java.lang.String url -> a
+    java.lang.String BASE_URL -> b
+    48:48:java.lang.String device() -> a
+    52:85:java.io.File getExternalDirectory() -> b
+    93:106:java.lang.String readFirstLineOfFile(java.lang.String) -> a
+    111:120:void errorDialog(android.content.Context,java.lang.String,java.lang.String) -> a
+    133:149:java.io.FileInputStream rootFileInputStream(java.lang.String) -> b
+    154:164:void copy(java.io.File,java.io.File) -> a
+    213:227:java.lang.Boolean execCommand(java.lang.String) -> c
+    250:265:boolean downloadUtil$62dc3a75(java.lang.String,java.lang.String) -> a
+    269:278:void downloadUtil2(android.content.Context,java.lang.String,java.lang.String) -> b
+    302:306:java.lang.String tpyrced(java.lang.String) -> d
+    311:386:void unzip(java.lang.String,java.lang.String,java.lang.String,android.content.Context) -> a
+    390:397:void zipper2(java.lang.String,java.lang.String,java.lang.String) -> a
+    400:444:void zipDir(java.lang.String,java.util.zip.ZipOutputStream,java.lang.String) -> a
+    447:455:boolean appInstalledOrNot(android.content.Context,java.lang.String) -> a
+    476:481:java.lang.String getMD5(java.lang.String) -> e
+    485:501:void log(java.lang.String) -> f
+    505:513:boolean checkbinarys(java.lang.String,java.lang.String) -> b
+    517:526:boolean deleteDir(java.io.File) -> a
+    530:532:void fixfilesystem(java.lang.String,android.content.Context) -> a
+    606:610:boolean checkIfNumber(java.lang.String) -> g
+    615:622:void writeFile(java.lang.String,java.lang.String) -> c
+com.drx2.bootmanager.utilities.Utilities$1 -> com.drx2.bootmanager.utilities.as:
+    com.drx2.bootmanager.utilities.Utilities this$0 -> a
+    117:118:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.utilities.Utilities$fixThread -> com.drx2.bootmanager.utilities.at:
+    java.lang.String rom -> a
+    android.content.Context context -> b
+    com.drx2.bootmanager.utilities.CustomProgressDialog cpd -> c
+    com.drx2.bootmanager.utilities.Utilities this$0 -> d
+    546:594:void run() -> run
+com.drx2.bootmanager.widget.FragWidgetActivity -> com.drx2.bootmanager.widget.FragWidgetActivity:
+    android.content.Context context -> a
+    int slot -> b
+    android.content.SharedPreferences shared -> c
+    com.drx2.bootmanager.utilities.Utilities u -> d
+    com.drx2.bootmanager.Loader l -> e
+    29:47:void onCreate(android.os.Bundle) -> onCreate
+    87:99:java.lang.String readRomName(java.lang.String) -> a
+com.drx2.bootmanager.widget.FragWidgetActivity$1 -> com.drx2.bootmanager.widget.a:
+    com.drx2.bootmanager.widget.FragWidgetActivity this$0 -> a
+    java.lang.String val$slot -> b
+    55:59:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.widget.FragWidgetActivity$2 -> com.drx2.bootmanager.widget.b:
+    com.drx2.bootmanager.widget.FragWidgetActivity this$0 -> a
+    62:63:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.widget.FragWidgetLeft -> com.drx2.bootmanager.widget.FragWidgetLeft:
+    android.content.Context context -> a
+    int slot -> b
+    com.drx2.bootmanager.utilities.Utilities u -> c
+    28:71:void onCreate(android.os.Bundle) -> onCreate
+    92:104:java.lang.String readRomName(java.lang.String) -> a
+    109:121:java.lang.String getnames(java.lang.String) -> b
+com.drx2.bootmanager.widget.FragWidgetProvider -> com.drx2.bootmanager.widget.FragWidgetProvider:
+    com.drx2.bootmanager.utilities.ShellCommand s -> a
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    32:66:void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
+    69:130:int currentROM(android.content.Context) -> a
+    152:164:java.lang.String readRomName(java.lang.String) -> a
+    169:181:java.lang.String getnames(java.lang.String) -> b
+com.drx2.bootmanager.widget.FragWidgetRight -> com.drx2.bootmanager.widget.FragWidgetRight:
+    android.content.Context context -> a
+    int slot -> b
+    com.drx2.bootmanager.utilities.Utilities u -> c
+    32:76:void onCreate(android.os.Bundle) -> onCreate
+    95:106:int getMaxSlots() -> a
+    111:123:java.lang.String readRomName(java.lang.String) -> a
+    128:140:java.lang.String getnames(java.lang.String) -> b
+com.drx2.bootmanager.widget.WideWidgetDialog -> com.drx2.bootmanager.widget.WideWidgetDialog:
+    java.lang.String slot -> a
+    java.lang.String name1 -> b
+    java.lang.String name2 -> c
+    java.lang.String name3 -> d
+    java.lang.String name4 -> e
+    java.lang.String name5 -> f
+    java.lang.String none -> g
+    com.drx2.bootmanager.utilities.Utilities u -> h
+    com.drx2.bootmanager.Loader l -> i
+    com.drx2.bootmanager.utilities.ShellCommand s -> j
+    android.content.Context context -> k
+    java.lang.String board -> l
+    38:109:void onCreate(android.os.Bundle) -> onCreate
+    255:262:void eraseboot() -> a
+    265:266:void reboot() -> b
+    298:310:java.lang.String readRomName(java.lang.String) -> a
+    367:367:java.lang.String access$0(com.drx2.bootmanager.widget.WideWidgetDialog) -> a
+    350:350:void access$1(com.drx2.bootmanager.widget.WideWidgetDialog,java.lang.String,java.lang.String) -> a
+    111:111:void access$2(com.drx2.bootmanager.widget.WideWidgetDialog,java.lang.String) -> a
+    131:131:void access$3(com.drx2.bootmanager.widget.WideWidgetDialog,java.lang.String) -> b
+    313:313:void access$4(com.drx2.bootmanager.widget.WideWidgetDialog,java.lang.String) -> c
+com.drx2.bootmanager.widget.WideWidgetDialog$1 -> com.drx2.bootmanager.widget.c:
+    com.drx2.bootmanager.widget.WideWidgetDialog this$0 -> a
+    52:53:void onCancel(android.content.DialogInterface) -> onCancel
+com.drx2.bootmanager.widget.WideWidgetDialog$2 -> com.drx2.bootmanager.widget.d:
+    com.drx2.bootmanager.widget.WideWidgetDialog this$0 -> a
+    77:78:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.widget.WideWidgetDialog$3 -> com.drx2.bootmanager.widget.e:
+    com.drx2.bootmanager.widget.WideWidgetDialog this$0 -> a
+    85:101:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.widget.WideWidgetDialog$4 -> com.drx2.bootmanager.widget.f:
+    com.drx2.bootmanager.widget.WideWidgetDialog this$0 -> a
+    105:106:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.widget.WideWidgetDialog$5 -> com.drx2.bootmanager.widget.g:
+    com.drx2.bootmanager.widget.WideWidgetDialog this$0 -> a
+    185:186:void run() -> run
+com.drx2.bootmanager.widget.WideWidgetDialog$6 -> com.drx2.bootmanager.widget.h:
+    com.drx2.bootmanager.widget.WideWidgetDialog this$0 -> a
+    195:196:void run() -> run
+com.drx2.bootmanager.widget.WideWidgetDialog$7 -> com.drx2.bootmanager.widget.i:
+    com.drx2.bootmanager.widget.WideWidgetDialog this$0 -> a
+    235:236:void run() -> run
+com.drx2.bootmanager.widget.WideWidgetDialog$8 -> com.drx2.bootmanager.widget.j:
+    com.drx2.bootmanager.widget.WideWidgetDialog this$0 -> a
+    245:246:void run() -> run
+com.drx2.bootmanager.widget.WideWidgetProvider -> com.drx2.bootmanager.widget.WideWidgetProvider:
+    com.drx2.bootmanager.utilities.ShellCommand s -> a
+    int widgetlayout -> b
+    17:80:void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
+com.drx2.bootmanager.widget.WidgetDialog -> com.drx2.bootmanager.widget.WidgetDialog:
+    java.lang.String slot -> a
+    android.content.SharedPreferences shared -> b
+    android.content.Context context -> c
+    com.drx2.bootmanager.utilities.Utilities u -> d
+    com.drx2.bootmanager.utilities.ShellCommand s -> e
+    com.drx2.bootmanager.Loader l -> f
+    35:91:void onCreate(android.os.Bundle) -> onCreate
+    114:126:java.lang.String getnames(java.lang.String) -> a
+    131:143:java.lang.String readRomName(java.lang.String) -> b
+    93:93:void access$0$2b70eee8(com.drx2.bootmanager.widget.WidgetDialog,java.lang.String) -> a
+com.drx2.bootmanager.widget.WidgetDialog$1 -> com.drx2.bootmanager.widget.k:
+    com.drx2.bootmanager.widget.WidgetDialog this$0 -> a
+    65:66:void onCancel(android.content.DialogInterface) -> onCancel
+com.drx2.bootmanager.widget.WidgetDialog$2 -> com.drx2.bootmanager.widget.l:
+    com.drx2.bootmanager.widget.WidgetDialog this$0 -> a
+    70:70:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.widget.WidgetDialog$3 -> com.drx2.bootmanager.widget.m:
+    com.drx2.bootmanager.widget.WidgetDialog this$0 -> a
+    java.lang.CharSequence[] val$items -> b
+    74:85:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.widget.WidgetDialog$4 -> com.drx2.bootmanager.widget.n:
+    com.drx2.bootmanager.widget.WidgetDialog this$0 -> a
+    88:89:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.widget.WidgetDialog$5 -> com.drx2.bootmanager.widget.o:
+    com.drx2.bootmanager.widget.WidgetDialog this$0 -> a
+    java.lang.String val$slot -> b
+    99:103:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.widget.WidgetDialog$6 -> com.drx2.bootmanager.widget.p:
+    com.drx2.bootmanager.widget.WidgetDialog this$0 -> a
+    106:107:void onClick(android.content.DialogInterface,int) -> onClick
+com.drx2.bootmanager.widget.WidgetProvider -> com.drx2.bootmanager.widget.WidgetProvider:
+    com.drx2.bootmanager.utilities.ShellCommand s -> a
+    com.drx2.bootmanager.utilities.Utilities u -> b
+    java.lang.String romnumber -> c
+    28:54:void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
+    57:113:java.lang.String currentROM(android.content.Context) -> a
+com.markupartist.android.widget.ActionBar -> com.markupartist.android.widget.ActionBar:
+    android.view.LayoutInflater mInflater -> b
+    android.widget.RelativeLayout mBarView -> c
+    android.widget.ImageView mLogoView -> d
+    android.view.View mBackIndicator -> e
+    android.widget.TextView mTitleView -> f
+    android.widget.LinearLayout mActionsView -> g
+    android.widget.ImageButton mHomeBtn -> h
+    android.widget.RelativeLayout mHomeLayout -> i
+    android.widget.ProgressBar mProgress -> j
+    android.widget.ImageButton labelView -> k
+    android.content.Context contxt -> a
+    86:90:void setHomeAction(com.markupartist.android.widget.ActionBar$Action) -> a
+    93:98:void setHomeColor(int,int) -> a
+    128:129:void setTitle(java.lang.CharSequence) -> a
+    132:133:void setTitle$13462e() -> a
+    136:137:void setTitleColor(int) -> a
+    165:166:void setOnTitleClickListener(android.view.View$OnClickListener) -> a
+    170:175:void onClick(android.view.View) -> onClick
+    193:195:void addAction(com.markupartist.android.widget.ActionBar$Action,int,int) -> a
+    210:211:void removeAllActions() -> b
+com.markupartist.android.widget.ActionBar$Action -> com.markupartist.android.widget.a:
+    int getDrawable() -> a
+    void performAction$3c7ec8c3() -> b
+com.markupartist.android.widget.ScrollingTextView -> com.markupartist.android.widget.ScrollingTextView:
+    35:38:void onFocusChanged(boolean,int,android.graphics.Rect) -> onFocusChanged
+    42:45:void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    49:49:boolean isFocused() -> isFocused
+com.markupartist.android.widget.actionbar.R -> com.markupartist.android.widget.a.a:
+com.markupartist.android.widget.actionbar.R$styleable -> com.markupartist.android.widget.a.b:
+    int[] ActionBar -> a
+    int[] PagerHeader -> b

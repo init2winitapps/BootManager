@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="red2">#990000</color>
+    <color name="red">#CD2626</color>
+    <color name="gray">#FF999999</color>
+    <color name="gray2">#FF333333</color>
+    <color name="gray3">#FF666666</color>
+    
+    
+    <!-- Colors below need preferences -->
+    <color name="actionbar_separator">#881A1A1A</color>
+    <color name="actionbar_background_start">#8B1A1A</color>
+    <color name="actionbar_background_end">#CD2626</color>
+    <color name="actionbar_background_item_pressed_start">#FF7F00</color>
+    <color name="actionbar_background_item_pressed_end">#EE7600</color>
+    <color name="actionbar_title">#FFFFFF</color>
+    <color name="buttonStart">#FF8B1A1A</color>
+    <color name="buttonEnd">#FFCD2626</color>
+    <color name="buttonText">#FFFFFF</color>
+    <color name="stroke">#FF222222</color>
+    <color name="buttonPressStart">#880000</color>
+    <color name="buttonPressEnd">#850000</color>
+    <color name="vpTitle">#000000</color>
+    <color name="vpTitleUnused">#AEAEAE</color>
+    <color name="extrasText">#000000</color>
+</resources>

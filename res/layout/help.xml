@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <com.markupartist.android.widget.ActionBar xmlns:app="http://schemas.android.com/apk/res/com.drx2.bootmanager"
+    android:id="@+id/actionbar"
+    app:title="Help"
+    style="@style/ActionBar" />
+    <ScrollView android:id="@+id/scrollView1" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical"
+    android:scrollbarTrackVertical="@drawable/scrollbar_handle_vertical_track">
+    	<LinearLayout android:layout_width="fill_parent" 
+    	android:orientation="vertical" 
+    	android:id="@+id/linearLayout2" 
+    	android:layout_height="fill_parent">
+    		<TextView android:text="@string/installHelp" 
+    		android:textStyle="bold" 
+    		android:layout_marginBottom="12dip"
+    		android:layout_marginRight="5dip"
+    		android:layout_marginLeft="5dip"
+    		android:layout_marginTop="8dip"
+    		android:textColor="#000000" 
+    		android:textSize="18dip" 
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    		</TextView>
+    		<TextView android:text="@string/installInf" 
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:layout_marginRight="5dip"
+    		android:layout_marginLeft="5dip">
+    		</TextView>
+    		<TextView android:text="@string/bootHelp" 
+    		android:textStyle="bold" 
+    		android:layout_marginBottom="12dip"
+    		android:layout_marginRight="5dip"
+    		android:layout_marginLeft="5dip" 
+    		android:layout_marginTop="12dip" 
+    		android:textColor="#000000" 
+    		android:textSize="18dip" 
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    		</TextView>
+    		<TextView android:text="@string/bootInfo" 
+    		android:id="@+id/textView2" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:layout_marginRight="5dip"
+    		android:layout_marginLeft="5dip">
+    		</TextView>
+    		<TextView android:text="@string/phoneHelp" 
+    		android:textStyle="bold" 
+    		android:layout_marginBottom="12dip" 
+    		android:layout_marginTop="12dip" 
+    		android:layout_marginRight="5dip"
+    		android:layout_marginLeft="5dip"
+    		android:textColor="#000000" 
+    		android:textSize="18dip" 
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    		</TextView>
+    		<TextView android:text="@string/phoneInfo" 
+    		android:id="@+id/textView3" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:layout_marginRight="5dip"
+    		android:layout_marginLeft="5dip">
+    		</TextView>
+    		<TextView android:text="@string/manualHelp" 
+    		android:textStyle="bold" 
+    		android:layout_marginBottom="12dip" 
+    		android:layout_marginTop="12dip" 
+    		android:layout_marginRight="5dip"
+    		android:layout_marginLeft="5dip"
+    		android:textColor="#000000" 
+    		android:textSize="18dip" 
+    		android:id="@+id/textView1" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content">
+    		</TextView>
+    		<TextView android:text="@string/manualInfo" 
+    		android:id="@+id/textView4" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:layout_marginRight="5dip"
+    		android:layout_marginLeft="5dip"
+    		android:layout_marginBottom="15dip">
+    		</TextView>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

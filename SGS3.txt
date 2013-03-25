@@ -1,0 +1,21 @@
+Board: d2vzw, d2-common, msm8960-common (all under samsung)
+SD Card: /dev/block/mmcblk1p1
+Data: 16gb or 32gb so make it up
+
+ # df
+Filesystem             Size   Used   Free   Blksize
+/dev                   815M    52K   815M   4096
+/mnt/asec              815M     0K   815M   4096
+/mnt/obb               815M     0K   815M   4096
+/system                  1G   466M  1009M   4096
+/efs                    13M     4M     8M   4096
+/data                   26G     8G    17G   4096
+/cache                 826M    94M   731M   4096
+/persist                 7M     4M     3M   4096
+/firmware               63M    40M    23M   16384
+/storage/sdcard0        26G     8G    17G   4096
+
+Links
+http://paste.ubuntu.com/1338834/
+http://paste.ubuntu.com/1338841/
+http://paste.ubuntu.com/1338843/

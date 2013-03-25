@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <ListView android:id="@+id/queueDlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp" >
+    </ListView>
+	<LinearLayout android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:layout_below="@id/queueDlist" >    
+    	<TextView android:id="@+id/wipey"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center_horizontal"
+	    	android:textSize="18dp"
+	    	android:layout_weight="2"
+	    	android:textColor="@color/black"
+	    	android:text="--- Wipes ---" />
+		<LinearLayout android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:id="@+id/checkBoxLayout"
+    		android:weightSum="3" >
+    		<CheckBox android:id="@+id/checkBox1"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="System"
+        		android:layout_weight="1"
+        		android:button="@drawable/checkbox"
+        		android:textColor="@color/black" />
+    		<CheckBox android:id="@+id/checkBox2"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Data"
+        		android:layout_weight="1"
+        		android:button="@drawable/checkbox"
+        		android:textColor="@color/black" />
+    		<CheckBox android:id="@+id/checkBox3"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Cache"
+        		android:layout_weight="1"
+        		android:button="@drawable/checkbox"
+        		android:textColor="@color/black" />
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

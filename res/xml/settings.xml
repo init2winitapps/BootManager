@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="About">
+		<Preference
+			android:title="About"
+			android:summary="@string/aboutBM"
+			android:key="aboutPref" />
+		<Preference
+        	android:title="Quick Tips"
+			android:summary="@string/quickTip"
+			android:key="quicktipsPref" />
+	</PreferenceCategory>
+	<PreferenceCategory
+       	android:title="Boot Manager Settings"
+       	android:key="Extras" >
+        <CheckBoxPreference
+			android:title="Automount Sdcard"
+            android:defaultValue="false"
+            android:summary="@string/autoMount"
+            android:key="automountPref"
+            android:widgetLayout="@drawable/checkbox_pref" />
+        <CheckBoxPreference
+			android:title="Force Large Boot.img"
+            android:defaultValue="false"
+            android:summary="@string/force_large_boot"
+            android:key="forcelargeboot"
+            android:widgetLayout="@drawable/checkbox_pref" />
+       	<ListPreference android:title="Install Location" 
+        	android:positiveButtonText="Ok" 
+        	android:negativeButtonText="Cancel" 
+        	android:entryValues="@array/locationarrayvalues" 
+        	android:key="sdselector" 
+        	android:summary="Choose to use internal or external storage" 
+        	android:entries="@array/locationarray" 
+        	android:defaultValue="internal"/>
+        <CheckBoxPreference
+			android:title="Hide Superuser Toasts"
+            android:defaultValue="false"
+            android:summary="@string/suToasts"
+            android:key="superuserPref"
+            android:widgetLayout="@drawable/checkbox_pref" />
+        <EditTextPreference
+            android:title="Slot Number"
+            android:summary="@string/slotnumber"
+            android:defaultValue="4"
+            android:key="slotNum" />
+		<CheckBoxPreference
+         	android:title="Disable USB Notification"
+            android:defaultValue="false"
+            android:summary="@string/sdnotifyMount"
+            android:key="sdnotifyPref"
+            android:widgetLayout="@drawable/checkbox_pref" />
+        <CheckBoxPreference
+            android:title="Screen On During Install"
+            android:defaultValue="false"
+            android:summary="@string/screenInstall"
+            android:key="screeninstallPref"
+            android:widgetLayout="@drawable/checkbox_pref" />
+        <Preference
+        	android:title="Manually Set Variables"
+        	android:summary="@string/noSupport"
+        	android:key="manualPref" />
+        <CheckBoxPreference
+            android:title="Use Emmc Storage"
+            android:defaultValue="false"
+            android:summary="Uncheck to use SDcard"
+            android:key="useemmc"
+            android:widgetLayout="@drawable/checkbox_pref" />
+        <CheckBoxPreference android:key="hboot" 
+            android:summaryOff="Check this if you have newer HBoot" 
+            android:summaryOn="Uncheck if you have old HBoot" 
+            android:defaultValue="false" 
+            android:widgetLayout="@drawable/checkbox_pref"
+            android:title="HBoot Version"/>
+	</PreferenceCategory>
+    <PreferenceCategory
+		android:title="User Interface"
+        android:key="uitweaks" >
+		<Preference
+        	android:title="UI Tweaks"
+        	android:summary="@string/uiTweaks"
+        	android:key="uiTweakPref" />
+        <CheckBoxPreference
+            android:title="Open to booted ROM page"
+            android:defaultValue="false"
+            android:summary="@string/romPage"
+            android:key="romPagePref"
+			android:widgetLayout="@drawable/checkbox_pref" />
+		<CheckBoxPreference
+            android:title="Viewpager Titles"
+            android:defaultValue="false"
+            android:summary="@string/viewpagerTitles"
+            android:key="viewpagerTitlePref"
+            android:widgetLayout="@drawable/checkbox_pref" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="Notifications"
+        android:key="notifications" >
+		 <CheckBoxPreference
+            android:title="Use Sound"
+            android:defaultValue="false"
+            android:summary="@string/play_notifications_when_install_completes"
+            android:key="usesound"
+            android:widgetLayout="@drawable/checkbox_pref" />
+		 <RingtonePreference 
+		    android:showDefault="true"
+     		android:key="Audio" 
+     		android:dependency="usesound"
+     		android:title="Notification Sound"
+     		android:ringtoneType="notification">
+  		</RingtonePreference>
+	    <CheckBoxPreference
+            android:title="Vibrate"
+            android:defaultValue="false"
+            android:summary="@string/vibrate_when_install_completes"
+            android:key="usevibrate"
+            android:widgetLayout="@drawable/checkbox_pref" />
+	</PreferenceCategory>
+	 <PreferenceCategory
+		android:title="Shared Data"
+        android:key="sync" >
+        <Preference
+			android:title="Sync Call Logs"
+            android:summary="Select to choose which roms will sync the call logs."
+            android:key="calllogPref" />
+        <Preference
+			android:title="Sync SMS"
+            android:summary="Select to choose which roms will sync sms messages."
+            android:key="smsPref" />
+	</PreferenceCategory>
+	<PreferenceCategory
+      	android:title="Logs"
+    	android:key="logging" >
+        <Preference
+        	android:title="Clear Log"
+        	android:summary="@string/click_to_clear_log_from_sdcard"
+        	android:key="clearPref" />
+        <Preference
+        	android:title="Send Log"
+        	android:summary="@string/send_log"
+        	android:key="sLogPref" />
+		<Preference
+        	android:title="Change Log"
+        	android:summary="@string/changeLog"
+        	android:key="changesPref" />
+	</PreferenceCategory>
+    <PreferenceCategory
+		android:title="Other"
+        android:key="other" >
+        <Preference
+			android:title="Donate"
+        	android:summary="@string/donate"
+        	android:key="donatePref" />
+        <Preference
+        	android:title="Init 2 Winit Forum"
+        	android:summary="@string/forum"
+        	android:key="forumPref" />
+        <Preference
+        	android:title="Init 2 Winit Website"
+        	android:summary="@string/website"
+        	android:key="sitePref" />
+        <Preference
+        	android:title="Init 2 Winit Twitter"
+        	android:summary="@string/twitter"
+        	android:key="twitterPref" />
+	</PreferenceCategory>
+</PreferenceScreen>

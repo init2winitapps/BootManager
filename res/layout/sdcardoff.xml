@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout2" android:layout_height="fill_parent" android:orientation="vertical">
+            <ImageView android:id="@+id/sdcardIMG" android:layout_marginTop="10dp" android:layout_marginLeft="45dp" android:src="@drawable/sd_logo" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageView>
+            <TextView android:gravity="center|center_horizontal" android:text="@string/mountText" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14dp" ></TextView>
+        </LinearLayout>
+        <RelativeLayout 
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+      <Button android:id="@+id/sdcardoffButton" android:layout_marginBottom="25dp" android:background="@drawable/new_button" android:layout_gravity="center" android:text="@string/button_sdcardoff" android:textColor="#ffffff" android:layout_width="fill_parent" android:layout_height="50dp" android:layout_marginLeft="30dip" android:layout_marginRight="30dip"></Button>
+      </RelativeLayout>
+</RelativeLayout>
